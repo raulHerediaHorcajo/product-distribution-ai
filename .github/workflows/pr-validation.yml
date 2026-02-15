@@ -1,0 +1,71 @@
+name: PR Validation
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  changes:
+    name: Detect Changes
+    runs-on: ubuntu-latest
+
+    outputs:
+      frontend: ${{ steps.filter.outputs.frontend }}
+      backend: ${{ steps.filter.outputs.backend }}
+      data: ${{ steps.filter.outputs.data }}
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Detect changed paths
+        id: filter
+        uses: dorny/paths-filter@v3
+        with:
+          filters: |
+            frontend:
+              - 'frontend/**'
+              - '.github/workflows/pr-frontend-analysis.yml'
+            backend:
+              - 'backend/**'
+              - '.github/workflows/pr-backend-test-and-sonar.yml'
+            data:
+              - 'data/**'
+              - '.github/workflows/pr-data-validation.yml'
+
+  frontend:
+    name: Frontend Analysis
+    needs: changes
+    if: needs.changes.outputs.frontend == 'true'
+    uses: ./.github/workflows/pr-frontend-analysis.yml
+
+  backend:
+    name: Backend Test & Sonar
+    needs: changes
+    if: needs.changes.outputs.backend == 'true'
+    uses: ./.github/workflows/pr-backend-test-and-sonar.yml
+    secrets: inherit
+
+  data:
+    name: Data Structure Validation
+    needs: changes
+    if: needs.changes.outputs.data == 'true'
+    uses: ./.github/workflows/pr-data-validation.yml
+
+  pr-gate:
+    name: PR Gate
+    needs: [frontend, backend, data]
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check workflow results
+        run: |
+          if [ "${{ needs.frontend.result }}" == "failure" ] || \
+             [ "${{ needs.backend.result }}" == "failure" ] || \
+             [ "${{ needs.data.result }}" == "failure" ]; then
+            echo "❌ One or more workflows failed"
+            exit 1
+          fi
+          echo "✅ All required workflows passed"

@@ -1,0 +1,507 @@
+// ===== VARIABLES =====
+$primary-blue: #3b82f6;
+$success-green: #10b981;
+$warning-orange: #f59e0b;
+$danger-red: #ef4444;
+$neutral-gray: #6b7280;
+$light-gray: #f9fafb;
+$border-color: #e5e7eb;
+$text-primary: #111827;
+$text-secondary: #6b7280;
+
+$border-radius: 16px;
+$card-padding: 24px;
+$gap: 16px;
+$shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+$shadow-hover: 0 10px 25px rgba(0, 0, 0, 0.15);
+
+$font-size-title: 18px;
+$font-size-value-large: 32px;
+$font-size-value-medium: 24px;
+$font-size-value-small: 20px;
+$font-size-label: 14px;
+$font-size-small: 12px;
+
+$spacing-xs: 8px;
+$spacing-sm: 12px;
+$spacing-md: 16px;
+$spacing-lg: 20px;
+$spacing-xl: 24px;
+
+// ===== MIXINS =====
+@mixin card-base {
+  background: white;
+  border-radius: $border-radius;
+  padding: $card-padding;
+  box-shadow: $shadow;
+  transition: all 0.3s ease;
+  border: 1px solid $border-color;
+
+  &:hover {
+    box-shadow: $shadow-hover;
+    transform: translateY(-2px);
+  }
+}
+
+@mixin value-text($size: $font-size-value-small, $weight: 600) {
+  font-size: $size;
+  font-weight: $weight;
+  color: $text-primary;
+}
+
+@mixin label-text {
+  font-size: $font-size-label;
+  color: $text-secondary;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// ===== MAIN CONTAINER =====
+.metrics-detail-container {
+  display: grid;
+  gap: $gap;
+  padding: $gap;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  min-height: 400px;
+
+  .metrics-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: $gap;
+
+    &.full-width {
+      grid-template-columns: 1fr;
+    }
+
+    &:has(.chart-card) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    &:has(.large):not(:has(.chart-card)):not(.stacked-row) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    &.stacked-row {
+      @media (min-width: 1024px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-auto-flow: column;
+
+        .stacked-full-height {
+          grid-row: 1 / 3;
+        }
+
+        .stacked-column {
+          display: contents;
+        }
+
+        .stacked-card {
+          width: 100%;
+          height: 100%;
+          box-sizing: border-box;
+
+          &.stacked-top {
+            grid-row: 1;
+          }
+
+          &.stacked-bottom {
+            grid-row: 2;
+          }
+        }
+      }
+
+      @media (max-width: 1023px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+      }
+
+      &.demand-row {
+        @media (min-width: 1024px) {
+          grid-template-rows: 2fr 1fr;
+        }
+      }
+    }
+  }
+
+  .stacked-column {
+    display: contents;
+  }
+
+  .stacked-card {
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+
+  .metric-card {
+    @include card-base;
+
+    &.full-width {
+      grid-column: span 3;
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: $spacing-md;
+
+      .card-title {
+        @include value-text($font-size-title, 600);
+        margin: 0;
+      }
+
+      .metric-icon {
+        font-size: $font-size-value-medium;
+        opacity: 0.7;
+      }
+    }
+
+    .card-content {
+      display: flex;
+      flex-direction: column;
+      gap: $spacing-sm;
+    }
+
+    .card-footer {
+      margin-top: auto;
+      padding-top: $spacing-md;
+
+      .distance-info {
+        margin-top: $spacing-sm;
+        text-align: center;
+
+        .distance-details {
+          @include label-text;
+          font-size: $font-size-small;
+        }
+      }
+    }
+  }
+
+  // ===== PROGRESS CARDS =====
+  .progress-card {
+    .progress-circle {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: conic-gradient(
+        $primary-blue 0deg,
+        $primary-blue calc(var(--progress) * 3.6deg),
+        #e5e7eb calc(var(--progress) * 3.6deg)
+      );
+      @include flex-center;
+      flex-direction: column;
+      position: relative;
+
+      &.large {
+        width: 80px;
+        height: 80px;
+      }
+
+      .progress-value {
+        @include value-text($font-size-value-small, 700);
+      }
+
+      .progress-label {
+        @include label-text;
+        font-size: $font-size-small;
+      }
+    }
+
+    .progress-bar {
+      width: 100%;
+      height: $spacing-xs;
+      background: #e5e7eb;
+      border-radius: 4px;
+      overflow: hidden;
+
+      .progress-fill {
+        height: 100%;
+        border-radius: 4px;
+        transition: width 0.3s ease;
+      }
+    }
+
+    .status-badge {
+      padding: 6px $spacing-sm;
+      border-radius: 20px;
+      color: white !important;
+      @include label-text;
+      font-size: $font-size-small;
+      font-weight: 600;
+      text-transform: uppercase;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    .percentage {
+      @include value-text($font-size-value-medium, 700);
+    }
+  }
+
+  // ===== NUMBER CARDS =====
+  .number-card {
+    text-align: center;
+
+    .metric-value {
+      .separator {
+        @include value-text($font-size-value-medium, 300);
+        color: $border-color;
+        margin: 0 8px;
+      }
+      @include value-text(28px, 700);
+
+      .value-label {
+        @include value-text($font-size-label, 400);
+        color: $text-secondary;
+        margin-left: 4px;
+      }
+    }
+  }
+
+  // ===== MULTI-VALUE CARDS =====
+  .multi-value-card {
+    .value-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: $spacing-xs 0;
+      border-bottom: 1px solid #f3f4f6;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      &.main {
+        .value-number {
+          @include value-text($font-size-value-large, 700);
+        }
+      }
+
+      .value-number {
+        @include value-text($font-size-value-small, 600);
+      }
+
+      .value-label {
+        @include label-text;
+      }
+    }
+
+    .value-breakdown {
+      margin-top: $spacing-md;
+      padding-top: $spacing-md;
+      border-top: 1px solid #f3f4f6;
+
+      .breakdown-item {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: $spacing-xs;
+
+        .breakdown-label {
+          @include label-text;
+        }
+
+        .breakdown-value {
+          @include value-text($font-size-label, 600);
+        }
+      }
+    }
+
+    &.unfulfilled-demand-card {
+      .value-breakdown {
+        margin-top: 0;
+        padding-top: 0;
+        border-top: none;
+      }
+    }
+
+    &.fulfilled-demand-card {
+      padding: $spacing-lg;
+
+      .card-header {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  // ===== DISTANCE STATS =====
+  .distance-stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: $spacing-lg 0;
+
+    .distance-item {
+      text-align: center;
+
+      .distance-label {
+        display: block;
+        @include label-text;
+        margin-bottom: $spacing-xs;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+
+      .distance-value {
+        @include value-text($font-size-value-medium, 700);
+      }
+    }
+
+    .distance-divider {
+      @include value-text($font-size-value-medium, 300);
+      color: $border-color;
+    }
+  }
+
+  // ===== CHART CARDS =====
+  .chart-card {
+    .chart-container {
+      height: 300px;
+      margin-top: $spacing-md;
+      width: 100%;
+      position: relative;
+
+      canvas {
+        width: 100% !important;
+        height: 100% !important;
+      }
+
+      &.capacity-ring {
+        height: 280px;
+        @include flex-center;
+        flex-direction: column;
+
+        .ring-chart-wrapper {
+          position: relative;
+          width: 200px;
+          height: 200px;
+          margin-bottom: $spacing-md;
+
+          canvas {
+            width: 100% !important;
+            height: 100% !important;
+          }
+
+          .ring-center-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+
+            .ring-percentage {
+              @include value-text($font-size-value-large, 700);
+            }
+          }
+        }
+
+        .capacity-info {
+          text-align: center;
+
+          .capacity-details {
+            @include label-text;
+          }
+        }
+      }
+    }
+  }
+
+  // ===== LOADING STATE =====
+  .loading-state {
+    @include flex-center;
+    flex-direction: column;
+    padding: 60px $spacing-lg;
+    color: $text-secondary;
+
+    .loading-spinner {
+      width: 40px;
+      height: 40px;
+      border: 4px solid rgba(0, 0, 0, 0.1);
+      border-top-color: #000000;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin-bottom: $spacing-md;
+    }
+
+    p {
+      @include value-text($font-size-label, 400);
+      margin: 0;
+    }
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+// ===== RESPONSIVE DESIGN =====
+@media (max-width: 1024px) {
+  .metrics-detail-container {
+    .metrics-row {
+      grid-template-columns: repeat(2, 1fr);
+
+      &.full-width {
+        grid-template-columns: 1fr;
+      }
+
+      &:has(.chart-card) {
+        grid-template-columns: 1fr;
+      }
+
+      &:has(.large):not(:has(.chart-card)) {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      &.stacked-row {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+
+        .stacked-full-height {
+          grid-row: auto;
+        }
+
+        .stacked-card {
+          grid-row: auto;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .metrics-detail-container {
+    padding: $spacing-sm;
+    gap: $spacing-sm;
+
+    .metrics-row {
+      grid-template-columns: 1fr;
+
+      &:has(.large):not(:has(.chart-card)) {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .metric-card {
+      padding: $spacing-md;
+    }
+
+    .distance-stats {
+      flex-direction: column;
+      gap: $spacing-md;
+
+      .distance-divider {
+        display: none;
+      }
+    }
+  }
+}

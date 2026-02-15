@@ -1,0 +1,5519 @@
+[
+  {
+    "id": "W001",
+    "latitude": 39.26628212016817,
+    "longitude": 83.46184390644811,
+    "country": "China",
+    "stock": [
+      {
+        "productId": "1473-616-944",
+        "size": "M",
+        "quantity": 39
+      },
+      {
+        "productId": "1473-616-944",
+        "size": "L",
+        "quantity": 35
+      },
+      {
+        "productId": "1473-616-944",
+        "size": "XL",
+        "quantity": 62
+      },
+      {
+        "productId": "1473-616-944",
+        "size": "XXL",
+        "quantity": 94
+      },
+      {
+        "productId": "4424-620-066",
+        "size": "M",
+        "quantity": 1013
+      },
+      {
+        "productId": "4424-620-066",
+        "size": "XL",
+        "quantity": 595
+      },
+      {
+        "productId": "4424-620-066",
+        "size": "XXL",
+        "quantity": 1253
+      },
+      {
+        "productId": "4424-620-067",
+        "size": "XS",
+        "quantity": 938
+      },
+      {
+        "productId": "4424-620-067",
+        "size": "S",
+        "quantity": 673
+      },
+      {
+        "productId": "4424-620-067",
+        "size": "M",
+        "quantity": 483
+      },
+      {
+        "productId": "4424-620-067",
+        "size": "XL",
+        "quantity": 700
+      },
+      {
+        "productId": "4424-620-067",
+        "size": "XXL",
+        "quantity": 464
+      },
+      {
+        "productId": "1473-616-104",
+        "size": "S",
+        "quantity": 1306
+      },
+      {
+        "productId": "1473-616-104",
+        "size": "M",
+        "quantity": 1275
+      },
+      {
+        "productId": "1473-616-104",
+        "size": "XL",
+        "quantity": 1470
+      },
+      {
+        "productId": "1473-616-104",
+        "size": "XXL",
+        "quantity": 1275
+      },
+      {
+        "productId": "1473-617-104",
+        "size": "S",
+        "quantity": 687
+      },
+      {
+        "productId": "1473-617-104",
+        "size": "M",
+        "quantity": 1206
+      },
+      {
+        "productId": "1473-617-104",
+        "size": "L",
+        "quantity": 590
+      },
+      {
+        "productId": "1473-617-104",
+        "size": "XXL",
+        "quantity": 910
+      },
+      {
+        "productId": "1165-846-401",
+        "size": "XS",
+        "quantity": 748
+      },
+      {
+        "productId": "1165-846-401",
+        "size": "M",
+        "quantity": 1149
+      },
+      {
+        "productId": "1165-846-401",
+        "size": "XL",
+        "quantity": 1058
+      },
+      {
+        "productId": "1165-846-401",
+        "size": "XXL",
+        "quantity": 840
+      },
+      {
+        "productId": "1548-032-251",
+        "size": "XS",
+        "quantity": 45
+      },
+      {
+        "productId": "1548-032-251",
+        "size": "S",
+        "quantity": 73
+      },
+      {
+        "productId": "1548-032-251",
+        "size": "M",
+        "quantity": 45
+      },
+      {
+        "productId": "1548-032-251",
+        "size": "L",
+        "quantity": 93
+      },
+      {
+        "productId": "1548-032-251",
+        "size": "XL",
+        "quantity": 32
+      },
+      {
+        "productId": "1551-032-251",
+        "size": "XS",
+        "quantity": 2367
+      },
+      {
+        "productId": "1551-032-251",
+        "size": "S",
+        "quantity": 1707
+      },
+      {
+        "productId": "1551-032-251",
+        "size": "M",
+        "quantity": 944
+      },
+      {
+        "productId": "1551-032-251",
+        "size": "XL",
+        "quantity": 1483
+      },
+      {
+        "productId": "1551-032-251",
+        "size": "XXL",
+        "quantity": 2085
+      },
+      {
+        "productId": "1546-119-403",
+        "size": "XS",
+        "quantity": 59
+      },
+      {
+        "productId": "1546-119-403",
+        "size": "S",
+        "quantity": 55
+      },
+      {
+        "productId": "1546-119-403",
+        "size": "M",
+        "quantity": 89
+      },
+      {
+        "productId": "1546-119-403",
+        "size": "XL",
+        "quantity": 99
+      },
+      {
+        "productId": "1564-032-402",
+        "size": "XS",
+        "quantity": 472
+      },
+      {
+        "productId": "1564-032-402",
+        "size": "S",
+        "quantity": 631
+      },
+      {
+        "productId": "1564-032-402",
+        "size": "M",
+        "quantity": 461
+      },
+      {
+        "productId": "1564-032-402",
+        "size": "L",
+        "quantity": 662
+      },
+      {
+        "productId": "1564-032-402",
+        "size": "XL",
+        "quantity": 1337
+      },
+      {
+        "productId": "1564-032-402",
+        "size": "XXL",
+        "quantity": 464
+      },
+      {
+        "productId": "1165-730-250",
+        "size": "XS",
+        "quantity": 1358
+      },
+      {
+        "productId": "1165-730-250",
+        "size": "S",
+        "quantity": 1337
+      },
+      {
+        "productId": "1165-730-250",
+        "size": "M",
+        "quantity": 655
+      },
+      {
+        "productId": "1165-730-250",
+        "size": "L",
+        "quantity": 1227
+      },
+      {
+        "productId": "1165-730-250",
+        "size": "XXL",
+        "quantity": 926
+      },
+      {
+        "productId": "1533-119-402",
+        "size": "XS",
+        "quantity": 56
+      },
+      {
+        "productId": "1533-119-402",
+        "size": "S",
+        "quantity": 91
+      },
+      {
+        "productId": "1533-119-402",
+        "size": "M",
+        "quantity": 40
+      },
+      {
+        "productId": "1533-119-402",
+        "size": "L",
+        "quantity": 40
+      },
+      {
+        "productId": "1533-119-402",
+        "size": "XL",
+        "quantity": 64
+      },
+      {
+        "productId": "1533-119-402",
+        "size": "XXL",
+        "quantity": 80
+      },
+      {
+        "productId": "1551-032-251",
+        "size": "L",
+        "quantity": 894
+      },
+      {
+        "productId": "1266-553-000",
+        "size": "XS",
+        "quantity": 1045
+      },
+      {
+        "productId": "1266-553-000",
+        "size": "S",
+        "quantity": 1211
+      },
+      {
+        "productId": "1266-553-000",
+        "size": "L",
+        "quantity": 707
+      },
+      {
+        "productId": "1266-553-000",
+        "size": "XL",
+        "quantity": 962
+      },
+      {
+        "productId": "4586-530-002",
+        "size": "S",
+        "quantity": 948
+      },
+      {
+        "productId": "4586-530-002",
+        "size": "M",
+        "quantity": 654
+      },
+      {
+        "productId": "4586-530-002",
+        "size": "L",
+        "quantity": 633
+      },
+      {
+        "productId": "4586-530-002",
+        "size": "XL",
+        "quantity": 956
+      },
+      {
+        "productId": "0752-164-200",
+        "size": "S",
+        "quantity": 71
+      },
+      {
+        "productId": "0752-164-200",
+        "size": "XL",
+        "quantity": 38
+      },
+      {
+        "productId": "7521-618-305",
+        "size": "XS",
+        "quantity": 44
+      },
+      {
+        "productId": "7521-618-305",
+        "size": "S",
+        "quantity": 91
+      },
+      {
+        "productId": "7521-618-305",
+        "size": "M",
+        "quantity": 98
+      },
+      {
+        "productId": "7521-618-305",
+        "size": "L",
+        "quantity": 37
+      },
+      {
+        "productId": "7521-618-305",
+        "size": "XL",
+        "quantity": 81
+      },
+      {
+        "productId": "7521-618-305",
+        "size": "XXL",
+        "quantity": 80
+      },
+      {
+        "productId": "0752-164-100",
+        "size": "XS",
+        "quantity": 584
+      },
+      {
+        "productId": "0752-164-100",
+        "size": "XL",
+        "quantity": 508
+      },
+      {
+        "productId": "0752-164-100",
+        "size": "XXL",
+        "quantity": 1371
+      },
+      {
+        "productId": "0752-164-000",
+        "size": "M",
+        "quantity": 717
+      },
+      {
+        "productId": "0752-164-000",
+        "size": "L",
+        "quantity": 1143
+      },
+      {
+        "productId": "0752-164-000",
+        "size": "XL",
+        "quantity": 934
+      },
+      {
+        "productId": "1281-530-400",
+        "size": "XS",
+        "quantity": 688
+      },
+      {
+        "productId": "1281-530-400",
+        "size": "M",
+        "quantity": 624
+      },
+      {
+        "productId": "1281-530-400",
+        "size": "L",
+        "quantity": 1356
+      },
+      {
+        "productId": "1281-530-400",
+        "size": "XXL",
+        "quantity": 1061
+      },
+      {
+        "productId": "7521-613-200",
+        "size": "XS",
+        "quantity": 1313
+      },
+      {
+        "productId": "7521-613-200",
+        "size": "S",
+        "quantity": 691
+      },
+      {
+        "productId": "7521-613-200",
+        "size": "XL",
+        "quantity": 1213
+      },
+      {
+        "productId": "7521-613-200",
+        "size": "XXL",
+        "quantity": 615
+      },
+      {
+        "productId": "1266-553-005",
+        "size": "XS",
+        "quantity": 570
+      },
+      {
+        "productId": "1266-553-005",
+        "size": "S",
+        "quantity": 734
+      },
+      {
+        "productId": "1266-553-005",
+        "size": "M",
+        "quantity": 762
+      },
+      {
+        "productId": "1266-553-005",
+        "size": "XL",
+        "quantity": 670
+      },
+      {
+        "productId": "1266-553-005",
+        "size": "XXL",
+        "quantity": 895
+      },
+      {
+        "productId": "9006-660-060",
+        "size": "M",
+        "quantity": 1950
+      },
+      {
+        "productId": "9006-660-060",
+        "size": "L",
+        "quantity": 2117
+      },
+      {
+        "productId": "9006-660-060",
+        "size": "XL",
+        "quantity": 2432
+      },
+      {
+        "productId": "9006-660-060",
+        "size": "XXL",
+        "quantity": 2349
+      },
+      {
+        "productId": "9006-660-060",
+        "size": "S",
+        "quantity": 1162
+      },
+      {
+        "productId": "1716-621-712",
+        "size": "M",
+        "quantity": 776
+      },
+      {
+        "productId": "1716-621-712",
+        "size": "XXL",
+        "quantity": 804
+      },
+      {
+        "productId": "6208-605-400",
+        "size": "XS",
+        "quantity": 1236
+      },
+      {
+        "productId": "6208-605-400",
+        "size": "S",
+        "quantity": 1385
+      },
+      {
+        "productId": "1639-613-520",
+        "size": "XS",
+        "quantity": 1130
+      },
+      {
+        "productId": "1639-613-520",
+        "size": "S",
+        "quantity": 1283
+      },
+      {
+        "productId": "1639-613-520",
+        "size": "M",
+        "quantity": 1142
+      },
+      {
+        "productId": "1639-613-520",
+        "size": "XL",
+        "quantity": 1281
+      },
+      {
+        "productId": "2702-633-300",
+        "size": "XS",
+        "quantity": 1062
+      },
+      {
+        "productId": "2702-633-300",
+        "size": "S",
+        "quantity": 589
+      },
+      {
+        "productId": "2702-633-300",
+        "size": "M",
+        "quantity": 626
+      },
+      {
+        "productId": "2702-633-300",
+        "size": "L",
+        "quantity": 917
+      },
+      {
+        "productId": "2702-633-300",
+        "size": "XXL",
+        "quantity": 650
+      },
+      {
+        "productId": "4493-605-251",
+        "size": "XS",
+        "quantity": 50
+      },
+      {
+        "productId": "4493-605-251",
+        "size": "S",
+        "quantity": 84
+      },
+      {
+        "productId": "4493-605-251",
+        "size": "M",
+        "quantity": 99
+      },
+      {
+        "productId": "4493-605-251",
+        "size": "L",
+        "quantity": 92
+      },
+      {
+        "productId": "4493-605-251",
+        "size": "XL",
+        "quantity": 62
+      },
+      {
+        "productId": "4493-605-251",
+        "size": "XXL",
+        "quantity": 29
+      },
+      {
+        "productId": "4786-607-500",
+        "size": "XS",
+        "quantity": 35
+      },
+      {
+        "productId": "4786-607-500",
+        "size": "S",
+        "quantity": 34
+      },
+      {
+        "productId": "4786-607-500",
+        "size": "M",
+        "quantity": 75
+      },
+      {
+        "productId": "4786-607-500",
+        "size": "L",
+        "quantity": 27
+      },
+      {
+        "productId": "4786-607-500",
+        "size": "XL",
+        "quantity": 71
+      },
+      {
+        "productId": "4786-607-500",
+        "size": "XXL",
+        "quantity": 81
+      },
+      {
+        "productId": "4786-608-500",
+        "size": "S",
+        "quantity": 42
+      },
+      {
+        "productId": "4786-608-500",
+        "size": "M",
+        "quantity": 38
+      },
+      {
+        "productId": "4786-608-500",
+        "size": "L",
+        "quantity": 90
+      },
+      {
+        "productId": "4786-608-500",
+        "size": "XL",
+        "quantity": 55
+      },
+      {
+        "productId": "4786-608-500",
+        "size": "XXL",
+        "quantity": 35
+      },
+      {
+        "productId": "4786-608-250",
+        "size": "XS",
+        "quantity": 911
+      },
+      {
+        "productId": "4786-608-250",
+        "size": "M",
+        "quantity": 1102
+      },
+      {
+        "productId": "4786-608-250",
+        "size": "L",
+        "quantity": 1012
+      },
+      {
+        "productId": "4786-608-250",
+        "size": "XL",
+        "quantity": 1244
+      },
+      {
+        "productId": "4786-608-250",
+        "size": "XXL",
+        "quantity": 1111
+      },
+      {
+        "productId": "1492-637-402",
+        "size": "XS",
+        "quantity": 42
+      },
+      {
+        "productId": "1492-637-402",
+        "size": "M",
+        "quantity": 53
+      },
+      {
+        "productId": "1492-637-402",
+        "size": "L",
+        "quantity": 43
+      },
+      {
+        "productId": "1492-637-402",
+        "size": "XL",
+        "quantity": 61
+      },
+      {
+        "productId": "4354-633-300",
+        "size": "XS",
+        "quantity": 868
+      },
+      {
+        "productId": "4354-633-300",
+        "size": "S",
+        "quantity": 547
+      },
+      {
+        "productId": "4354-633-300",
+        "size": "L",
+        "quantity": 531
+      },
+      {
+        "productId": "4354-633-300",
+        "size": "XL",
+        "quantity": 1308
+      },
+      {
+        "productId": "1492-637-402",
+        "size": "S",
+        "quantity": 60
+      },
+      {
+        "productId": "6224-845-620",
+        "size": "S",
+        "quantity": 952
+      },
+      {
+        "productId": "6224-845-620",
+        "size": "M",
+        "quantity": 1920
+      },
+      {
+        "productId": "6224-845-620",
+        "size": "L",
+        "quantity": 1621
+      },
+      {
+        "productId": "6224-845-620",
+        "size": "XL",
+        "quantity": 662
+      },
+      {
+        "productId": "6224-845-620",
+        "size": "XXL",
+        "quantity": 1320
+      },
+      {
+        "productId": "0208-616-251",
+        "size": "XS",
+        "quantity": 635
+      },
+      {
+        "productId": "0208-616-251",
+        "size": "XL",
+        "quantity": 529
+      },
+      {
+        "productId": "0208-616-251",
+        "size": "XXL",
+        "quantity": 620
+      },
+      {
+        "productId": "5067-602-300",
+        "size": "S",
+        "quantity": 1068
+      },
+      {
+        "productId": "5067-602-300",
+        "size": "M",
+        "quantity": 1196
+      },
+      {
+        "productId": "5067-602-300",
+        "size": "XL",
+        "quantity": 1032
+      },
+      {
+        "productId": "5067-602-300",
+        "size": "XXL",
+        "quantity": 1087
+      },
+      {
+        "productId": "0122-618-400",
+        "size": "XS",
+        "quantity": 1104
+      },
+      {
+        "productId": "0122-618-400",
+        "size": "L",
+        "quantity": 730
+      },
+      {
+        "productId": "0122-618-400",
+        "size": "XXL",
+        "quantity": 643
+      },
+      {
+        "productId": "6045-608-406",
+        "size": "XS",
+        "quantity": 545
+      },
+      {
+        "productId": "6045-608-406",
+        "size": "S",
+        "quantity": 407
+      },
+      {
+        "productId": "6045-608-406",
+        "size": "M",
+        "quantity": 410
+      },
+      {
+        "productId": "6045-608-406",
+        "size": "L",
+        "quantity": 551
+      },
+      {
+        "productId": "6045-608-406",
+        "size": "XL",
+        "quantity": 766
+      },
+      {
+        "productId": "7227-609-407",
+        "size": "XS",
+        "quantity": 34
+      },
+      {
+        "productId": "7227-609-407",
+        "size": "S",
+        "quantity": 60
+      },
+      {
+        "productId": "7227-609-407",
+        "size": "XL",
+        "quantity": 90
+      },
+      {
+        "productId": "7227-609-407",
+        "size": "XXL",
+        "quantity": 31
+      },
+      {
+        "productId": "7227-612-407",
+        "size": "S",
+        "quantity": 1341
+      },
+      {
+        "productId": "7227-612-407",
+        "size": "M",
+        "quantity": 1036
+      },
+      {
+        "productId": "7227-612-407",
+        "size": "L",
+        "quantity": 1259
+      },
+      {
+        "productId": "7227-612-407",
+        "size": "XL",
+        "quantity": 725
+      },
+      {
+        "productId": "7227-612-407",
+        "size": "XXL",
+        "quantity": 1288
+      },
+      {
+        "productId": "4441-775-250",
+        "size": "XS",
+        "quantity": 516
+      },
+      {
+        "productId": "4441-775-250",
+        "size": "S",
+        "quantity": 923
+      },
+      {
+        "productId": "4441-775-250",
+        "size": "M",
+        "quantity": 989
+      },
+      {
+        "productId": "4441-775-250",
+        "size": "L",
+        "quantity": 697
+      },
+      {
+        "productId": "4441-775-250",
+        "size": "XL",
+        "quantity": 694
+      },
+      {
+        "productId": "4441-775-250",
+        "size": "XXL",
+        "quantity": 688
+      },
+      {
+        "productId": "7227-609-406",
+        "size": "XS",
+        "quantity": 944
+      },
+      {
+        "productId": "7227-609-406",
+        "size": "L",
+        "quantity": 1007
+      },
+      {
+        "productId": "7227-609-406",
+        "size": "XXL",
+        "quantity": 707
+      },
+      {
+        "productId": "7227-612-406",
+        "size": "M",
+        "quantity": 466
+      },
+      {
+        "productId": "7227-612-406",
+        "size": "L",
+        "quantity": 1038
+      },
+      {
+        "productId": "7227-612-406",
+        "size": "XL",
+        "quantity": 496
+      },
+      {
+        "productId": "7227-612-406",
+        "size": "XXL",
+        "quantity": 552
+      },
+      {
+        "productId": "3391-623-300",
+        "size": "XS",
+        "quantity": 984
+      },
+      {
+        "productId": "3391-623-300",
+        "size": "M",
+        "quantity": 690
+      },
+      {
+        "productId": "3391-623-300",
+        "size": "L",
+        "quantity": 638
+      },
+      {
+        "productId": "3391-623-300",
+        "size": "XL",
+        "quantity": 580
+      },
+      {
+        "productId": "3391-623-300",
+        "size": "XXL",
+        "quantity": 1116
+      },
+      {
+        "productId": "3391-625-615",
+        "size": "XS",
+        "quantity": 94
+      },
+      {
+        "productId": "3391-625-615",
+        "size": "M",
+        "quantity": 90
+      },
+      {
+        "productId": "3391-625-615",
+        "size": "L",
+        "quantity": 97
+      },
+      {
+        "productId": "3391-625-615",
+        "size": "XL",
+        "quantity": 52
+      },
+      {
+        "productId": "3391-625-615",
+        "size": "S",
+        "quantity": 91
+      },
+      {
+        "productId": "3391-625-615",
+        "size": "XXL",
+        "quantity": 46
+      },
+      {
+        "productId": "0339-162-302",
+        "size": "S",
+        "quantity": 1058
+      },
+      {
+        "productId": "0339-162-302",
+        "size": "M",
+        "quantity": 615
+      },
+      {
+        "productId": "0339-162-302",
+        "size": "L",
+        "quantity": 639
+      },
+      {
+        "productId": "0339-162-302",
+        "size": "XL",
+        "quantity": 666
+      },
+      {
+        "productId": "1971-604-067",
+        "size": "XS",
+        "quantity": 2031
+      },
+      {
+        "productId": "1971-604-067",
+        "size": "S",
+        "quantity": 1715
+      },
+      {
+        "productId": "1971-604-067",
+        "size": "M",
+        "quantity": 1319
+      },
+      {
+        "productId": "1971-604-067",
+        "size": "L",
+        "quantity": 1136
+      },
+      {
+        "productId": "1971-604-067",
+        "size": "XXL",
+        "quantity": 1293
+      },
+      {
+        "productId": "1971-604-067",
+        "size": "XL",
+        "quantity": 1681
+      },
+      {
+        "productId": "6224-843-712",
+        "size": "XS",
+        "quantity": 725
+      },
+      {
+        "productId": "6224-843-712",
+        "size": "S",
+        "quantity": 614
+      },
+      {
+        "productId": "6224-843-712",
+        "size": "M",
+        "quantity": 883
+      },
+      {
+        "productId": "6224-843-712",
+        "size": "L",
+        "quantity": 1172
+      },
+      {
+        "productId": "6224-843-712",
+        "size": "XL",
+        "quantity": 450
+      },
+      {
+        "productId": "6224-843-712",
+        "size": "XXL",
+        "quantity": 470
+      },
+      {
+        "productId": "4333-610-120",
+        "size": "XS",
+        "quantity": 565
+      },
+      {
+        "productId": "4333-610-120",
+        "size": "S",
+        "quantity": 954
+      },
+      {
+        "productId": "4333-610-120",
+        "size": "M",
+        "quantity": 1376
+      },
+      {
+        "productId": "4333-610-120",
+        "size": "L",
+        "quantity": 912
+      },
+      {
+        "productId": "4333-610-120",
+        "size": "XL",
+        "quantity": 1149
+      },
+      {
+        "productId": "6224-843-807",
+        "size": "XS",
+        "quantity": 1540
+      },
+      {
+        "productId": "6224-843-807",
+        "size": "S",
+        "quantity": 750
+      },
+      {
+        "productId": "6224-843-807",
+        "size": "M",
+        "quantity": 765
+      },
+      {
+        "productId": "6224-843-807",
+        "size": "L",
+        "quantity": 794
+      },
+      {
+        "productId": "6224-843-807",
+        "size": "XL",
+        "quantity": 1554
+      },
+      {
+        "productId": "6224-843-807",
+        "size": "XXL",
+        "quantity": 780
+      },
+      {
+        "productId": "5987-614-527",
+        "size": "XS",
+        "quantity": 2373
+      },
+      {
+        "productId": "5987-614-527",
+        "size": "XL",
+        "quantity": 1759
+      },
+      {
+        "productId": "5987-614-527",
+        "size": "XXL",
+        "quantity": 1373
+      },
+      {
+        "productId": "5987-613-527",
+        "size": "XS",
+        "quantity": 766
+      },
+      {
+        "productId": "5987-613-527",
+        "size": "S",
+        "quantity": 1272
+      },
+      {
+        "productId": "5987-613-527",
+        "size": "M",
+        "quantity": 621
+      },
+      {
+        "productId": "5987-613-527",
+        "size": "L",
+        "quantity": 841
+      },
+      {
+        "productId": "5987-613-527",
+        "size": "XL",
+        "quantity": 1211
+      },
+      {
+        "productId": "1165-653-250",
+        "size": "XS",
+        "quantity": 857
+      },
+      {
+        "productId": "1165-653-250",
+        "size": "S",
+        "quantity": 1149
+      },
+      {
+        "productId": "1165-653-250",
+        "size": "M",
+        "quantity": 1341
+      },
+      {
+        "productId": "1165-653-250",
+        "size": "L",
+        "quantity": 1833
+      },
+      {
+        "productId": "5987-613-330",
+        "size": "XS",
+        "quantity": 661
+      },
+      {
+        "productId": "5987-613-330",
+        "size": "S",
+        "quantity": 1054
+      },
+      {
+        "productId": "5987-613-330",
+        "size": "M",
+        "quantity": 1062
+      },
+      {
+        "productId": "5987-613-330",
+        "size": "L",
+        "quantity": 835
+      },
+      {
+        "productId": "5987-613-330",
+        "size": "XL",
+        "quantity": 1142
+      },
+      {
+        "productId": "5987-613-330",
+        "size": "XXL",
+        "quantity": 755
+      },
+      {
+        "productId": "6045-606-400",
+        "size": "XS",
+        "quantity": 609
+      },
+      {
+        "productId": "6045-606-400",
+        "size": "S",
+        "quantity": 509
+      },
+      {
+        "productId": "6045-606-400",
+        "size": "M",
+        "quantity": 716
+      },
+      {
+        "productId": "6045-606-400",
+        "size": "L",
+        "quantity": 650
+      },
+      {
+        "productId": "6045-606-400",
+        "size": "XXL",
+        "quantity": 971
+      },
+      {
+        "productId": "1608-617-094",
+        "size": "S",
+        "quantity": 86
+      },
+      {
+        "productId": "1608-617-094",
+        "size": "M",
+        "quantity": 49
+      },
+      {
+        "productId": "1608-617-094",
+        "size": "L",
+        "quantity": 66
+      },
+      {
+        "productId": "1608-617-094",
+        "size": "XL",
+        "quantity": 79
+      },
+      {
+        "productId": "1608-617-094",
+        "size": "XXL",
+        "quantity": 41
+      },
+      {
+        "productId": "1608-617-402",
+        "size": "M",
+        "quantity": 66
+      },
+      {
+        "productId": "1608-617-402",
+        "size": "L",
+        "quantity": 83
+      },
+      {
+        "productId": "1608-617-402",
+        "size": "XL",
+        "quantity": 58
+      },
+      {
+        "productId": "1608-617-402",
+        "size": "XXL",
+        "quantity": 92
+      },
+      {
+        "productId": "1608-617-402",
+        "size": "S",
+        "quantity": 71
+      },
+      {
+        "productId": "5987-614-527",
+        "size": "L",
+        "quantity": 1189
+      },
+      {
+        "productId": "2511-605-712",
+        "size": "S",
+        "quantity": 1493
+      },
+      {
+        "productId": "2511-605-712",
+        "size": "M",
+        "quantity": 2487
+      },
+      {
+        "productId": "2511-605-712",
+        "size": "L",
+        "quantity": 2611
+      },
+      {
+        "productId": "2511-605-712",
+        "size": "XL",
+        "quantity": 1724
+      },
+      {
+        "productId": "2511-605-712",
+        "size": "XXL",
+        "quantity": 1899
+      },
+      {
+        "productId": "2511-607-712",
+        "size": "S",
+        "quantity": 2207
+      },
+      {
+        "productId": "2511-607-712",
+        "size": "M",
+        "quantity": 1441
+      },
+      {
+        "productId": "2511-607-712",
+        "size": "L",
+        "quantity": 1669
+      },
+      {
+        "productId": "2511-607-712",
+        "size": "XL",
+        "quantity": 1543
+      },
+      {
+        "productId": "2511-607-712",
+        "size": "XXL",
+        "quantity": 1580
+      },
+      {
+        "productId": "6201-602-712",
+        "size": "S",
+        "quantity": 42
+      },
+      {
+        "productId": "6201-602-712",
+        "size": "M",
+        "quantity": 99
+      },
+      {
+        "productId": "6201-602-712",
+        "size": "L",
+        "quantity": 100
+      },
+      {
+        "productId": "6201-602-712",
+        "size": "XL",
+        "quantity": 52
+      },
+      {
+        "productId": "6201-602-712",
+        "size": "XXL",
+        "quantity": 29
+      },
+      {
+        "productId": "2795-617-712",
+        "size": "XS",
+        "quantity": 815
+      },
+      {
+        "productId": "2795-617-712",
+        "size": "S",
+        "quantity": 799
+      },
+      {
+        "productId": "2795-617-712",
+        "size": "M",
+        "quantity": 669
+      },
+      {
+        "productId": "2795-617-712",
+        "size": "L",
+        "quantity": 656
+      },
+      {
+        "productId": "4770-603-712",
+        "size": "XS",
+        "quantity": 969
+      },
+      {
+        "productId": "4770-603-712",
+        "size": "S",
+        "quantity": 1200
+      },
+      {
+        "productId": "4770-603-712",
+        "size": "M",
+        "quantity": 1122
+      },
+      {
+        "productId": "4770-603-712",
+        "size": "L",
+        "quantity": 1234
+      },
+      {
+        "productId": "4770-603-712",
+        "size": "XL",
+        "quantity": 966
+      },
+      {
+        "productId": "5107-600-083",
+        "size": "XS",
+        "quantity": 30
+      },
+      {
+        "productId": "5107-600-083",
+        "size": "S",
+        "quantity": 56
+      },
+      {
+        "productId": "5107-600-083",
+        "size": "M",
+        "quantity": 80
+      },
+      {
+        "productId": "5107-600-083",
+        "size": "XL",
+        "quantity": 28
+      },
+      {
+        "productId": "5107-600-083",
+        "size": "XXL",
+        "quantity": 77
+      },
+      {
+        "productId": "5107-600-083",
+        "size": "L",
+        "quantity": 62
+      },
+      {
+        "productId": "4493-622-942",
+        "size": "XS",
+        "quantity": 649
+      },
+      {
+        "productId": "4493-622-942",
+        "size": "S",
+        "quantity": 609
+      },
+      {
+        "productId": "4493-622-942",
+        "size": "L",
+        "quantity": 648
+      },
+      {
+        "productId": "4493-622-942",
+        "size": "XL",
+        "quantity": 684
+      },
+      {
+        "productId": "4493-622-942",
+        "size": "XXL",
+        "quantity": 455
+      },
+      {
+        "productId": "4493-621-942",
+        "size": "XS",
+        "quantity": 814
+      },
+      {
+        "productId": "4493-621-942",
+        "size": "M",
+        "quantity": 1329
+      },
+      {
+        "productId": "4493-621-942",
+        "size": "L",
+        "quantity": 1050
+      },
+      {
+        "productId": "4493-621-942",
+        "size": "S",
+        "quantity": 986
+      },
+      {
+        "productId": "4493-621-942",
+        "size": "XXL",
+        "quantity": 686
+      },
+      {
+        "productId": "3772-605-052",
+        "size": "XS",
+        "quantity": 2384
+      },
+      {
+        "productId": "3772-605-052",
+        "size": "S",
+        "quantity": 1864
+      },
+      {
+        "productId": "3772-605-052",
+        "size": "XXL",
+        "quantity": 2337
+      },
+      {
+        "productId": "3772-605-052",
+        "size": "XL",
+        "quantity": 874
+      },
+      {
+        "productId": "4493-620-942",
+        "size": "XS",
+        "quantity": 93
+      },
+      {
+        "productId": "4493-620-942",
+        "size": "S",
+        "quantity": 41
+      },
+      {
+        "productId": "4493-620-942",
+        "size": "XXL",
+        "quantity": 39
+      },
+      {
+        "productId": "4493-620-942",
+        "size": "M",
+        "quantity": 72
+      },
+      {
+        "productId": "4493-620-942",
+        "size": "L",
+        "quantity": 34
+      },
+      {
+        "productId": "4493-620-942",
+        "size": "XL",
+        "quantity": 73
+      },
+      {
+        "productId": "4174-646-712",
+        "size": "XS",
+        "quantity": 1611
+      },
+      {
+        "productId": "4174-646-712",
+        "size": "M",
+        "quantity": 1655
+      },
+      {
+        "productId": "4174-646-712",
+        "size": "L",
+        "quantity": 2124
+      },
+      {
+        "productId": "4174-646-712",
+        "size": "XL",
+        "quantity": 2410
+      },
+      {
+        "productId": "4174-692-712",
+        "size": "XS",
+        "quantity": 651
+      },
+      {
+        "productId": "4174-692-712",
+        "size": "S",
+        "quantity": 1210
+      },
+      {
+        "productId": "4174-692-712",
+        "size": "L",
+        "quantity": 1023
+      },
+      {
+        "productId": "4174-692-712",
+        "size": "XL",
+        "quantity": 1148
+      },
+      {
+        "productId": "4174-692-712",
+        "size": "XXL",
+        "quantity": 855
+      },
+      {
+        "productId": "4174-646-712",
+        "size": "S",
+        "quantity": 919
+      },
+      {
+        "productId": "5431-957-620",
+        "size": "XS",
+        "quantity": 38
+      },
+      {
+        "productId": "5431-957-620",
+        "size": "XL",
+        "quantity": 92
+      },
+      {
+        "productId": "5431-957-620",
+        "size": "XXL",
+        "quantity": 79
+      },
+      {
+        "productId": "5431-957-620",
+        "size": "S",
+        "quantity": 75
+      },
+      {
+        "productId": "5431-957-620",
+        "size": "L",
+        "quantity": 84
+      },
+      {
+        "productId": "5431-957-250",
+        "size": "S",
+        "quantity": 54
+      },
+      {
+        "productId": "5431-957-250",
+        "size": "M",
+        "quantity": 53
+      },
+      {
+        "productId": "5431-957-250",
+        "size": "L",
+        "quantity": 54
+      },
+      {
+        "productId": "5431-957-250",
+        "size": "XL",
+        "quantity": 77
+      },
+      {
+        "productId": "5431-957-250",
+        "size": "XXL",
+        "quantity": 56
+      },
+      {
+        "productId": "8675-607-800",
+        "size": "XS",
+        "quantity": 882
+      },
+      {
+        "productId": "8675-607-800",
+        "size": "XXL",
+        "quantity": 706
+      },
+      {
+        "productId": "0257-606-539",
+        "size": "XS",
+        "quantity": 501
+      },
+      {
+        "productId": "0257-606-539",
+        "size": "XL",
+        "quantity": 601
+      },
+      {
+        "productId": "0257-606-539",
+        "size": "XXL",
+        "quantity": 772
+      },
+      {
+        "productId": "5431-957-620",
+        "size": "M",
+        "quantity": 33
+      },
+      {
+        "productId": "3920-619-622",
+        "size": "M",
+        "quantity": 873
+      },
+      {
+        "productId": "3920-619-622",
+        "size": "L",
+        "quantity": 886
+      },
+      {
+        "productId": "3920-619-622",
+        "size": "XL",
+        "quantity": 734
+      },
+      {
+        "productId": "3920-619-622",
+        "size": "XXL",
+        "quantity": 966
+      },
+      {
+        "productId": "2488-603-982",
+        "size": "XS",
+        "quantity": 1223
+      },
+      {
+        "productId": "2488-603-982",
+        "size": "M",
+        "quantity": 1325
+      },
+      {
+        "productId": "2488-603-982",
+        "size": "L",
+        "quantity": 1271
+      },
+      {
+        "productId": "2488-603-982",
+        "size": "XL",
+        "quantity": 926
+      },
+      {
+        "productId": "2488-602-712",
+        "size": "XS",
+        "quantity": 1738
+      },
+      {
+        "productId": "2488-602-712",
+        "size": "S",
+        "quantity": 1314
+      },
+      {
+        "productId": "2488-602-712",
+        "size": "L",
+        "quantity": 1290
+      },
+      {
+        "productId": "2488-602-712",
+        "size": "XL",
+        "quantity": 1247
+      },
+      {
+        "productId": "2488-602-712",
+        "size": "M",
+        "quantity": 714
+      },
+      {
+        "productId": "2488-602-712",
+        "size": "XXL",
+        "quantity": 1161
+      },
+      {
+        "productId": "1345-553-005",
+        "size": "XS",
+        "quantity": 717
+      },
+      {
+        "productId": "1345-553-005",
+        "size": "S",
+        "quantity": 640
+      },
+      {
+        "productId": "1345-553-005",
+        "size": "M",
+        "quantity": 426
+      },
+      {
+        "productId": "1345-553-005",
+        "size": "L",
+        "quantity": 547
+      },
+      {
+        "productId": "1345-553-005",
+        "size": "XL",
+        "quantity": 1142
+      },
+      {
+        "productId": "1383-404-401",
+        "size": "XS",
+        "quantity": 69
+      },
+      {
+        "productId": "1383-404-401",
+        "size": "S",
+        "quantity": 87
+      },
+      {
+        "productId": "1383-404-401",
+        "size": "M",
+        "quantity": 89
+      },
+      {
+        "productId": "1383-404-401",
+        "size": "L",
+        "quantity": 43
+      },
+      {
+        "productId": "1383-404-401",
+        "size": "XXL",
+        "quantity": 72
+      },
+      {
+        "productId": "3391-630-512",
+        "size": "S",
+        "quantity": 31
+      },
+      {
+        "productId": "3391-630-512",
+        "size": "L",
+        "quantity": 47
+      },
+      {
+        "productId": "3391-630-512",
+        "size": "XL",
+        "quantity": 88
+      },
+      {
+        "productId": "0653-675-620",
+        "size": "XS",
+        "quantity": 715
+      },
+      {
+        "productId": "0653-675-620",
+        "size": "S",
+        "quantity": 550
+      },
+      {
+        "productId": "0653-675-620",
+        "size": "M",
+        "quantity": 658
+      },
+      {
+        "productId": "0653-675-620",
+        "size": "L",
+        "quantity": 484
+      },
+      {
+        "productId": "0653-675-620",
+        "size": "XXL",
+        "quantity": 486
+      },
+      {
+        "productId": "1262-530-002",
+        "size": "XS",
+        "quantity": 1350
+      },
+      {
+        "productId": "1262-530-002",
+        "size": "S",
+        "quantity": 1126
+      },
+      {
+        "productId": "1262-530-002",
+        "size": "L",
+        "quantity": 1252
+      },
+      {
+        "productId": "1262-530-002",
+        "size": "XL",
+        "quantity": 1000
+      },
+      {
+        "productId": "1262-530-002",
+        "size": "XXL",
+        "quantity": 1204
+      },
+      {
+        "productId": "1473-616-104",
+        "size": "XS",
+        "quantity": 1234
+      },
+      {
+        "productId": "1639-617-402",
+        "size": "L",
+        "quantity": 1090
+      },
+      {
+        "productId": "1266-553-000",
+        "size": "XXL",
+        "quantity": 1284
+      },
+      {
+        "productId": "0752-164-000",
+        "size": "XXL",
+        "quantity": 1210
+      },
+      {
+        "productId": "6208-605-400",
+        "size": "M",
+        "quantity": 1114
+      },
+      {
+        "productId": "4786-750-250",
+        "size": "XXL",
+        "quantity": 1258
+      },
+      {
+        "productId": "0122-618-400",
+        "size": "M",
+        "quantity": 1306
+      },
+      {
+        "productId": "3391-624-330",
+        "size": "XL",
+        "quantity": 1294
+      },
+      {
+        "productId": "1971-604-069",
+        "size": "XL",
+        "quantity": 1276
+      },
+      {
+        "productId": "1639-900-400",
+        "size": "XS",
+        "quantity": 1149
+      },
+      {
+        "productId": "1639-900-400",
+        "size": "XXL",
+        "quantity": 1372
+      },
+      {
+        "productId": "0208-615-251",
+        "size": "XXL",
+        "quantity": 1361
+      },
+      {
+        "productId": "3920-619-622",
+        "size": "S",
+        "quantity": 1162
+      }
+    ]
+  },
+  {
+    "id": "W002",
+    "latitude": 56.05847647307439,
+    "longitude": 24.121386685528734,
+    "country": "Lithuania",
+    "stock": [
+      {
+        "productId": "4424-620-066",
+        "size": "S",
+        "quantity": 1178
+      },
+      {
+        "productId": "4424-620-066",
+        "size": "L",
+        "quantity": 949
+      },
+      {
+        "productId": "4424-620-066",
+        "size": "XL",
+        "quantity": 522
+      },
+      {
+        "productId": "4424-620-067",
+        "size": "S",
+        "quantity": 549
+      },
+      {
+        "productId": "4424-620-067",
+        "size": "M",
+        "quantity": 589
+      },
+      {
+        "productId": "4424-620-067",
+        "size": "L",
+        "quantity": 774
+      },
+      {
+        "productId": "4424-620-067",
+        "size": "XL",
+        "quantity": 436
+      },
+      {
+        "productId": "4424-620-067",
+        "size": "XXL",
+        "quantity": 436
+      },
+      {
+        "productId": "1473-617-104",
+        "size": "S",
+        "quantity": 468
+      },
+      {
+        "productId": "1473-617-104",
+        "size": "L",
+        "quantity": 604
+      },
+      {
+        "productId": "1473-617-104",
+        "size": "XL",
+        "quantity": 1390
+      },
+      {
+        "productId": "1473-617-104",
+        "size": "XXL",
+        "quantity": 326
+      },
+      {
+        "productId": "1165-846-401",
+        "size": "S",
+        "quantity": 1160
+      },
+      {
+        "productId": "1165-846-401",
+        "size": "M",
+        "quantity": 206
+      },
+      {
+        "productId": "1165-846-401",
+        "size": "XL",
+        "quantity": 226
+      },
+      {
+        "productId": "1165-846-401",
+        "size": "XXL",
+        "quantity": 470
+      },
+      {
+        "productId": "1473-616-944",
+        "size": "M",
+        "quantity": 27
+      },
+      {
+        "productId": "1473-616-944",
+        "size": "L",
+        "quantity": 67
+      },
+      {
+        "productId": "1473-616-944",
+        "size": "XXL",
+        "quantity": 39
+      },
+      {
+        "productId": "1548-032-251",
+        "size": "XS",
+        "quantity": 38
+      },
+      {
+        "productId": "1548-032-251",
+        "size": "M",
+        "quantity": 76
+      },
+      {
+        "productId": "1548-032-251",
+        "size": "L",
+        "quantity": 72
+      },
+      {
+        "productId": "1548-032-251",
+        "size": "XL",
+        "quantity": 28
+      },
+      {
+        "productId": "1551-032-251",
+        "size": "XS",
+        "quantity": 981
+      },
+      {
+        "productId": "1551-032-251",
+        "size": "S",
+        "quantity": 1292
+      },
+      {
+        "productId": "1551-032-251",
+        "size": "M",
+        "quantity": 1239
+      },
+      {
+        "productId": "1551-032-251",
+        "size": "L",
+        "quantity": 1773
+      },
+      {
+        "productId": "1551-032-251",
+        "size": "XL",
+        "quantity": 1541
+      },
+      {
+        "productId": "1546-119-403",
+        "size": "XS",
+        "quantity": 48
+      },
+      {
+        "productId": "1546-119-403",
+        "size": "S",
+        "quantity": 83
+      },
+      {
+        "productId": "1546-119-403",
+        "size": "XXL",
+        "quantity": 43
+      },
+      {
+        "productId": "1546-119-403",
+        "size": "M",
+        "quantity": 57
+      },
+      {
+        "productId": "1546-119-403",
+        "size": "L",
+        "quantity": 91
+      },
+      {
+        "productId": "1564-032-402",
+        "size": "XS",
+        "quantity": 431
+      },
+      {
+        "productId": "1564-032-402",
+        "size": "S",
+        "quantity": 543
+      },
+      {
+        "productId": "1564-032-402",
+        "size": "M",
+        "quantity": 588
+      },
+      {
+        "productId": "1564-032-402",
+        "size": "L",
+        "quantity": 438
+      },
+      {
+        "productId": "1564-032-402",
+        "size": "XXL",
+        "quantity": 692
+      },
+      {
+        "productId": "1165-733-300",
+        "size": "XS",
+        "quantity": 1167
+      },
+      {
+        "productId": "1165-733-300",
+        "size": "S",
+        "quantity": 676
+      },
+      {
+        "productId": "1165-733-300",
+        "size": "M",
+        "quantity": 676
+      },
+      {
+        "productId": "1165-733-300",
+        "size": "L",
+        "quantity": 909
+      },
+      {
+        "productId": "1165-733-300",
+        "size": "XL",
+        "quantity": 1272
+      },
+      {
+        "productId": "1165-733-300",
+        "size": "XXL",
+        "quantity": 1277
+      },
+      {
+        "productId": "4586-530-002",
+        "size": "S",
+        "quantity": 317
+      },
+      {
+        "productId": "4586-530-002",
+        "size": "L",
+        "quantity": 595
+      },
+      {
+        "productId": "4586-530-002",
+        "size": "XL",
+        "quantity": 337
+      },
+      {
+        "productId": "4586-530-002",
+        "size": "XXL",
+        "quantity": 1079
+      },
+      {
+        "productId": "0752-164-200",
+        "size": "XS",
+        "quantity": 76
+      },
+      {
+        "productId": "0752-164-200",
+        "size": "M",
+        "quantity": 84
+      },
+      {
+        "productId": "0752-164-200",
+        "size": "XL",
+        "quantity": 28
+      },
+      {
+        "productId": "0752-164-200",
+        "size": "XXL",
+        "quantity": 59
+      },
+      {
+        "productId": "7521-618-305",
+        "size": "XS",
+        "quantity": 74
+      },
+      {
+        "productId": "7521-618-305",
+        "size": "S",
+        "quantity": 76
+      },
+      {
+        "productId": "7521-618-305",
+        "size": "M",
+        "quantity": 66
+      },
+      {
+        "productId": "7521-618-305",
+        "size": "L",
+        "quantity": 83
+      },
+      {
+        "productId": "7521-618-305",
+        "size": "XL",
+        "quantity": 42
+      },
+      {
+        "productId": "7521-618-305",
+        "size": "XXL",
+        "quantity": 47
+      },
+      {
+        "productId": "0752-164-100",
+        "size": "XS",
+        "quantity": 517
+      },
+      {
+        "productId": "0752-164-100",
+        "size": "S",
+        "quantity": 982
+      },
+      {
+        "productId": "0752-164-100",
+        "size": "M",
+        "quantity": 1082
+      },
+      {
+        "productId": "0752-164-100",
+        "size": "L",
+        "quantity": 805
+      },
+      {
+        "productId": "0752-164-100",
+        "size": "XL",
+        "quantity": 626
+      },
+      {
+        "productId": "0752-164-000",
+        "size": "S",
+        "quantity": 1232
+      },
+      {
+        "productId": "0752-164-000",
+        "size": "M",
+        "quantity": 522
+      },
+      {
+        "productId": "1281-530-400",
+        "size": "XS",
+        "quantity": 452
+      },
+      {
+        "productId": "1281-530-400",
+        "size": "S",
+        "quantity": 1230
+      },
+      {
+        "productId": "1281-530-400",
+        "size": "M",
+        "quantity": 511
+      },
+      {
+        "productId": "1281-530-400",
+        "size": "XL",
+        "quantity": 660
+      },
+      {
+        "productId": "1281-530-400",
+        "size": "XXL",
+        "quantity": 335
+      },
+      {
+        "productId": "7521-613-200",
+        "size": "S",
+        "quantity": 491
+      },
+      {
+        "productId": "7521-613-200",
+        "size": "M",
+        "quantity": 1044
+      },
+      {
+        "productId": "7521-613-200",
+        "size": "L",
+        "quantity": 980
+      },
+      {
+        "productId": "7521-613-200",
+        "size": "XXL",
+        "quantity": 537
+      },
+      {
+        "productId": "1266-553-005",
+        "size": "XS",
+        "quantity": 687
+      },
+      {
+        "productId": "1266-553-005",
+        "size": "M",
+        "quantity": 474
+      },
+      {
+        "productId": "1266-553-005",
+        "size": "XL",
+        "quantity": 548
+      },
+      {
+        "productId": "1266-553-005",
+        "size": "XXL",
+        "quantity": 292
+      },
+      {
+        "productId": "9006-660-060",
+        "size": "S",
+        "quantity": 1356
+      },
+      {
+        "productId": "9006-660-060",
+        "size": "L",
+        "quantity": 324
+      },
+      {
+        "productId": "9006-660-060",
+        "size": "XL",
+        "quantity": 43
+      },
+      {
+        "productId": "9006-660-060",
+        "size": "XXL",
+        "quantity": 115
+      },
+      {
+        "productId": "9006-660-060",
+        "size": "XS",
+        "quantity": 2548
+      },
+      {
+        "productId": "9006-660-060",
+        "size": "M",
+        "quantity": 488
+      },
+      {
+        "productId": "1716-621-712",
+        "size": "XS",
+        "quantity": 740
+      },
+      {
+        "productId": "1716-621-712",
+        "size": "S",
+        "quantity": 1374
+      },
+      {
+        "productId": "1716-621-712",
+        "size": "M",
+        "quantity": 414
+      },
+      {
+        "productId": "1716-621-712",
+        "size": "XL",
+        "quantity": 896
+      },
+      {
+        "productId": "1716-621-712",
+        "size": "XXL",
+        "quantity": 464
+      },
+      {
+        "productId": "2702-633-300",
+        "size": "S",
+        "quantity": 348
+      },
+      {
+        "productId": "2702-633-300",
+        "size": "M",
+        "quantity": 534
+      },
+      {
+        "productId": "2702-633-300",
+        "size": "L",
+        "quantity": 268
+      },
+      {
+        "productId": "2702-633-300",
+        "size": "XXL",
+        "quantity": 514
+      },
+      {
+        "productId": "4493-605-251",
+        "size": "XS",
+        "quantity": 89
+      },
+      {
+        "productId": "4493-605-251",
+        "size": "S",
+        "quantity": 39
+      },
+      {
+        "productId": "4493-605-251",
+        "size": "M",
+        "quantity": 63
+      },
+      {
+        "productId": "4493-605-251",
+        "size": "XL",
+        "quantity": 97
+      },
+      {
+        "productId": "4786-607-500",
+        "size": "XS",
+        "quantity": 40
+      },
+      {
+        "productId": "4786-607-500",
+        "size": "S",
+        "quantity": 99
+      },
+      {
+        "productId": "4786-607-500",
+        "size": "M",
+        "quantity": 73
+      },
+      {
+        "productId": "4786-607-500",
+        "size": "XL",
+        "quantity": 96
+      },
+      {
+        "productId": "1492-637-402",
+        "size": "XS",
+        "quantity": 65
+      },
+      {
+        "productId": "1492-637-402",
+        "size": "S",
+        "quantity": 45
+      },
+      {
+        "productId": "1492-637-402",
+        "size": "L",
+        "quantity": 66
+      },
+      {
+        "productId": "1492-637-402",
+        "size": "XXL",
+        "quantity": 38
+      },
+      {
+        "productId": "1492-637-402",
+        "size": "M",
+        "quantity": 59
+      },
+      {
+        "productId": "1492-637-402",
+        "size": "XL",
+        "quantity": 97
+      },
+      {
+        "productId": "4354-633-300",
+        "size": "XS",
+        "quantity": 341
+      },
+      {
+        "productId": "4354-633-300",
+        "size": "S",
+        "quantity": 483
+      },
+      {
+        "productId": "4354-633-300",
+        "size": "M",
+        "quantity": 1262
+      },
+      {
+        "productId": "4354-633-300",
+        "size": "L",
+        "quantity": 604
+      },
+      {
+        "productId": "4354-633-300",
+        "size": "XXL",
+        "quantity": 1278
+      },
+      {
+        "productId": "0208-616-251",
+        "size": "XS",
+        "quantity": 473
+      },
+      {
+        "productId": "0208-616-251",
+        "size": "S",
+        "quantity": 1275
+      },
+      {
+        "productId": "0208-616-251",
+        "size": "M",
+        "quantity": 1145
+      },
+      {
+        "productId": "0208-616-251",
+        "size": "L",
+        "quantity": 786
+      },
+      {
+        "productId": "0208-616-251",
+        "size": "XL",
+        "quantity": 628
+      },
+      {
+        "productId": "0208-616-251",
+        "size": "XXL",
+        "quantity": 515
+      },
+      {
+        "productId": "6224-845-620",
+        "size": "S",
+        "quantity": 1393
+      },
+      {
+        "productId": "6224-845-620",
+        "size": "M",
+        "quantity": 414
+      },
+      {
+        "productId": "6224-845-620",
+        "size": "L",
+        "quantity": 620
+      },
+      {
+        "productId": "6224-845-620",
+        "size": "XL",
+        "quantity": 1051
+      },
+      {
+        "productId": "6224-845-620",
+        "size": "XXL",
+        "quantity": 1046
+      },
+      {
+        "productId": "0122-618-400",
+        "size": "XS",
+        "quantity": 116
+      },
+      {
+        "productId": "0122-618-400",
+        "size": "S",
+        "quantity": 689
+      },
+      {
+        "productId": "0122-618-400",
+        "size": "XXL",
+        "quantity": 550
+      },
+      {
+        "productId": "6045-608-406",
+        "size": "XS",
+        "quantity": 657
+      },
+      {
+        "productId": "6045-608-406",
+        "size": "S",
+        "quantity": 719
+      },
+      {
+        "productId": "6045-608-406",
+        "size": "M",
+        "quantity": 388
+      },
+      {
+        "productId": "6045-608-406",
+        "size": "L",
+        "quantity": 442
+      },
+      {
+        "productId": "6045-608-406",
+        "size": "XL",
+        "quantity": 571
+      },
+      {
+        "productId": "6045-608-406",
+        "size": "XXL",
+        "quantity": 821
+      },
+      {
+        "productId": "7227-609-407",
+        "size": "XS",
+        "quantity": 80
+      },
+      {
+        "productId": "7227-609-407",
+        "size": "S",
+        "quantity": 33
+      },
+      {
+        "productId": "7227-609-407",
+        "size": "M",
+        "quantity": 88
+      },
+      {
+        "productId": "7227-609-407",
+        "size": "L",
+        "quantity": 98
+      },
+      {
+        "productId": "7227-609-407",
+        "size": "XXL",
+        "quantity": 54
+      },
+      {
+        "productId": "4441-775-250",
+        "size": "XS",
+        "quantity": 654
+      },
+      {
+        "productId": "4441-775-250",
+        "size": "L",
+        "quantity": 513
+      },
+      {
+        "productId": "4441-775-250",
+        "size": "XL",
+        "quantity": 483
+      },
+      {
+        "productId": "4441-775-250",
+        "size": "XXL",
+        "quantity": 595
+      },
+      {
+        "productId": "7227-609-406",
+        "size": "L",
+        "quantity": 273
+      },
+      {
+        "productId": "7227-609-406",
+        "size": "XXL",
+        "quantity": 486
+      },
+      {
+        "productId": "7227-612-406",
+        "size": "M",
+        "quantity": 464
+      },
+      {
+        "productId": "7227-612-406",
+        "size": "XL",
+        "quantity": 680
+      },
+      {
+        "productId": "7227-612-406",
+        "size": "XXL",
+        "quantity": 739
+      },
+      {
+        "productId": "4806-608-400",
+        "size": "XS",
+        "quantity": 75
+      },
+      {
+        "productId": "4806-608-400",
+        "size": "S",
+        "quantity": 39
+      },
+      {
+        "productId": "4806-608-400",
+        "size": "M",
+        "quantity": 83
+      },
+      {
+        "productId": "4806-608-400",
+        "size": "L",
+        "quantity": 52
+      },
+      {
+        "productId": "4806-608-400",
+        "size": "XL",
+        "quantity": 31
+      },
+      {
+        "productId": "4806-608-400",
+        "size": "XXL",
+        "quantity": 56
+      },
+      {
+        "productId": "3391-623-300",
+        "size": "M",
+        "quantity": 438
+      },
+      {
+        "productId": "3391-623-300",
+        "size": "L",
+        "quantity": 463
+      },
+      {
+        "productId": "3391-623-300",
+        "size": "XL",
+        "quantity": 656
+      },
+      {
+        "productId": "3391-623-300",
+        "size": "XXL",
+        "quantity": 134
+      },
+      {
+        "productId": "3391-625-615",
+        "size": "XS",
+        "quantity": 54
+      },
+      {
+        "productId": "3391-625-615",
+        "size": "S",
+        "quantity": 87
+      },
+      {
+        "productId": "3391-625-615",
+        "size": "M",
+        "quantity": 57
+      },
+      {
+        "productId": "3391-625-615",
+        "size": "L",
+        "quantity": 65
+      },
+      {
+        "productId": "0339-162-302",
+        "size": "XS",
+        "quantity": 730
+      },
+      {
+        "productId": "0339-162-302",
+        "size": "S",
+        "quantity": 270
+      },
+      {
+        "productId": "0339-162-302",
+        "size": "M",
+        "quantity": 564
+      },
+      {
+        "productId": "0339-162-302",
+        "size": "L",
+        "quantity": 735
+      },
+      {
+        "productId": "0339-162-302",
+        "size": "XL",
+        "quantity": 620
+      },
+      {
+        "productId": "0339-162-302",
+        "size": "XXL",
+        "quantity": 1073
+      },
+      {
+        "productId": "3391-624-330",
+        "size": "XS",
+        "quantity": 937
+      },
+      {
+        "productId": "3391-624-330",
+        "size": "M",
+        "quantity": 967
+      },
+      {
+        "productId": "3391-625-615",
+        "size": "XL",
+        "quantity": 63
+      },
+      {
+        "productId": "3391-625-615",
+        "size": "XXL",
+        "quantity": 56
+      },
+      {
+        "productId": "1971-604-067",
+        "size": "XS",
+        "quantity": 311
+      },
+      {
+        "productId": "1971-604-067",
+        "size": "S",
+        "quantity": 531
+      },
+      {
+        "productId": "1971-604-067",
+        "size": "M",
+        "quantity": 981
+      },
+      {
+        "productId": "1971-604-067",
+        "size": "L",
+        "quantity": 1306
+      },
+      {
+        "productId": "1971-604-067",
+        "size": "XXL",
+        "quantity": 1161
+      },
+      {
+        "productId": "1971-604-067",
+        "size": "XL",
+        "quantity": 842
+      },
+      {
+        "productId": "6224-843-712",
+        "size": "XS",
+        "quantity": 617
+      },
+      {
+        "productId": "6224-843-712",
+        "size": "S",
+        "quantity": 544
+      },
+      {
+        "productId": "6224-843-712",
+        "size": "XL",
+        "quantity": 578
+      },
+      {
+        "productId": "6224-843-712",
+        "size": "XXL",
+        "quantity": 571
+      },
+      {
+        "productId": "4333-610-120",
+        "size": "XS",
+        "quantity": 1138
+      },
+      {
+        "productId": "4333-610-120",
+        "size": "S",
+        "quantity": 700
+      },
+      {
+        "productId": "4333-610-120",
+        "size": "L",
+        "quantity": 1409
+      },
+      {
+        "productId": "4333-610-120",
+        "size": "XL",
+        "quantity": 1090
+      },
+      {
+        "productId": "4333-610-120",
+        "size": "XXL",
+        "quantity": 2326
+      },
+      {
+        "productId": "4333-610-120",
+        "size": "M",
+        "quantity": 1021
+      },
+      {
+        "productId": "6224-843-807",
+        "size": "S",
+        "quantity": 1590
+      },
+      {
+        "productId": "6224-843-807",
+        "size": "M",
+        "quantity": 1680
+      },
+      {
+        "productId": "6224-843-807",
+        "size": "L",
+        "quantity": 1470
+      },
+      {
+        "productId": "6224-843-807",
+        "size": "XL",
+        "quantity": 989
+      },
+      {
+        "productId": "6224-843-807",
+        "size": "XXL",
+        "quantity": 1626
+      },
+      {
+        "productId": "4333-610-116",
+        "size": "S",
+        "quantity": 2059
+      },
+      {
+        "productId": "4333-610-116",
+        "size": "M",
+        "quantity": 2254
+      },
+      {
+        "productId": "4333-610-116",
+        "size": "XL",
+        "quantity": 1631
+      },
+      {
+        "productId": "4333-610-116",
+        "size": "XS",
+        "quantity": 2120
+      },
+      {
+        "productId": "4333-610-116",
+        "size": "L",
+        "quantity": 2250
+      },
+      {
+        "productId": "4333-610-116",
+        "size": "XXL",
+        "quantity": 2442
+      },
+      {
+        "productId": "5987-614-527",
+        "size": "L",
+        "quantity": 1311
+      },
+      {
+        "productId": "5987-614-527",
+        "size": "XL",
+        "quantity": 699
+      },
+      {
+        "productId": "5987-614-527",
+        "size": "XXL",
+        "quantity": 988
+      },
+      {
+        "productId": "5987-613-527",
+        "size": "XS",
+        "quantity": 592
+      },
+      {
+        "productId": "5987-613-527",
+        "size": "M",
+        "quantity": 575
+      },
+      {
+        "productId": "5987-613-527",
+        "size": "L",
+        "quantity": 359
+      },
+      {
+        "productId": "5987-613-527",
+        "size": "XXL",
+        "quantity": 1290
+      },
+      {
+        "productId": "1165-653-250",
+        "size": "XS",
+        "quantity": 910
+      },
+      {
+        "productId": "1165-653-250",
+        "size": "S",
+        "quantity": 953
+      },
+      {
+        "productId": "1165-653-250",
+        "size": "M",
+        "quantity": 1196
+      },
+      {
+        "productId": "1165-653-250",
+        "size": "XXL",
+        "quantity": 2385
+      },
+      {
+        "productId": "5987-613-330",
+        "size": "XS",
+        "quantity": 451
+      },
+      {
+        "productId": "5987-613-330",
+        "size": "M",
+        "quantity": 363
+      },
+      {
+        "productId": "5987-613-330",
+        "size": "XL",
+        "quantity": 120
+      },
+      {
+        "productId": "6045-606-400",
+        "size": "XS",
+        "quantity": 608
+      },
+      {
+        "productId": "6045-606-400",
+        "size": "S",
+        "quantity": 729
+      },
+      {
+        "productId": "6045-606-400",
+        "size": "M",
+        "quantity": 497
+      },
+      {
+        "productId": "6045-606-400",
+        "size": "XL",
+        "quantity": 1365
+      },
+      {
+        "productId": "1608-617-094",
+        "size": "XS",
+        "quantity": 30
+      },
+      {
+        "productId": "1608-617-094",
+        "size": "M",
+        "quantity": 77
+      },
+      {
+        "productId": "1608-617-094",
+        "size": "XL",
+        "quantity": 59
+      },
+      {
+        "productId": "1608-617-402",
+        "size": "XS",
+        "quantity": 28
+      },
+      {
+        "productId": "1608-617-402",
+        "size": "M",
+        "quantity": 57
+      },
+      {
+        "productId": "1608-617-402",
+        "size": "L",
+        "quantity": 77
+      },
+      {
+        "productId": "1608-617-402",
+        "size": "XL",
+        "quantity": 71
+      },
+      {
+        "productId": "1608-617-402",
+        "size": "XXL",
+        "quantity": 70
+      },
+      {
+        "productId": "1608-617-402",
+        "size": "S",
+        "quantity": 49
+      },
+      {
+        "productId": "5987-614-527",
+        "size": "XS",
+        "quantity": 44
+      },
+      {
+        "productId": "5987-614-527",
+        "size": "S",
+        "quantity": 1783
+      },
+      {
+        "productId": "5987-614-527",
+        "size": "M",
+        "quantity": 2604
+      },
+      {
+        "productId": "2511-605-712",
+        "size": "XS",
+        "quantity": 2220
+      },
+      {
+        "productId": "2511-605-712",
+        "size": "XL",
+        "quantity": 530
+      },
+      {
+        "productId": "2511-605-712",
+        "size": "S",
+        "quantity": 642
+      },
+      {
+        "productId": "2511-605-712",
+        "size": "XXL",
+        "quantity": 463
+      },
+      {
+        "productId": "2511-607-712",
+        "size": "XS",
+        "quantity": 2571
+      },
+      {
+        "productId": "2511-607-712",
+        "size": "M",
+        "quantity": 888
+      },
+      {
+        "productId": "2511-607-712",
+        "size": "L",
+        "quantity": 805
+      },
+      {
+        "productId": "2511-607-712",
+        "size": "XL",
+        "quantity": 992
+      },
+      {
+        "productId": "2511-607-712",
+        "size": "XXL",
+        "quantity": 949
+      },
+      {
+        "productId": "6201-602-712",
+        "size": "XS",
+        "quantity": 48
+      },
+      {
+        "productId": "6201-602-712",
+        "size": "S",
+        "quantity": 45
+      },
+      {
+        "productId": "6201-602-712",
+        "size": "M",
+        "quantity": 35
+      },
+      {
+        "productId": "2795-617-712",
+        "size": "XS",
+        "quantity": 479
+      },
+      {
+        "productId": "2795-617-712",
+        "size": "S",
+        "quantity": 521
+      },
+      {
+        "productId": "2795-617-712",
+        "size": "M",
+        "quantity": 629
+      },
+      {
+        "productId": "2795-617-712",
+        "size": "L",
+        "quantity": 542
+      },
+      {
+        "productId": "4770-603-712",
+        "size": "XS",
+        "quantity": 312
+      },
+      {
+        "productId": "4770-603-712",
+        "size": "M",
+        "quantity": 144
+      },
+      {
+        "productId": "4770-603-712",
+        "size": "XL",
+        "quantity": 149
+      },
+      {
+        "productId": "4770-603-712",
+        "size": "XXL",
+        "quantity": 1332
+      },
+      {
+        "productId": "5107-600-083",
+        "size": "M",
+        "quantity": 72
+      },
+      {
+        "productId": "5107-600-083",
+        "size": "XL",
+        "quantity": 52
+      },
+      {
+        "productId": "5107-600-083",
+        "size": "S",
+        "quantity": 43
+      },
+      {
+        "productId": "5107-600-083",
+        "size": "XXL",
+        "quantity": 84
+      },
+      {
+        "productId": "4493-622-942",
+        "size": "XS",
+        "quantity": 583
+      },
+      {
+        "productId": "4493-622-942",
+        "size": "S",
+        "quantity": 563
+      },
+      {
+        "productId": "4493-622-942",
+        "size": "M",
+        "quantity": 1230
+      },
+      {
+        "productId": "4493-622-942",
+        "size": "XL",
+        "quantity": 520
+      },
+      {
+        "productId": "4493-622-942",
+        "size": "XXL",
+        "quantity": 499
+      },
+      {
+        "productId": "4493-621-942",
+        "size": "XS",
+        "quantity": 1478
+      },
+      {
+        "productId": "4493-621-942",
+        "size": "XL",
+        "quantity": 1360
+      },
+      {
+        "productId": "4493-621-942",
+        "size": "S",
+        "quantity": 1101
+      },
+      {
+        "productId": "4493-621-942",
+        "size": "M",
+        "quantity": 795
+      },
+      {
+        "productId": "4493-621-942",
+        "size": "L",
+        "quantity": 1255
+      },
+      {
+        "productId": "4493-621-942",
+        "size": "XXL",
+        "quantity": 812
+      },
+      {
+        "productId": "3772-605-052",
+        "size": "S",
+        "quantity": 609
+      },
+      {
+        "productId": "3772-605-052",
+        "size": "M",
+        "quantity": 2440
+      },
+      {
+        "productId": "3772-605-052",
+        "size": "L",
+        "quantity": 2252
+      },
+      {
+        "productId": "3772-605-052",
+        "size": "XL",
+        "quantity": 1475
+      },
+      {
+        "productId": "3772-605-052",
+        "size": "XXL",
+        "quantity": 25
+      },
+      {
+        "productId": "4493-620-942",
+        "size": "XS",
+        "quantity": 80
+      },
+      {
+        "productId": "4493-620-942",
+        "size": "L",
+        "quantity": 34
+      },
+      {
+        "productId": "4493-620-942",
+        "size": "XXL",
+        "quantity": 40
+      },
+      {
+        "productId": "5107-600-083",
+        "size": "L",
+        "quantity": 86
+      },
+      {
+        "productId": "4174-692-712",
+        "size": "XS",
+        "quantity": 686
+      },
+      {
+        "productId": "4174-692-712",
+        "size": "S",
+        "quantity": 91
+      },
+      {
+        "productId": "4174-692-712",
+        "size": "L",
+        "quantity": 259
+      },
+      {
+        "productId": "4174-692-712",
+        "size": "XL",
+        "quantity": 94
+      },
+      {
+        "productId": "4174-692-712",
+        "size": "XXL",
+        "quantity": 423
+      },
+      {
+        "productId": "5431-957-620",
+        "size": "S",
+        "quantity": 59
+      },
+      {
+        "productId": "5431-957-620",
+        "size": "M",
+        "quantity": 83
+      },
+      {
+        "productId": "5431-957-620",
+        "size": "L",
+        "quantity": 54
+      },
+      {
+        "productId": "5431-957-620",
+        "size": "XL",
+        "quantity": 61
+      },
+      {
+        "productId": "5431-957-620",
+        "size": "XXL",
+        "quantity": 63
+      },
+      {
+        "productId": "5431-957-620",
+        "size": "XS",
+        "quantity": 65
+      },
+      {
+        "productId": "5431-957-250",
+        "size": "XS",
+        "quantity": 35
+      },
+      {
+        "productId": "5431-957-250",
+        "size": "S",
+        "quantity": 42
+      },
+      {
+        "productId": "5431-957-250",
+        "size": "M",
+        "quantity": 33
+      },
+      {
+        "productId": "5431-957-250",
+        "size": "XL",
+        "quantity": 66
+      },
+      {
+        "productId": "5431-957-250",
+        "size": "XXL",
+        "quantity": 60
+      },
+      {
+        "productId": "8675-607-800",
+        "size": "S",
+        "quantity": 683
+      },
+      {
+        "productId": "8675-607-800",
+        "size": "M",
+        "quantity": 830
+      },
+      {
+        "productId": "8675-607-800",
+        "size": "XXL",
+        "quantity": 382
+      },
+      {
+        "productId": "0257-606-539",
+        "size": "XS",
+        "quantity": 598
+      },
+      {
+        "productId": "0257-606-539",
+        "size": "S",
+        "quantity": 1234
+      },
+      {
+        "productId": "0257-606-539",
+        "size": "M",
+        "quantity": 839
+      },
+      {
+        "productId": "0257-606-539",
+        "size": "L",
+        "quantity": 882
+      },
+      {
+        "productId": "0257-606-539",
+        "size": "XL",
+        "quantity": 602
+      },
+      {
+        "productId": "0257-606-539",
+        "size": "XXL",
+        "quantity": 482
+      },
+      {
+        "productId": "0208-615-251",
+        "size": "XS",
+        "quantity": 1300
+      },
+      {
+        "productId": "0208-615-251",
+        "size": "M",
+        "quantity": 1316
+      },
+      {
+        "productId": "0208-615-251",
+        "size": "L",
+        "quantity": 831
+      },
+      {
+        "productId": "0208-615-251",
+        "size": "XL",
+        "quantity": 1074
+      },
+      {
+        "productId": "3920-619-622",
+        "size": "XS",
+        "quantity": 1296
+      },
+      {
+        "productId": "3920-619-622",
+        "size": "M",
+        "quantity": 374
+      },
+      {
+        "productId": "3920-619-622",
+        "size": "L",
+        "quantity": 444
+      },
+      {
+        "productId": "3920-619-622",
+        "size": "XL",
+        "quantity": 526
+      },
+      {
+        "productId": "3920-619-622",
+        "size": "XXL",
+        "quantity": 226
+      },
+      {
+        "productId": "2488-603-982",
+        "size": "S",
+        "quantity": 1194
+      },
+      {
+        "productId": "2488-603-982",
+        "size": "XL",
+        "quantity": 256
+      },
+      {
+        "productId": "2488-603-982",
+        "size": "XXL",
+        "quantity": 1314
+      },
+      {
+        "productId": "2488-602-712",
+        "size": "XS",
+        "quantity": 562
+      },
+      {
+        "productId": "2488-602-712",
+        "size": "M",
+        "quantity": 1777
+      },
+      {
+        "productId": "2488-602-712",
+        "size": "L",
+        "quantity": 934
+      },
+      {
+        "productId": "2488-602-712",
+        "size": "XL",
+        "quantity": 1056
+      },
+      {
+        "productId": "2488-602-712",
+        "size": "XXL",
+        "quantity": 1298
+      },
+      {
+        "productId": "2488-602-712",
+        "size": "S",
+        "quantity": 1101
+      },
+      {
+        "productId": "1345-553-005",
+        "size": "XS",
+        "quantity": 539
+      },
+      {
+        "productId": "1345-553-005",
+        "size": "S",
+        "quantity": 520
+      },
+      {
+        "productId": "1345-553-005",
+        "size": "M",
+        "quantity": 541
+      },
+      {
+        "productId": "1345-553-005",
+        "size": "L",
+        "quantity": 547
+      },
+      {
+        "productId": "1345-553-005",
+        "size": "XXL",
+        "quantity": 748
+      },
+      {
+        "productId": "1383-404-401",
+        "size": "XS",
+        "quantity": 53
+      },
+      {
+        "productId": "1383-404-401",
+        "size": "M",
+        "quantity": 32
+      },
+      {
+        "productId": "1383-404-401",
+        "size": "XL",
+        "quantity": 75
+      },
+      {
+        "productId": "1383-404-401",
+        "size": "XXL",
+        "quantity": 91
+      },
+      {
+        "productId": "3391-630-512",
+        "size": "XS",
+        "quantity": 61
+      },
+      {
+        "productId": "3391-630-512",
+        "size": "S",
+        "quantity": 88
+      },
+      {
+        "productId": "3391-630-512",
+        "size": "M",
+        "quantity": 54
+      },
+      {
+        "productId": "3391-630-512",
+        "size": "L",
+        "quantity": 51
+      },
+      {
+        "productId": "3391-630-512",
+        "size": "XL",
+        "quantity": 97
+      },
+      {
+        "productId": "3391-630-512",
+        "size": "XXL",
+        "quantity": 51
+      },
+      {
+        "productId": "3391-631-630",
+        "size": "XS",
+        "quantity": 53
+      },
+      {
+        "productId": "3391-631-630",
+        "size": "S",
+        "quantity": 38
+      },
+      {
+        "productId": "3391-631-630",
+        "size": "M",
+        "quantity": 99
+      },
+      {
+        "productId": "3391-631-630",
+        "size": "L",
+        "quantity": 76
+      },
+      {
+        "productId": "3391-631-630",
+        "size": "XXL",
+        "quantity": 84
+      },
+      {
+        "productId": "0653-675-620",
+        "size": "XS",
+        "quantity": 502
+      },
+      {
+        "productId": "0653-675-620",
+        "size": "S",
+        "quantity": 439
+      },
+      {
+        "productId": "0653-675-620",
+        "size": "M",
+        "quantity": 649
+      },
+      {
+        "productId": "0653-675-620",
+        "size": "L",
+        "quantity": 614
+      },
+      {
+        "productId": "0653-675-620",
+        "size": "XL",
+        "quantity": 895
+      },
+      {
+        "productId": "0653-675-620",
+        "size": "XXL",
+        "quantity": 455
+      },
+      {
+        "productId": "1639-617-402",
+        "size": "XS",
+        "quantity": 1274
+      },
+      {
+        "productId": "1266-553-000",
+        "size": "M",
+        "quantity": 1371
+      },
+      {
+        "productId": "1266-553-005",
+        "size": "L",
+        "quantity": 1140
+      },
+      {
+        "productId": "6208-605-400",
+        "size": "XXL",
+        "quantity": 1301
+      },
+      {
+        "productId": "7227-609-406",
+        "size": "S",
+        "quantity": 1253
+      },
+      {
+        "productId": "7227-609-406",
+        "size": "XL",
+        "quantity": 1205
+      },
+      {
+        "productId": "1639-900-400",
+        "size": "M",
+        "quantity": 1205
+      },
+      {
+        "productId": "1639-900-400",
+        "size": "L",
+        "quantity": 1240
+      },
+      {
+        "productId": "0208-615-251",
+        "size": "S",
+        "quantity": 1325
+      },
+      {
+        "productId": "1262-530-002",
+        "size": "M",
+        "quantity": 1332
+      },
+      {
+        "productId": "4424-620-777",
+        "size": "S",
+        "quantity": 1300
+      }
+    ]
+  },
+  {
+    "id": "W003",
+    "latitude": 57.92796016715036,
+    "longitude": -116.16380495811205,
+    "country": "Canada",
+    "stock": [
+      {
+        "productId": "1473-616-944",
+        "size": "XS",
+        "quantity": 41
+      },
+      {
+        "productId": "1473-616-944",
+        "size": "XL",
+        "quantity": 60
+      },
+      {
+        "productId": "1473-616-944",
+        "size": "XXL",
+        "quantity": 48
+      },
+      {
+        "productId": "4424-620-066",
+        "size": "XS",
+        "quantity": 1173
+      },
+      {
+        "productId": "4424-620-066",
+        "size": "S",
+        "quantity": 86
+      },
+      {
+        "productId": "4424-620-066",
+        "size": "M",
+        "quantity": 359
+      },
+      {
+        "productId": "4424-620-066",
+        "size": "L",
+        "quantity": 267
+      },
+      {
+        "productId": "4424-620-066",
+        "size": "XL",
+        "quantity": 83
+      },
+      {
+        "productId": "4424-620-067",
+        "size": "XS",
+        "quantity": 271
+      },
+      {
+        "productId": "4424-620-067",
+        "size": "S",
+        "quantity": 48
+      },
+      {
+        "productId": "4424-620-067",
+        "size": "M",
+        "quantity": 307
+      },
+      {
+        "productId": "4424-620-067",
+        "size": "L",
+        "quantity": 489
+      },
+      {
+        "productId": "4424-620-067",
+        "size": "XL",
+        "quantity": 96
+      },
+      {
+        "productId": "4424-620-067",
+        "size": "XXL",
+        "quantity": 243
+      },
+      {
+        "productId": "1165-846-401",
+        "size": "XS",
+        "quantity": 509
+      },
+      {
+        "productId": "1473-616-944",
+        "size": "S",
+        "quantity": 41
+      },
+      {
+        "productId": "1473-616-944",
+        "size": "M",
+        "quantity": 63
+      },
+      {
+        "productId": "1473-616-944",
+        "size": "L",
+        "quantity": 29
+      },
+      {
+        "productId": "1551-032-251",
+        "size": "M",
+        "quantity": 1456
+      },
+      {
+        "productId": "1551-032-251",
+        "size": "L",
+        "quantity": 965
+      },
+      {
+        "productId": "1551-032-251",
+        "size": "XL",
+        "quantity": 565
+      },
+      {
+        "productId": "1551-032-251",
+        "size": "XXL",
+        "quantity": 1346
+      },
+      {
+        "productId": "1548-032-251",
+        "size": "XS",
+        "quantity": 53
+      },
+      {
+        "productId": "1548-032-251",
+        "size": "S",
+        "quantity": 70
+      },
+      {
+        "productId": "1548-032-251",
+        "size": "M",
+        "quantity": 35
+      },
+      {
+        "productId": "1548-032-251",
+        "size": "XL",
+        "quantity": 54
+      },
+      {
+        "productId": "1548-032-251",
+        "size": "XXL",
+        "quantity": 54
+      },
+      {
+        "productId": "1551-032-251",
+        "size": "S",
+        "quantity": 522
+      },
+      {
+        "productId": "1546-119-403",
+        "size": "S",
+        "quantity": 98
+      },
+      {
+        "productId": "1546-119-403",
+        "size": "L",
+        "quantity": 27
+      },
+      {
+        "productId": "1546-119-403",
+        "size": "XXL",
+        "quantity": 91
+      },
+      {
+        "productId": "1564-032-402",
+        "size": "XS",
+        "quantity": 319
+      },
+      {
+        "productId": "1564-032-402",
+        "size": "S",
+        "quantity": 71
+      },
+      {
+        "productId": "1564-032-402",
+        "size": "M",
+        "quantity": 233
+      },
+      {
+        "productId": "1564-032-402",
+        "size": "L",
+        "quantity": 211
+      },
+      {
+        "productId": "1564-032-402",
+        "size": "XXL",
+        "quantity": 150
+      },
+      {
+        "productId": "1165-733-300",
+        "size": "S",
+        "quantity": 556
+      },
+      {
+        "productId": "1165-733-300",
+        "size": "M",
+        "quantity": 650
+      },
+      {
+        "productId": "1165-733-300",
+        "size": "L",
+        "quantity": 403
+      },
+      {
+        "productId": "1165-730-250",
+        "size": "M",
+        "quantity": 620
+      },
+      {
+        "productId": "1165-730-250",
+        "size": "XL",
+        "quantity": 1251
+      },
+      {
+        "productId": "1165-730-250",
+        "size": "XXL",
+        "quantity": 259
+      },
+      {
+        "productId": "1533-119-402",
+        "size": "XS",
+        "quantity": 37
+      },
+      {
+        "productId": "1533-119-402",
+        "size": "S",
+        "quantity": 58
+      },
+      {
+        "productId": "1533-119-402",
+        "size": "M",
+        "quantity": 67
+      },
+      {
+        "productId": "1533-119-402",
+        "size": "L",
+        "quantity": 93
+      },
+      {
+        "productId": "1533-119-402",
+        "size": "XXL",
+        "quantity": 43
+      },
+      {
+        "productId": "1639-617-402",
+        "size": "S",
+        "quantity": 1384
+      },
+      {
+        "productId": "1639-617-402",
+        "size": "M",
+        "quantity": 1271
+      },
+      {
+        "productId": "1639-617-402",
+        "size": "XL",
+        "quantity": 1239
+      },
+      {
+        "productId": "1639-617-402",
+        "size": "XXL",
+        "quantity": 1221
+      },
+      {
+        "productId": "1551-032-251",
+        "size": "XS",
+        "quantity": 81
+      },
+      {
+        "productId": "1266-553-000",
+        "size": "XS",
+        "quantity": 321
+      },
+      {
+        "productId": "1266-553-000",
+        "size": "L",
+        "quantity": 472
+      },
+      {
+        "productId": "1266-553-000",
+        "size": "XL",
+        "quantity": 240
+      },
+      {
+        "productId": "4586-530-002",
+        "size": "XS",
+        "quantity": 1263
+      },
+      {
+        "productId": "4586-530-002",
+        "size": "M",
+        "quantity": 640
+      },
+      {
+        "productId": "4586-530-002",
+        "size": "L",
+        "quantity": 32
+      },
+      {
+        "productId": "4586-530-002",
+        "size": "XXL",
+        "quantity": 180
+      },
+      {
+        "productId": "0752-164-200",
+        "size": "XS",
+        "quantity": 54
+      },
+      {
+        "productId": "0752-164-200",
+        "size": "M",
+        "quantity": 66
+      },
+      {
+        "productId": "0752-164-200",
+        "size": "L",
+        "quantity": 36
+      },
+      {
+        "productId": "0752-164-200",
+        "size": "XL",
+        "quantity": 47
+      },
+      {
+        "productId": "0752-164-200",
+        "size": "XXL",
+        "quantity": 76
+      },
+      {
+        "productId": "7521-618-305",
+        "size": "XS",
+        "quantity": 42
+      },
+      {
+        "productId": "7521-618-305",
+        "size": "M",
+        "quantity": 44
+      },
+      {
+        "productId": "7521-618-305",
+        "size": "L",
+        "quantity": 60
+      },
+      {
+        "productId": "7521-618-305",
+        "size": "XXL",
+        "quantity": 51
+      },
+      {
+        "productId": "0752-164-100",
+        "size": "XS",
+        "quantity": 188
+      },
+      {
+        "productId": "0752-164-100",
+        "size": "S",
+        "quantity": 216
+      },
+      {
+        "productId": "0752-164-100",
+        "size": "M",
+        "quantity": 210
+      },
+      {
+        "productId": "0752-164-100",
+        "size": "L",
+        "quantity": 639
+      },
+      {
+        "productId": "0752-164-100",
+        "size": "XL",
+        "quantity": 45
+      },
+      {
+        "productId": "0752-164-000",
+        "size": "M",
+        "quantity": 121
+      },
+      {
+        "productId": "0752-164-000",
+        "size": "L",
+        "quantity": 122
+      },
+      {
+        "productId": "0752-164-000",
+        "size": "XL",
+        "quantity": 292
+      },
+      {
+        "productId": "1281-530-400",
+        "size": "XS",
+        "quantity": 76
+      },
+      {
+        "productId": "1281-530-400",
+        "size": "M",
+        "quantity": 93
+      },
+      {
+        "productId": "1281-530-400",
+        "size": "XL",
+        "quantity": 554
+      },
+      {
+        "productId": "7521-613-200",
+        "size": "S",
+        "quantity": 44
+      },
+      {
+        "productId": "7521-613-200",
+        "size": "M",
+        "quantity": 249
+      },
+      {
+        "productId": "7521-613-200",
+        "size": "L",
+        "quantity": 207
+      },
+      {
+        "productId": "7521-613-200",
+        "size": "XL",
+        "quantity": 83
+      },
+      {
+        "productId": "7521-613-200",
+        "size": "XXL",
+        "quantity": 98
+      },
+      {
+        "productId": "1266-553-005",
+        "size": "XS",
+        "quantity": 84
+      },
+      {
+        "productId": "1266-553-005",
+        "size": "S",
+        "quantity": 452
+      },
+      {
+        "productId": "1266-553-005",
+        "size": "M",
+        "quantity": 53
+      },
+      {
+        "productId": "1716-621-712",
+        "size": "XS",
+        "quantity": 526
+      },
+      {
+        "productId": "1716-621-712",
+        "size": "M",
+        "quantity": 75
+      },
+      {
+        "productId": "1716-621-712",
+        "size": "L",
+        "quantity": 1311
+      },
+      {
+        "productId": "1716-621-712",
+        "size": "XL",
+        "quantity": 421
+      },
+      {
+        "productId": "1716-621-712",
+        "size": "XXL",
+        "quantity": 46
+      },
+      {
+        "productId": "4786-750-250",
+        "size": "XS",
+        "quantity": 1178
+      },
+      {
+        "productId": "4786-750-250",
+        "size": "S",
+        "quantity": 1238
+      },
+      {
+        "productId": "4786-750-250",
+        "size": "M",
+        "quantity": 1156
+      },
+      {
+        "productId": "4786-750-250",
+        "size": "L",
+        "quantity": 1226
+      },
+      {
+        "productId": "4786-750-250",
+        "size": "XL",
+        "quantity": 1312
+      },
+      {
+        "productId": "1639-613-520",
+        "size": "XS",
+        "quantity": 120
+      },
+      {
+        "productId": "1639-613-520",
+        "size": "M",
+        "quantity": 146
+      },
+      {
+        "productId": "1639-613-520",
+        "size": "L",
+        "quantity": 1266
+      },
+      {
+        "productId": "1639-613-520",
+        "size": "XXL",
+        "quantity": 1228
+      },
+      {
+        "productId": "2702-633-300",
+        "size": "XS",
+        "quantity": 141
+      },
+      {
+        "productId": "2702-633-300",
+        "size": "S",
+        "quantity": 187
+      },
+      {
+        "productId": "2702-633-300",
+        "size": "M",
+        "quantity": 32
+      },
+      {
+        "productId": "2702-633-300",
+        "size": "XL",
+        "quantity": 1175
+      },
+      {
+        "productId": "2702-633-300",
+        "size": "XXL",
+        "quantity": 34
+      },
+      {
+        "productId": "4493-605-251",
+        "size": "XS",
+        "quantity": 49
+      },
+      {
+        "productId": "4493-605-251",
+        "size": "S",
+        "quantity": 51
+      },
+      {
+        "productId": "4493-605-251",
+        "size": "M",
+        "quantity": 70
+      },
+      {
+        "productId": "4493-605-251",
+        "size": "XXL",
+        "quantity": 91
+      },
+      {
+        "productId": "4786-607-500",
+        "size": "S",
+        "quantity": 46
+      },
+      {
+        "productId": "4786-607-500",
+        "size": "L",
+        "quantity": 57
+      },
+      {
+        "productId": "4786-607-500",
+        "size": "XL",
+        "quantity": 27
+      },
+      {
+        "productId": "4786-607-500",
+        "size": "XXL",
+        "quantity": 43
+      },
+      {
+        "productId": "4786-608-250",
+        "size": "XS",
+        "quantity": 315
+      },
+      {
+        "productId": "4786-608-250",
+        "size": "S",
+        "quantity": 1265
+      },
+      {
+        "productId": "4786-608-250",
+        "size": "M",
+        "quantity": 144
+      },
+      {
+        "productId": "4786-608-250",
+        "size": "L",
+        "quantity": 277
+      },
+      {
+        "productId": "4786-608-250",
+        "size": "XL",
+        "quantity": 97
+      },
+      {
+        "productId": "4786-608-250",
+        "size": "XXL",
+        "quantity": 73
+      },
+      {
+        "productId": "4493-605-251",
+        "size": "XL",
+        "quantity": 60
+      },
+      {
+        "productId": "1492-637-402",
+        "size": "XS",
+        "quantity": 57
+      },
+      {
+        "productId": "1492-637-402",
+        "size": "S",
+        "quantity": 53
+      },
+      {
+        "productId": "1492-637-402",
+        "size": "L",
+        "quantity": 80
+      },
+      {
+        "productId": "1492-637-402",
+        "size": "XL",
+        "quantity": 31
+      },
+      {
+        "productId": "1492-637-402",
+        "size": "M",
+        "quantity": 81
+      },
+      {
+        "productId": "4354-633-300",
+        "size": "S",
+        "quantity": 257
+      },
+      {
+        "productId": "4354-633-300",
+        "size": "L",
+        "quantity": 68
+      },
+      {
+        "productId": "6224-845-620",
+        "size": "XS",
+        "quantity": 2419
+      },
+      {
+        "productId": "6224-845-620",
+        "size": "L",
+        "quantity": 310
+      },
+      {
+        "productId": "6224-845-620",
+        "size": "XL",
+        "quantity": 662
+      },
+      {
+        "productId": "0208-616-251",
+        "size": "XS",
+        "quantity": 86
+      },
+      {
+        "productId": "0208-616-251",
+        "size": "L",
+        "quantity": 383
+      },
+      {
+        "productId": "0208-616-251",
+        "size": "XL",
+        "quantity": 97
+      },
+      {
+        "productId": "0208-616-251",
+        "size": "XXL",
+        "quantity": 61
+      },
+      {
+        "productId": "5067-602-300",
+        "size": "XS",
+        "quantity": 1338
+      },
+      {
+        "productId": "5067-602-300",
+        "size": "S",
+        "quantity": 137
+      },
+      {
+        "productId": "5067-602-300",
+        "size": "L",
+        "quantity": 1365
+      },
+      {
+        "productId": "5067-602-300",
+        "size": "XL",
+        "quantity": 302
+      },
+      {
+        "productId": "5067-602-300",
+        "size": "XXL",
+        "quantity": 164
+      },
+      {
+        "productId": "6224-845-620",
+        "size": "S",
+        "quantity": 145
+      },
+      {
+        "productId": "6224-845-620",
+        "size": "M",
+        "quantity": 97
+      },
+      {
+        "productId": "0122-618-400",
+        "size": "S",
+        "quantity": 528
+      },
+      {
+        "productId": "0122-618-400",
+        "size": "L",
+        "quantity": 418
+      },
+      {
+        "productId": "0122-618-400",
+        "size": "XL",
+        "quantity": 1230
+      },
+      {
+        "productId": "0122-618-400",
+        "size": "XXL",
+        "quantity": 36
+      },
+      {
+        "productId": "6045-608-406",
+        "size": "XS",
+        "quantity": 76
+      },
+      {
+        "productId": "6045-608-406",
+        "size": "S",
+        "quantity": 101
+      },
+      {
+        "productId": "6045-608-406",
+        "size": "M",
+        "quantity": 192
+      },
+      {
+        "productId": "6045-608-406",
+        "size": "L",
+        "quantity": 235
+      },
+      {
+        "productId": "6045-608-406",
+        "size": "XL",
+        "quantity": 25
+      },
+      {
+        "productId": "6045-608-406",
+        "size": "XXL",
+        "quantity": 451
+      },
+      {
+        "productId": "7227-609-407",
+        "size": "S",
+        "quantity": 44
+      },
+      {
+        "productId": "7227-609-407",
+        "size": "M",
+        "quantity": 40
+      },
+      {
+        "productId": "7227-609-407",
+        "size": "XL",
+        "quantity": 99
+      },
+      {
+        "productId": "7227-609-407",
+        "size": "XXL",
+        "quantity": 33
+      },
+      {
+        "productId": "7227-612-407",
+        "size": "XS",
+        "quantity": 1384
+      },
+      {
+        "productId": "7227-612-407",
+        "size": "M",
+        "quantity": 175
+      },
+      {
+        "productId": "7227-612-407",
+        "size": "L",
+        "quantity": 94
+      },
+      {
+        "productId": "7227-612-407",
+        "size": "XL",
+        "quantity": 444
+      },
+      {
+        "productId": "4441-775-250",
+        "size": "XS",
+        "quantity": 66
+      },
+      {
+        "productId": "4441-775-250",
+        "size": "S",
+        "quantity": 280
+      },
+      {
+        "productId": "4441-775-250",
+        "size": "M",
+        "quantity": 187
+      },
+      {
+        "productId": "4441-775-250",
+        "size": "XL",
+        "quantity": 55
+      },
+      {
+        "productId": "4441-775-250",
+        "size": "XXL",
+        "quantity": 54
+      },
+      {
+        "productId": "7227-609-406",
+        "size": "XS",
+        "quantity": 388
+      },
+      {
+        "productId": "7227-609-406",
+        "size": "M",
+        "quantity": 1274
+      },
+      {
+        "productId": "7227-609-406",
+        "size": "XXL",
+        "quantity": 57
+      },
+      {
+        "productId": "7227-612-406",
+        "size": "XS",
+        "quantity": 1193
+      },
+      {
+        "productId": "7227-612-406",
+        "size": "S",
+        "quantity": 1244
+      },
+      {
+        "productId": "7227-612-406",
+        "size": "M",
+        "quantity": 306
+      },
+      {
+        "productId": "7227-612-406",
+        "size": "L",
+        "quantity": 236
+      },
+      {
+        "productId": "7227-612-406",
+        "size": "XL",
+        "quantity": 212
+      },
+      {
+        "productId": "7227-612-406",
+        "size": "XXL",
+        "quantity": 57
+      },
+      {
+        "productId": "4806-608-400",
+        "size": "XS",
+        "quantity": 32
+      },
+      {
+        "productId": "4806-608-400",
+        "size": "S",
+        "quantity": 51
+      },
+      {
+        "productId": "4806-608-400",
+        "size": "L",
+        "quantity": 70
+      },
+      {
+        "productId": "4806-608-400",
+        "size": "XL",
+        "quantity": 95
+      },
+      {
+        "productId": "3391-623-300",
+        "size": "XS",
+        "quantity": 245
+      },
+      {
+        "productId": "3391-623-300",
+        "size": "M",
+        "quantity": 128
+      },
+      {
+        "productId": "3391-623-300",
+        "size": "L",
+        "quantity": 92
+      },
+      {
+        "productId": "3391-623-300",
+        "size": "XL",
+        "quantity": 44
+      },
+      {
+        "productId": "3391-625-615",
+        "size": "XS",
+        "quantity": 52
+      },
+      {
+        "productId": "3391-625-615",
+        "size": "S",
+        "quantity": 46
+      },
+      {
+        "productId": "3391-625-615",
+        "size": "M",
+        "quantity": 94
+      },
+      {
+        "productId": "3391-625-615",
+        "size": "XL",
+        "quantity": 100
+      },
+      {
+        "productId": "0339-162-302",
+        "size": "XS",
+        "quantity": 490
+      },
+      {
+        "productId": "0339-162-302",
+        "size": "L",
+        "quantity": 60
+      },
+      {
+        "productId": "0339-162-302",
+        "size": "XL",
+        "quantity": 44
+      },
+      {
+        "productId": "0339-162-302",
+        "size": "XXL",
+        "quantity": 197
+      },
+      {
+        "productId": "3391-624-330",
+        "size": "XS",
+        "quantity": 394
+      },
+      {
+        "productId": "3391-624-330",
+        "size": "S",
+        "quantity": 1263
+      },
+      {
+        "productId": "3391-624-330",
+        "size": "M",
+        "quantity": 380
+      },
+      {
+        "productId": "3391-624-330",
+        "size": "L",
+        "quantity": 1265
+      },
+      {
+        "productId": "1971-604-067",
+        "size": "S",
+        "quantity": 48
+      },
+      {
+        "productId": "1971-604-067",
+        "size": "M",
+        "quantity": 64
+      },
+      {
+        "productId": "1971-604-067",
+        "size": "L",
+        "quantity": 46
+      },
+      {
+        "productId": "6224-843-712",
+        "size": "S",
+        "quantity": 27
+      },
+      {
+        "productId": "6224-843-712",
+        "size": "M",
+        "quantity": 239
+      },
+      {
+        "productId": "6224-843-712",
+        "size": "L",
+        "quantity": 117
+      },
+      {
+        "productId": "6224-843-712",
+        "size": "XL",
+        "quantity": 202
+      },
+      {
+        "productId": "6224-843-712",
+        "size": "XXL",
+        "quantity": 30
+      },
+      {
+        "productId": "4333-610-120",
+        "size": "XS",
+        "quantity": 581
+      },
+      {
+        "productId": "4333-610-120",
+        "size": "S",
+        "quantity": 886
+      },
+      {
+        "productId": "4333-610-120",
+        "size": "M",
+        "quantity": 189
+      },
+      {
+        "productId": "4333-610-120",
+        "size": "L",
+        "quantity": 37
+      },
+      {
+        "productId": "4333-610-120",
+        "size": "XL",
+        "quantity": 177
+      },
+      {
+        "productId": "4333-610-120",
+        "size": "XXL",
+        "quantity": 80
+      },
+      {
+        "productId": "6224-843-807",
+        "size": "XS",
+        "quantity": 1055
+      },
+      {
+        "productId": "6224-843-807",
+        "size": "S",
+        "quantity": 41
+      },
+      {
+        "productId": "6224-843-807",
+        "size": "M",
+        "quantity": 61
+      },
+      {
+        "productId": "6224-843-807",
+        "size": "L",
+        "quantity": 78
+      },
+      {
+        "productId": "6224-843-807",
+        "size": "XXL",
+        "quantity": 166
+      },
+      {
+        "productId": "1971-604-069",
+        "size": "S",
+        "quantity": 1384
+      },
+      {
+        "productId": "1971-604-069",
+        "size": "M",
+        "quantity": 1308
+      },
+      {
+        "productId": "1971-604-069",
+        "size": "XXL",
+        "quantity": 1308
+      },
+      {
+        "productId": "4333-610-116",
+        "size": "S",
+        "quantity": 508
+      },
+      {
+        "productId": "4333-610-116",
+        "size": "M",
+        "quantity": 351
+      },
+      {
+        "productId": "4333-610-116",
+        "size": "L",
+        "quantity": 202
+      },
+      {
+        "productId": "4333-610-116",
+        "size": "XL",
+        "quantity": 895
+      },
+      {
+        "productId": "4333-610-116",
+        "size": "XS",
+        "quantity": 446
+      },
+      {
+        "productId": "4333-610-116",
+        "size": "XXL",
+        "quantity": 82
+      },
+      {
+        "productId": "5987-614-527",
+        "size": "S",
+        "quantity": 656
+      },
+      {
+        "productId": "5987-614-527",
+        "size": "L",
+        "quantity": 26
+      },
+      {
+        "productId": "5987-614-527",
+        "size": "XL",
+        "quantity": 77
+      },
+      {
+        "productId": "1165-653-250",
+        "size": "XS",
+        "quantity": 732
+      },
+      {
+        "productId": "1165-653-250",
+        "size": "S",
+        "quantity": 345
+      },
+      {
+        "productId": "1165-653-250",
+        "size": "M",
+        "quantity": 49
+      },
+      {
+        "productId": "1165-653-250",
+        "size": "L",
+        "quantity": 757
+      },
+      {
+        "productId": "1165-653-250",
+        "size": "XL",
+        "quantity": 2494
+      },
+      {
+        "productId": "5987-613-330",
+        "size": "XS",
+        "quantity": 132
+      },
+      {
+        "productId": "5987-613-330",
+        "size": "S",
+        "quantity": 174
+      },
+      {
+        "productId": "5987-613-330",
+        "size": "L",
+        "quantity": 434
+      },
+      {
+        "productId": "5987-613-330",
+        "size": "XXL",
+        "quantity": 595
+      },
+      {
+        "productId": "6045-606-400",
+        "size": "XS",
+        "quantity": 57
+      },
+      {
+        "productId": "6045-606-400",
+        "size": "S",
+        "quantity": 37
+      },
+      {
+        "productId": "6045-606-400",
+        "size": "M",
+        "quantity": 58
+      },
+      {
+        "productId": "6045-606-400",
+        "size": "L",
+        "quantity": 595
+      },
+      {
+        "productId": "6045-606-400",
+        "size": "XXL",
+        "quantity": 256
+      },
+      {
+        "productId": "1608-617-094",
+        "size": "XS",
+        "quantity": 62
+      },
+      {
+        "productId": "1608-617-094",
+        "size": "S",
+        "quantity": 28
+      },
+      {
+        "productId": "1608-617-094",
+        "size": "L",
+        "quantity": 40
+      },
+      {
+        "productId": "1608-617-094",
+        "size": "XL",
+        "quantity": 86
+      },
+      {
+        "productId": "1608-617-094",
+        "size": "XXL",
+        "quantity": 43
+      },
+      {
+        "productId": "1608-617-402",
+        "size": "XS",
+        "quantity": 35
+      },
+      {
+        "productId": "1608-617-402",
+        "size": "S",
+        "quantity": 73
+      },
+      {
+        "productId": "1608-617-402",
+        "size": "M",
+        "quantity": 51
+      },
+      {
+        "productId": "1608-617-402",
+        "size": "XL",
+        "quantity": 54
+      },
+      {
+        "productId": "1608-617-402",
+        "size": "XXL",
+        "quantity": 55
+      },
+      {
+        "productId": "2511-605-712",
+        "size": "XS",
+        "quantity": 281
+      },
+      {
+        "productId": "2511-605-712",
+        "size": "S",
+        "quantity": 410
+      },
+      {
+        "productId": "2511-605-712",
+        "size": "M",
+        "quantity": 50
+      },
+      {
+        "productId": "2511-607-712",
+        "size": "S",
+        "quantity": 341
+      },
+      {
+        "productId": "2511-607-712",
+        "size": "M",
+        "quantity": 149
+      },
+      {
+        "productId": "2511-607-712",
+        "size": "XL",
+        "quantity": 49
+      },
+      {
+        "productId": "2511-607-712",
+        "size": "XXL",
+        "quantity": 89
+      },
+      {
+        "productId": "6201-602-712",
+        "size": "XS",
+        "quantity": 74
+      },
+      {
+        "productId": "6201-602-712",
+        "size": "S",
+        "quantity": 62
+      },
+      {
+        "productId": "6201-602-712",
+        "size": "L",
+        "quantity": 32
+      },
+      {
+        "productId": "6201-602-712",
+        "size": "XXL",
+        "quantity": 48
+      },
+      {
+        "productId": "2795-617-712",
+        "size": "M",
+        "quantity": 30
+      },
+      {
+        "productId": "2795-617-712",
+        "size": "L",
+        "quantity": 40
+      },
+      {
+        "productId": "2795-617-712",
+        "size": "XL",
+        "quantity": 1312
+      },
+      {
+        "productId": "2795-617-712",
+        "size": "XXL",
+        "quantity": 1238
+      },
+      {
+        "productId": "0595-611-250",
+        "size": "M",
+        "quantity": 70
+      },
+      {
+        "productId": "0595-611-250",
+        "size": "XXL",
+        "quantity": 25
+      },
+      {
+        "productId": "5107-600-083",
+        "size": "XS",
+        "quantity": 83
+      },
+      {
+        "productId": "5107-600-083",
+        "size": "S",
+        "quantity": 90
+      },
+      {
+        "productId": "5107-600-083",
+        "size": "M",
+        "quantity": 69
+      },
+      {
+        "productId": "5107-600-083",
+        "size": "L",
+        "quantity": 80
+      },
+      {
+        "productId": "5107-600-083",
+        "size": "XXL",
+        "quantity": 86
+      },
+      {
+        "productId": "4493-622-942",
+        "size": "S",
+        "quantity": 54
+      },
+      {
+        "productId": "4493-622-942",
+        "size": "L",
+        "quantity": 659
+      },
+      {
+        "productId": "4493-622-942",
+        "size": "XL",
+        "quantity": 60
+      },
+      {
+        "productId": "4493-622-942",
+        "size": "XXL",
+        "quantity": 309
+      },
+      {
+        "productId": "4493-621-942",
+        "size": "XS",
+        "quantity": 258
+      },
+      {
+        "productId": "4493-621-942",
+        "size": "S",
+        "quantity": 449
+      },
+      {
+        "productId": "4493-621-942",
+        "size": "M",
+        "quantity": 277
+      },
+      {
+        "productId": "4493-621-942",
+        "size": "XL",
+        "quantity": 1130
+      },
+      {
+        "productId": "4493-621-942",
+        "size": "XXL",
+        "quantity": 776
+      },
+      {
+        "productId": "4493-621-942",
+        "size": "L",
+        "quantity": 247
+      },
+      {
+        "productId": "3772-605-052",
+        "size": "XS",
+        "quantity": 46
+      },
+      {
+        "productId": "3772-605-052",
+        "size": "S",
+        "quantity": 39
+      },
+      {
+        "productId": "3772-605-052",
+        "size": "L",
+        "quantity": 122
+      },
+      {
+        "productId": "3772-605-052",
+        "size": "XL",
+        "quantity": 137
+      },
+      {
+        "productId": "4493-620-942",
+        "size": "XS",
+        "quantity": 29
+      },
+      {
+        "productId": "4493-620-942",
+        "size": "S",
+        "quantity": 55
+      },
+      {
+        "productId": "4493-620-942",
+        "size": "L",
+        "quantity": 63
+      },
+      {
+        "productId": "4493-620-942",
+        "size": "XXL",
+        "quantity": 69
+      },
+      {
+        "productId": "4493-620-942",
+        "size": "M",
+        "quantity": 100
+      },
+      {
+        "productId": "4493-620-942",
+        "size": "XL",
+        "quantity": 55
+      },
+      {
+        "productId": "4174-646-712",
+        "size": "XS",
+        "quantity": 727
+      },
+      {
+        "productId": "4174-646-712",
+        "size": "S",
+        "quantity": 1613
+      },
+      {
+        "productId": "4174-646-712",
+        "size": "M",
+        "quantity": 696
+      },
+      {
+        "productId": "4174-646-712",
+        "size": "XL",
+        "quantity": 65
+      },
+      {
+        "productId": "4174-692-712",
+        "size": "XS",
+        "quantity": 63
+      },
+      {
+        "productId": "4174-692-712",
+        "size": "M",
+        "quantity": 1236
+      },
+      {
+        "productId": "4174-646-712",
+        "size": "L",
+        "quantity": 426
+      },
+      {
+        "productId": "5431-957-620",
+        "size": "S",
+        "quantity": 72
+      },
+      {
+        "productId": "5431-957-620",
+        "size": "XL",
+        "quantity": 70
+      },
+      {
+        "productId": "5431-957-620",
+        "size": "XXL",
+        "quantity": 30
+      },
+      {
+        "productId": "5431-957-620",
+        "size": "XS",
+        "quantity": 84
+      },
+      {
+        "productId": "5431-957-620",
+        "size": "M",
+        "quantity": 43
+      },
+      {
+        "productId": "5431-957-620",
+        "size": "L",
+        "quantity": 86
+      },
+      {
+        "productId": "5431-957-250",
+        "size": "XS",
+        "quantity": 31
+      },
+      {
+        "productId": "5431-957-250",
+        "size": "L",
+        "quantity": 33
+      },
+      {
+        "productId": "5431-957-250",
+        "size": "XL",
+        "quantity": 91
+      },
+      {
+        "productId": "5431-957-250",
+        "size": "XXL",
+        "quantity": 72
+      },
+      {
+        "productId": "8675-607-800",
+        "size": "XS",
+        "quantity": 365
+      },
+      {
+        "productId": "8675-607-800",
+        "size": "S",
+        "quantity": 637
+      },
+      {
+        "productId": "8675-607-800",
+        "size": "M",
+        "quantity": 384
+      },
+      {
+        "productId": "8675-607-800",
+        "size": "XL",
+        "quantity": 1290
+      },
+      {
+        "productId": "0257-606-539",
+        "size": "XS",
+        "quantity": 341
+      },
+      {
+        "productId": "0257-606-539",
+        "size": "M",
+        "quantity": 460
+      },
+      {
+        "productId": "0257-606-539",
+        "size": "L",
+        "quantity": 430
+      },
+      {
+        "productId": "0257-606-539",
+        "size": "XL",
+        "quantity": 47
+      },
+      {
+        "productId": "0257-606-539",
+        "size": "XXL",
+        "quantity": 58
+      },
+      {
+        "productId": "0208-615-251",
+        "size": "L",
+        "quantity": 401
+      },
+      {
+        "productId": "0208-615-251",
+        "size": "XL",
+        "quantity": 365
+      },
+      {
+        "productId": "2488-602-712",
+        "size": "XS",
+        "quantity": 35
+      },
+      {
+        "productId": "2488-602-712",
+        "size": "S",
+        "quantity": 95
+      },
+      {
+        "productId": "2488-602-712",
+        "size": "M",
+        "quantity": 31
+      },
+      {
+        "productId": "2488-602-712",
+        "size": "L",
+        "quantity": 200
+      },
+      {
+        "productId": "2488-602-712",
+        "size": "XL",
+        "quantity": 87
+      },
+      {
+        "productId": "2488-602-712",
+        "size": "XXL",
+        "quantity": 98
+      },
+      {
+        "productId": "1345-553-005",
+        "size": "XS",
+        "quantity": 34
+      },
+      {
+        "productId": "1345-553-005",
+        "size": "S",
+        "quantity": 98
+      },
+      {
+        "productId": "1345-553-005",
+        "size": "M",
+        "quantity": 284
+      },
+      {
+        "productId": "1345-553-005",
+        "size": "L",
+        "quantity": 76
+      },
+      {
+        "productId": "1345-553-005",
+        "size": "XL",
+        "quantity": 116
+      },
+      {
+        "productId": "1345-553-005",
+        "size": "XXL",
+        "quantity": 468
+      },
+      {
+        "productId": "1383-404-401",
+        "size": "XS",
+        "quantity": 49
+      },
+      {
+        "productId": "1383-404-401",
+        "size": "L",
+        "quantity": 39
+      },
+      {
+        "productId": "1383-404-401",
+        "size": "XL",
+        "quantity": 56
+      },
+      {
+        "productId": "1383-404-401",
+        "size": "XXL",
+        "quantity": 27
+      },
+      {
+        "productId": "3391-630-512",
+        "size": "M",
+        "quantity": 32
+      },
+      {
+        "productId": "3391-630-512",
+        "size": "L",
+        "quantity": 93
+      },
+      {
+        "productId": "3391-630-512",
+        "size": "XXL",
+        "quantity": 57
+      },
+      {
+        "productId": "3391-631-630",
+        "size": "S",
+        "quantity": 61
+      },
+      {
+        "productId": "3391-631-630",
+        "size": "M",
+        "quantity": 79
+      },
+      {
+        "productId": "3391-631-630",
+        "size": "L",
+        "quantity": 25
+      },
+      {
+        "productId": "3391-631-630",
+        "size": "XL",
+        "quantity": 95
+      },
+      {
+        "productId": "3391-631-630",
+        "size": "XS",
+        "quantity": 31
+      },
+      {
+        "productId": "3391-631-630",
+        "size": "XXL",
+        "quantity": 72
+      },
+      {
+        "productId": "0653-675-620",
+        "size": "XS",
+        "quantity": 31
+      },
+      {
+        "productId": "0653-675-620",
+        "size": "S",
+        "quantity": 231
+      },
+      {
+        "productId": "0653-675-620",
+        "size": "M",
+        "quantity": 37
+      },
+      {
+        "productId": "0653-675-620",
+        "size": "L",
+        "quantity": 53
+      },
+      {
+        "productId": "0653-675-620",
+        "size": "XL",
+        "quantity": 386
+      },
+      {
+        "productId": "0653-675-620",
+        "size": "XXL",
+        "quantity": 262
+      },
+      {
+        "productId": "1262-530-002",
+        "size": "XL",
+        "quantity": 229
+      },
+      {
+        "productId": "1473-616-104",
+        "size": "L",
+        "quantity": 1276
+      },
+      {
+        "productId": "1473-617-104",
+        "size": "XS",
+        "quantity": 1337
+      },
+      {
+        "productId": "1165-846-401",
+        "size": "L",
+        "quantity": 1352
+      },
+      {
+        "productId": "0752-164-000",
+        "size": "XS",
+        "quantity": 1245
+      },
+      {
+        "productId": "6208-605-400",
+        "size": "L",
+        "quantity": 1292
+      },
+      {
+        "productId": "6208-605-400",
+        "size": "XL",
+        "quantity": 1157
+      },
+      {
+        "productId": "3391-623-300",
+        "size": "S",
+        "quantity": 1206
+      },
+      {
+        "productId": "3391-624-330",
+        "size": "XXL",
+        "quantity": 1312
+      },
+      {
+        "productId": "1971-604-069",
+        "size": "XS",
+        "quantity": 1191
+      },
+      {
+        "productId": "1971-604-069",
+        "size": "L",
+        "quantity": 1293
+      },
+      {
+        "productId": "1639-900-400",
+        "size": "S",
+        "quantity": 1259
+      },
+      {
+        "productId": "1639-900-400",
+        "size": "XL",
+        "quantity": 1343
+      },
+      {
+        "productId": "4174-646-712",
+        "size": "XXL",
+        "quantity": 2566
+      },
+      {
+        "productId": "8675-607-800",
+        "size": "L",
+        "quantity": 1223
+      }
+    ]
+  },
+  {
+    "id": "W004",
+    "latitude": 57.0,
+    "longitude": 24.5,
+    "country": "Latvia",
+    "stock": [
+      {
+        "productId": "4424-620-777",
+        "size": "S",
+        "quantity": 1100
+      }
+    ]
+  }
+]

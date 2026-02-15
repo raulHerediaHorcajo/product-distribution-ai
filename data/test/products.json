@@ -1,0 +1,17 @@
+[
+    {
+      "id": "P1",
+      "brandId": "B1",
+      "sizes": ["M"]
+    },
+    {
+      "id": "P2",
+      "brandId": "B2",
+      "sizes": ["M"]
+    },
+    {
+      "id": "P3",
+      "brandId": "B3",
+      "sizes": ["M"]
+    }
+]

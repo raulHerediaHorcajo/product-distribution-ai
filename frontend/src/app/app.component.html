@@ -1,0 +1,44 @@
+<main class="main-container">
+  <h1 class="title">Product Distribution</h1>
+  <app-dashboard-metrics [metrics]="globalMetrics"></app-dashboard-metrics>
+  <app-dashboard-filters
+    [warehouses]="warehouses"
+    [stores]="stores"
+    [products]="products"
+    [filters]="filters"
+    (filtersChange)="onFiltersChange($event)"
+  ></app-dashboard-filters>
+  <app-dashboard-tabs
+    [activeTab]="activeTab"
+    (tabChange)="onTabChange($event)"
+  ></app-dashboard-tabs>
+  @if (activeTab === 'map') {
+    <app-dashboard-map
+      [filters]="filters"
+      [assignments]="assignments"
+      [warehouses]="warehouses"
+      [stores]="stores"
+    ></app-dashboard-map>
+  }
+  @if (activeTab === 'table') {
+    <app-dashboard-table
+      [assignments]="assignments"
+      [warehouses]="warehouses"
+      [stores]="stores"
+    ></app-dashboard-table>
+  }
+  @if (activeTab === 'metrics') {
+    <app-dashboard-metrics-detail [metrics]="detailedMetrics"></app-dashboard-metrics-detail>
+  }
+  @if (loading) {
+    <div class="loading-overlay">
+      <div class="loading-spinner"></div>
+      <p>Loading data...</p>
+    </div>
+  }
+  @if (error) {
+    <div class="error-overlay">
+      <p>Error: {{ error }}</p>
+    </div>
+  }
+</main>

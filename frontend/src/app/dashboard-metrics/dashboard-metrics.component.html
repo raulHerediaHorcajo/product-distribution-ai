@@ -1,0 +1,48 @@
+<div class="metrics-container">
+  @if (metrics) {
+    <div class="metric-card">
+      <div class="metric-header">
+        <h3 class="metric-title">Total Shipments</h3>
+      </div>
+      <div class="metric-value-container">
+        <div class="metric-value">
+          {{ metrics.totalShipments | formatNumber }}
+        </div>
+      </div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-header">
+        <h3 class="metric-title">Fulfilled Units</h3>
+      </div>
+      <div class="metric-value-container">
+        <div class="metric-value">
+          {{ metrics.fulfilledUnits | formatNumber }}
+        </div>
+      </div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-header">
+        <h3 class="metric-title">Unfulfilled Units</h3>
+      </div>
+      <div class="metric-value-container">
+        <div class="metric-value">
+          {{ metrics.unfulfilledUnits | formatNumber }}
+        </div>
+      </div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-header">
+        <h3 class="metric-title">Average Distance</h3>
+      </div>
+      <div class="metric-value-container">
+        <div class="metric-value">
+          {{ metrics.averageDistance | formatDistance }}
+        </div>
+      </div>
+    </div>
+  } @else {
+    <div class="loading-metrics">
+      <p>Loading metrics...</p>
+    </div>
+  }
+</div>

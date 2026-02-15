@@ -1,0 +1,50 @@
+<div class="filters-container">
+  <div class="filter-group">
+    <label class="filter-label">
+      <span class="filter-label-text">Warehouse</span>
+      <ng-select
+        [(ngModel)]="filters.warehouseId"
+        [items]="warehouses"
+        bindLabel="id"
+        bindValue="id"
+        [searchable]="true"
+        [clearable]="true"
+        placeholder="All warehouses"
+        (change)="onFiltersChange()"
+      >
+      </ng-select>
+    </label>
+  </div>
+  <div class="filter-group">
+    <label class="filter-label">
+      <span class="filter-label-text">Store</span>
+      <ng-select
+        [(ngModel)]="filters.storeId"
+        [items]="stores"
+        bindLabel="id"
+        bindValue="id"
+        [searchable]="true"
+        [clearable]="true"
+        placeholder="All stores"
+        (change)="onFiltersChange()"
+      >
+      </ng-select>
+    </label>
+  </div>
+  <div class="filter-group">
+    <label class="filter-label">
+      <span class="filter-label-text">Product</span>
+      <ng-select
+        [(ngModel)]="filters.productId"
+        [items]="products"
+        bindLabel="id"
+        bindValue="id"
+        [searchable]="true"
+        [clearable]="true"
+        placeholder="All products"
+        (change)="onFiltersChange()"
+      >
+      </ng-select>
+    </label>
+  </div>
+</div>

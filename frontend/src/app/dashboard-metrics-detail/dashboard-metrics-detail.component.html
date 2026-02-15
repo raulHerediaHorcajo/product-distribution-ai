@@ -1,0 +1,279 @@
+<div class="metrics-detail-container">
+  @if (metrics) {
+    <div class="metrics-row">
+      <div class="metric-card progress-card">
+        <div class="card-header">
+          <h3 class="card-title">Efficiency Score</h3>
+          <div class="progress-circle">
+            <div class="progress-value">{{ metrics.efficiencyScore }}</div>
+            <div class="progress-label">/100</div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span
+            class="status-badge"
+            [style.background-color]="getEfficiencyColor(metrics.efficiencyScore)"
+          >
+            {{
+              metrics.efficiencyScore >= 80
+                ? 'Excellent'
+                : metrics.efficiencyScore >= 60
+                  ? 'Good'
+                  : 'Needs Improvement'
+            }}
+          </span>
+        </div>
+      </div>
+
+      <div class="metric-card progress-card">
+        <div class="card-header">
+          <h3 class="card-title">Fulfillment Rate</h3>
+          <div class="progress-bar">
+            <div
+              class="progress-fill"
+              [style.width.%]="metrics.fulfillmentRate"
+              [style.background-color]="getFulfillmentColor(metrics.fulfillmentRate)"
+            ></div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="percentage">{{ metrics.fulfillmentRate | formatPercentage }}</span>
+        </div>
+      </div>
+
+      <div class="metric-card number-card">
+        <div class="card-header">
+          <h3 class="card-title">Total Distance</h3>
+          <div class="metric-icon">🚛</div>
+        </div>
+        <div class="card-footer">
+          <span class="metric-value">{{ metrics.totalDistance | formatNumber }} km</span>
+          <div class="distance-info">
+            <span class="distance-details"
+              >{{ metrics.totalShipments | formatNumber }} shipments</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="metrics-row stacked-row">
+      <div class="metric-card multi-value-card stacked-full-height">
+        <div class="card-header">
+          <h3 class="card-title">Stores Served</h3>
+          <div class="metric-icon">🛍️</div>
+        </div>
+        <div class="card-content">
+          <div class="value-item">
+            <span class="value-number">{{ metrics.storesServed.servedStores | formatNumber }}</span>
+            <span class="value-label">served</span>
+          </div>
+          <div class="value-item">
+            <span class="value-number">{{
+              metrics.storesServed.fullyServedStores | formatNumber
+            }}</span>
+            <span class="value-label"
+              >fully served ({{
+                metrics.storesServed.fullyServedPercentage | formatPercentage
+              }})</span
+            >
+          </div>
+          <div class="value-item">
+            <span class="value-number">{{
+              metrics.storesServed.neverServedStores | formatNumber
+            }}</span>
+            <span class="value-label">never served</span>
+          </div>
+          <div class="value-item">
+            <span class="value-number">{{
+              metrics.storesServed.coveragePercentage | formatPercentage
+            }}</span>
+            <span class="value-label">coverage</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="stacked-column">
+        <div class="metric-card number-card stacked-card stacked-top">
+          <div class="card-header">
+            <h3 class="card-title">Avg Shipment Size</h3>
+            <div class="metric-icon">📦</div>
+          </div>
+          <div class="card-footer">
+            <span class="metric-value">{{ metrics.avgShipmentSize | formatNumber }} units</span>
+          </div>
+        </div>
+
+        <div class="metric-card number-card stacked-card stacked-bottom">
+          <div class="card-header">
+            <h3 class="card-title">Unique Products</h3>
+            <div class="metric-icon">🏷️</div>
+          </div>
+          <div class="card-footer">
+            <span class="metric-value">
+              <span title="Unique products distributed">
+                {{ metrics.uniqueProductsDistributed | formatNumber }}
+                <span class="value-label">dist.</span>
+              </span>
+              <span class="separator">|</span>
+              <span title="Unique products requested">
+                {{ metrics.uniqueProductsRequested | formatNumber }}
+                <span class="value-label">req.</span>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="metrics-row stacked-row demand-row">
+      <div class="stacked-column">
+        <div class="metric-card multi-value-card stacked-card stacked-top unfulfilled-demand-card">
+          <div class="card-header">
+            <h3 class="card-title">Unfulfilled Demand</h3>
+          </div>
+          <div class="card-content">
+            <div class="value-item main">
+              <span class="value-number">{{
+                metrics.unfulfilledDemand.totalUnits | formatNumber
+              }}</span>
+              <span class="value-label">unfulfilled units</span>
+            </div>
+            <div class="value-breakdown">
+              <div class="breakdown-item">
+                <span class="breakdown-label">Stock shortage:</span>
+                <span class="breakdown-value"
+                  >{{ metrics.unfulfilledDemand.unitsByStockShortage | formatNumber }} units</span
+                >
+              </div>
+              <div class="breakdown-item">
+                <span class="breakdown-label">Capacity shortage:</span>
+                <span class="breakdown-value"
+                  >{{
+                    metrics.unfulfilledDemand.unitsByCapacityShortage | formatNumber
+                  }}
+                  units</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="metric-card multi-value-card stacked-card stacked-bottom fulfilled-demand-card">
+          <div class="card-header">
+            <h3 class="card-title">Fulfilled Demand</h3>
+          </div>
+          <div class="card-content">
+            <div class="value-item main">
+              <span class="value-number">{{ metrics.fulfilledUnits | formatNumber }}</span>
+              <span class="value-label">fulfilled units</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="metric-card chart-card large stacked-full-height">
+        <div class="card-header">
+          <h3 class="card-title">Capacity Utilization</h3>
+        </div>
+        <div class="chart-container capacity-ring">
+          @if (capacityChartData) {
+            <div class="ring-chart-wrapper">
+              <canvas
+                baseChart
+                [data]="capacityChartData"
+                [options]="capacityChartOptions"
+                type="doughnut"
+              >
+              </canvas>
+              <div class="ring-center-text">
+                <span class="ring-percentage">{{
+                  metrics.capacityUtilization.percentage | formatPercentage
+                }}</span>
+              </div>
+            </div>
+            <div class="capacity-info">
+              <span class="capacity-details"
+                >{{ metrics.capacityUtilization.storesAtCapacity | formatNumber }}
+                /
+                {{ metrics.capacityUtilization.totalStores | formatNumber }}
+                stores at capacity</span
+              >
+            </div>
+          }
+        </div>
+      </div>
+    </div>
+
+    <div class="metrics-row full-width">
+      <div class="metric-card multi-value-card full-width">
+        <div class="card-header">
+          <h3 class="card-title">Distance Distribution</h3>
+        </div>
+        <div class="card-content distance-stats">
+          <div class="distance-item">
+            <span class="distance-label">Min</span>
+            <span class="distance-value">{{
+              metrics.distanceStats.minDistance | formatDistance
+            }}</span>
+          </div>
+          <div class="distance-divider">|</div>
+          <div class="distance-item">
+            <span class="distance-label">Median</span>
+            <span class="distance-value">{{
+              metrics.distanceStats.medianDistance | formatDistance
+            }}</span>
+          </div>
+          <div class="distance-divider">|</div>
+          <div class="distance-item">
+            <span class="distance-label">Max</span>
+            <span class="distance-value">{{
+              metrics.distanceStats.maxDistance | formatDistance
+            }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="metrics-row">
+      <div class="metric-card chart-card">
+        <div class="card-header">
+          <h3 class="card-title">Units by Warehouse</h3>
+        </div>
+        <div class="chart-container">
+          @if (warehouseChartData) {
+            <canvas
+              baseChart
+              [data]="warehouseChartData"
+              [options]="horizontalChartOptions"
+              type="bar"
+            >
+            </canvas>
+          }
+        </div>
+      </div>
+
+      <div class="metric-card chart-card">
+        <div class="card-header">
+          <h3 class="card-title">Top 5 Products</h3>
+        </div>
+        <div class="chart-container">
+          @if (topProductsChartData) {
+            <canvas
+              baseChart
+              [data]="topProductsChartData"
+              [options]="verticalChartOptions"
+              type="bar"
+            >
+            </canvas>
+          }
+        </div>
+      </div>
+    </div>
+  } @else {
+    <div class="loading-state">
+      <div class="loading-spinner"></div>
+      <p>Loading detailed metrics...</p>
+    </div>
+  }
+</div>

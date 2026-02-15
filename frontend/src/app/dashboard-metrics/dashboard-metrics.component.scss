@@ -1,0 +1,50 @@
+.metrics-container {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.metric-card {
+  background: #fff;
+  border-radius: 0.75rem;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
+  flex: 1 1 0;
+  min-width: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.metric-card:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+  transition: all 0.2s;
+}
+
+.metric-header {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+}
+
+.metric-title {
+  color: #020817;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  margin: 0;
+}
+
+.metric-value-container {
+  padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+.metric-value {
+  color: #020817;
+  font-size: 1.5rem;
+  font-weight: 700;
+}

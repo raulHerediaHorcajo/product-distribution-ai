@@ -1,0 +1,40 @@
+.dashboard-tabs {
+  display: flex;
+  background: #f5f6fa;
+  padding: 4px 4px;
+  border-radius: calc(-2px + 0.5rem);
+  width: fit-content;
+  margin-bottom: 12px;
+}
+
+.dashboard-tabs button:focus {
+  outline-color: #111;
+}
+
+.dashboard-tabs button {
+  font-family: 'Inter', sans-serif;
+  border: none;
+  background: transparent;
+  color: #7a7f9a;
+  font-weight: 500;
+  padding: 8px 12px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: calc(-2px + 0.5rem);
+  transition:
+    background 0.2s,
+    color 0.2s,
+    font-weight 0.2s;
+  box-shadow: none;
+}
+
+.dashboard-tabs button.active {
+  background: #fff;
+  color: #000000;
+}
+
+.dashboard-tabs button:not(.active) {
+  border: none;
+  background: transparent;
+  color: #7a7f9a;
+}

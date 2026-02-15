@@ -1,0 +1,36 @@
+# Operating System
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*~
+
+# Docker
+docker-compose.override.yml
+.env
+.env.local
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Backup files
+*.bak
+*.backup
+
+# IDE files in root (specific ones go in each subproject)
+.idea/
+.vscode/
+
+# Local configuration files
+*.local

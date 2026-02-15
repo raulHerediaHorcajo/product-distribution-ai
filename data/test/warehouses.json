@@ -1,0 +1,41 @@
+[
+    {
+      "id": "W1",
+      "latitude": 44.913501,
+      "longitude": -3.7038,
+      "country": "ES",
+      "stock": [
+        {
+          "productId": "P1",
+          "size": "M",
+          "quantity": 50
+        }
+      ]
+    },
+    {
+      "id": "W2",
+      "latitude": 45.273137,
+      "longitude": -3.7038,
+      "country": "ES",
+      "stock": [
+        {
+          "productId": "P1",
+          "size": "M",
+          "quantity": 70
+        }
+      ]
+    },
+    {
+      "id": "W3",
+      "latitude": 49.4100,
+      "longitude": -3.735,
+      "country": "GB",
+      "stock": [
+        {
+          "productId": "P2",
+          "size": "M",
+          "quantity": 30
+        }
+      ]
+    }
+]

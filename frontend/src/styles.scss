@@ -1,0 +1,37 @@
+/* You can add global styles to this file, and also import other style files */
+$font-family-primary: 'Inter', sans-serif;
+
+$color-warehouse-bg: rgba(1, 1, 1, 0.6);
+$color-warehouse-bg-hover: rgba(1, 1, 1, 0.8);
+$color-store-bg: rgba(150, 150, 150, 0.5);
+$color-store-bg-hover: rgba(100, 100, 100, 0.7);
+$color-white: #ffffff;
+
+body {
+  font-family: $font-family-primary;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.leaflet-interactive {
+  outline: none !important;
+}
+
+.marker-cluster-warehouse {
+  background-color: $color-warehouse-bg !important;
+
+  div {
+    background-color: $color-warehouse-bg-hover !important;
+    color: $color-white !important;
+  }
+}
+
+.marker-cluster-store {
+  background-color: $color-store-bg !important;
+
+  div {
+    background-color: $color-store-bg-hover !important;
+    color: $color-white !important;
+  }
+}

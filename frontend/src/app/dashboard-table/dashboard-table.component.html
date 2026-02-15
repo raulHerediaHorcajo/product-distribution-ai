@@ -1,0 +1,40 @@
+<div class="table-container">
+  <cdk-virtual-scroll-viewport itemSize="50" style="height: 400px">
+    <table class="dashboard-table">
+      <thead>
+        <tr>
+          <th>Warehouse</th>
+          <th>Store</th>
+          <th>Product</th>
+          <th>Size</th>
+          <th>Quantity</th>
+          <th>Distance</th>
+        </tr>
+      </thead>
+      <tbody>
+        @if (assignments.length > 0) {
+          <tr *cdkVirtualFor="let assignment of assignments; trackBy: trackByAssignmentId">
+            <td title="Warehouse">
+              <span class="badge">{{ assignment.warehouseId }}</span>
+              <span class="name">{{ getWarehouseCountry(assignment.warehouseId) }}</span>
+            </td>
+            <td title="Store">
+              <span class="badge">{{ assignment.storeId }}</span>
+              <span class="name">{{ getStoreCountry(assignment.storeId) }}</span>
+            </td>
+            <td title="Product">{{ assignment.productId }}</td>
+            <td title="Size">{{ assignment.size }}</td>
+            <td title="Quantity">{{ assignment.quantity | formatNumber }}</td>
+            <td title="Distance">
+              {{ assignment.distanceKm | formatDistance }}
+            </td>
+          </tr>
+        } @else {
+          <tr>
+            <td colspan="6" class="no-data">No data to display</td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  </cdk-virtual-scroll-viewport>
+</div>

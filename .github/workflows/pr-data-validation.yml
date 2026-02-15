@@ -1,0 +1,97 @@
+name: Data PR - Structure Validation
+
+on:
+  workflow_call:
+  workflow_dispatch:
+
+jobs:
+  validate-current:
+    name: Validate Current Folder
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Validate current folder
+        run: |
+          echo "📁 Validating data/current..."
+          CURRENT_FILES=(products.json warehouses.json stores.json)
+          CURRENT_FOUND=($(ls data/current 2>/dev/null || true))
+          
+          if [ "${#CURRENT_FOUND[@]}" -ne 3 ]; then
+            echo "❌ ERROR: data/current must contain exactly 3 files"
+            exit 1
+          fi
+          
+          for f in "${CURRENT_FILES[@]}"; do
+            if [[ ! " ${CURRENT_FOUND[@]} " =~ " ${f} " ]]; then
+              echo "❌ ERROR: data/current must contain $f"
+              exit 1
+            fi
+            python3 -m json.tool "data/current/$f" > /dev/null || (echo "❌ ERROR: Invalid JSON $f" && exit 1)
+            echo "✅ $f OK"
+          done
+          echo "✅ data/current folder OK"
+
+  validate-test:
+    name: Validate Test Folder
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Validate test folder
+        run: |
+          echo "📁 Validating data/test..."
+          TEST_FILES=(products.json warehouses.json stores.json)
+          TEST_FOUND=($(ls data/test 2>/dev/null || true))
+          
+          if [ "${#TEST_FOUND[@]}" -ne 3 ]; then
+            echo "❌ ERROR: data/test must contain exactly 3 files"
+            exit 1
+          fi
+          
+          for f in "${TEST_FILES[@]}"; do
+            if [[ ! " ${TEST_FOUND[@]} " =~ " ${f} " ]]; then
+              echo "❌ ERROR: data/test must contain $f"
+              exit 1
+            fi
+            python3 -m json.tool "data/test/$f" > /dev/null || (echo "❌ ERROR: Invalid JSON $f" && exit 1)
+            echo "✅ $f OK"
+          done
+          echo "✅ data/test folder OK"
+
+  validate-archive:
+    name: Validate Archive Folder
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Validate archive folder
+        run: |
+          echo "📁 Validating data/archive..."
+          ARCHIVE_FOUND=($(ls data/archive 2>/dev/null || true))
+          
+          if [ $(( ${#ARCHIVE_FOUND[@]} % 3 )) -ne 0 ]; then
+            echo "❌ ERROR: data/archive must have a multiple of 3 files"
+            exit 1
+          fi
+          
+          for base in products warehouses stores; do
+            VERSIONS=($(ls data/archive/${base}_v*.json 2>/dev/null | sed -E "s/.*_v([0-9]+)\.json/\1/" | sort -n))
+            EXPECT=1
+            for v in "${VERSIONS[@]}"; do
+              if [ "$v" -ne "$EXPECT" ]; then
+                echo "❌ ERROR: ${base} in archive must have consecutive versions starting from v1"
+                exit 1
+              fi
+              
+              FILE="data/archive/${base}_v${v}.json"
+              python3 -m json.tool "$FILE" > /dev/null || (echo "❌ ERROR: Invalid JSON $FILE" && exit 1)
+              echo "✅ $FILE OK"
+              
+              EXPECT=$((EXPECT+1))
+            done
+          done
+          echo "✅ data/archive folder OK"

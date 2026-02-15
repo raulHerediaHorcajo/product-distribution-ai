@@ -1,0 +1,10 @@
+# Reglas globales para todo el proyecto
+* text=auto eol=lf
+
+# Scripts ejecutables
+/mvnw text eol=lf
+*.sh text eol=lf
+*.cmd text eol=crlf
+
+# Archivos binarios
+*.{jar,class,png,jpg,jpeg,gif,ico,woff,woff2,ttf,eot,svg} binary

@@ -1,0 +1,37 @@
+[
+    {
+      "id": "S1",
+      "latitude": 40.4168,
+      "longitude": -3.7038,
+      "country": "ES",
+      "max_stock_capacity": 100,
+      "expected_return_rate": 0.1,
+      "demand": [
+        {
+          "productId": "P1",
+          "size": "M",
+          "quantity": 100
+        },
+        {
+          "productId": "P2",
+          "size": "M",
+          "quantity": 50
+        }
+      ]
+    },
+    {
+      "id": "S2",
+      "latitude": 48.8566,
+      "longitude": 2.3522,
+      "country": "FR",
+      "max_stock_capacity": 100,
+      "expected_return_rate": 0.1,
+      "demand": [
+        {
+          "productId": "P3",
+          "size": "M",
+          "quantity": 30
+        }
+      ]
+    }
+]
