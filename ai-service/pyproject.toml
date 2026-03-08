@@ -1,0 +1,46 @@
+[project]
+name = "ai-service"
+version = "0.1.0"
+description = "AI microservice: multi-agent conversational assistant for product distribution queries"
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi>=0.129.0",
+    "uvicorn[standard]>=0.40.0",
+    "google-adk[extensions]>=1.25.0",
+    "litellm>=1.81.0",
+    "httpx>=0.27.0",
+    "pydantic-settings>=2.6.0",
+    "cachetools>=7.0.2",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff>=0.15.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["app"]
+
+[tool.ruff]
+target-version = "py314"
+line-length = 125
+src = ["app"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "C4", "UP"]
+ignore = []
+
+[tool.ruff.format]
+quote-style = "double"
+
+[dependency-groups]
+dev = [
+    "google-adk[eval]>=1.25.0",
+]
+
+[tool.ruff.lint.isort]
+known-first-party = ["app"]
