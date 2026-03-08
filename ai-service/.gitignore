@@ -1,0 +1,34 @@
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ADK runtime and eval artifacts
+.adk/
+*.evalset_result.json
+
+# Local env (sensitive)
+.env
+.env.local
+*.local
+
+# Logs and temp
+*.log
+*.tmp
+*.temp
+
+# IDE (if not ignored at repo root)
+.idea/
+.vscode/
+
+# OS
+.DS_Store
