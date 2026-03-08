@@ -13,6 +13,7 @@ jobs:
       frontend: ${{ steps.filter.outputs.frontend }}
       backend: ${{ steps.filter.outputs.backend }}
       data: ${{ steps.filter.outputs.data }}
+      ai-service: ${{ steps.filter.outputs.ai-service }}
 
     steps:
       - name: Checkout code
@@ -34,6 +35,9 @@ jobs:
             data:
               - 'data/**'
               - '.github/workflows/pr-data-validation.yml'
+            ai-service:
+              - 'ai-service/**'
+              - '.github/workflows/pr-ai-service-analysis.yml'
 
   frontend:
     name: Frontend Analysis
@@ -54,9 +58,15 @@ jobs:
     if: needs.changes.outputs.data == 'true'
     uses: ./.github/workflows/pr-data-validation.yml
 
+  ai-service:
+    name: AI Service Analysis
+    needs: changes
+    if: needs.changes.outputs.ai-service == 'true'
+    uses: ./.github/workflows/pr-ai-service-analysis.yml
+
   pr-gate:
     name: PR Gate
-    needs: [frontend, backend, data]
+    needs: [frontend, backend, data, ai-service]
     if: always()
     runs-on: ubuntu-latest
     steps:
@@ -64,7 +74,8 @@ jobs:
         run: |
           if [ "${{ needs.frontend.result }}" == "failure" ] || \
              [ "${{ needs.backend.result }}" == "failure" ] || \
-             [ "${{ needs.data.result }}" == "failure" ]; then
+             [ "${{ needs.data.result }}" == "failure" ] || \
+             [ "${{ needs.ai-service.result }}" == "failure" ]; then
             echo "❌ One or more workflows failed"
             exit 1
           fi
