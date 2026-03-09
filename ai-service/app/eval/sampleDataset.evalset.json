@@ -1,0 +1,234 @@
+{
+  "eval_set_id": "sampleDataset",
+  "name": "sampleDataset",
+  "eval_cases": [
+    {
+      "eval_id": "case1",
+      "conversation": [
+        {
+          "invocation_id": "e-73c1593f-bfdf-4f23-bc13-a5adb4e02c85",
+          "user_content": {
+            "parts": [
+              {
+                "text": "Dime el total de envíos"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "Okay, the user asked for the total number of shipments. I used the get_global_metrics tool, which returned the total_shipments as 306. The other metrics like fulfilled_units and average_distance are extra, but the user only needed the total shipments. I should present that number clearly and confirm if they need more details.\n",
+                "thought": true
+              },
+              {
+                "text": "El total de envíos es **306**. ¿Necesitas información adicional sobre estos envíos, como el promedio de distancia o unidades entregadas?"
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {
+            "invocation_events": [
+              {
+                "author": "main_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "text": "Okay, the user is asking for the total number of shipments. Let me check which agent to use. The data_agent provides metrics like total shipments, so that's the right one here. I don't need a chart, so no need to involve the chart_agent. The sql_agent is for more detailed queries, which isn't needed here. So I'll transfer the request to data_agent.\n",
+                      "thought": true
+                    },
+                    {
+                      "function_call": {
+                        "id": "call_9l7vrvlo",
+                        "args": {
+                          "agent_name": "data_agent"
+                        },
+                        "name": "transfer_to_agent"
+                      }
+                    }
+                  ],
+                  "role": "model"
+                }
+              },
+              {
+                "author": "main_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_response": {
+                        "id": "call_9l7vrvlo",
+                        "name": "transfer_to_agent",
+                        "response": {
+                          "result": null
+                        }
+                      }
+                    }
+                  ],
+                  "role": "user"
+                }
+              },
+              {
+                "author": "data_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "text": "Okay, the user is asking for the total number of shipments. Let me check which tool to use. The data_agent has two tools: get_global_metrics and get_detailed_metrics. The global metrics include totalShipments, which is exactly what the user needs. The detailed metrics might have that too, but since the user didn't specify any filters like store or warehouse, the global metric is the right choice. I'll call get_global_metrics to retrieve the totalShipments value.\n",
+                      "thought": true
+                    },
+                    {
+                      "function_call": {
+                        "id": "call_j8qfn7al",
+                        "args": {},
+                        "name": "get_global_metrics"
+                      }
+                    }
+                  ],
+                  "role": "model"
+                }
+              },
+              {
+                "author": "data_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_response": {
+                        "id": "call_j8qfn7al",
+                        "name": "get_global_metrics",
+                        "response": {
+                          "result": {
+                            "total_shipments": 306,
+                            "fulfilled_units": 440842,
+                            "unfulfilled_units": 132454,
+                            "average_distance": 6222.623328324075
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "role": "user"
+                }
+              }
+            ]
+          },
+          "creation_timestamp": 1773053528.797684
+        },
+        {
+          "invocation_id": "e-a9e0bb34-f2f5-4059-b936-2480f0c2681e",
+          "user_content": {
+            "parts": [
+              {
+                "text": "Dime cual es el producto que más se ha quedado sin satisfacer"
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "Okay, the user asked for the product that's most unfulfilled. I ran the SQL query to get the product_id with the highest sum of quantity_missing. The result came back as product_id \"0595-611-250\" with 6321 units unfulfilled. Now, I need to present this information clearly.\n\nFirst, I should check if there's a product name associated with this ID. The products table has id and brand_id, but no name column. So I can only provide the product_id. However, maybe the brand_id is useful. Let me see if the query included brand_id. In the previous step, the SQL didn't join with products, so the result only has product_id and total_unfulfilled. \n\nWait, the user might not know the product_id, so maybe they need more context. But based on the data available, the answer is the product_id. I should state that clearly. Also, mention the total unfulfilled units. The user might want to know if there's a way to get more details, but since the schema doesn't include product names, I can't. So the final answer is the product_id and the total. Make sure to format it in Spanish as the user's question was in Spanish.\n",
+                "thought": true
+              },
+              {
+                "text": "El producto con más demanda no satisfecha es **\"0595-611-250\"**, con un total de **6.321 unidades pendientes**. ¿Necesitas más detalles sobre este producto o acciones recomendadas para abordar esta situación?"
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {
+            "invocation_events": [
+              {
+                "author": "data_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "text": "Okay, the user is asking which product has the most unfulfilled demand. Let me recall the tools I have. The data_agent has get_detailed_metrics, which includes unfulfilledDemand with unitsByStockShortage and unitsByCapacityShortage. But the user specifically wants the product that's most unfulfilled. Wait, the get_detailed_metrics might not directly provide a list of products sorted by unfulfilled units. Let me check the parameters. The get_detailed_metrics can take product_id as a filter, but if I don't have a specific product, maybe I need to get all products and sort them. However, the tool's response structure includes unfulfilledDemand with totalUnits, but not per product. Wait, the detailed metrics include unfulfilledDemand as an object with totalUnits, unitsByStockShortage, and unitsByCapacityShortage. Wait, no, looking back, the get_detailed_metrics returns unfulfilledDemand as an object with totalUnits, unitsByStockShortage, and unitsByCapacityShortage. Wait, no, the detailed metrics include unfulfilledDemand as an object with totalUnits, unitsByStockShortage, and unitsBy, but perhaps not per product. Wait, the detailed metrics' unfulfilledDemand field is described as \"unfulfilledDemand (totalUnits, unitsByStockShortage, unitsByCapacityShortage)\". So that's total units unfulfilled, broken down by stock and capacity. But the user wants the product that has the most unfulfilled. So maybe the data_agent's get_detailed_metrics doesn't provide per-product unfulfilled data. Therefore, I need to check if there's another tool. Since the data_agent's tools are get_global_metrics and get_detailed_metrics, and the user's question requires product-level data, perhaps the sql_agent is needed. Because the data_agent's detailed metrics don't include per-product unfulfilled units. Therefore, I should transfer to sql_agent to query the database for products with the highest unfulfilled units. So the correct step is to call transfer_to_agent with sql_agent.\n",
+                      "thought": true
+                    },
+                    {
+                      "function_call": {
+                        "id": "call_9s80ozuk",
+                        "args": {
+                          "agent_name": "sql_agent"
+                        },
+                        "name": "transfer_to_agent"
+                      }
+                    }
+                  ],
+                  "role": "model"
+                }
+              },
+              {
+                "author": "data_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_response": {
+                        "id": "call_9s80ozuk",
+                        "name": "transfer_to_agent",
+                        "response": {
+                          "result": null
+                        }
+                      }
+                    }
+                  ],
+                  "role": "user"
+                }
+              },
+              {
+                "author": "sql_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "text": "Okay, the user is asking for the product that has the most unfulfilled demand. Let me think about how to approach this.\n\nFirst, I remember that the relevant table for unfulfilled demands is unfulfilled_demands. This table has columns like product_id, quantity_missing, and maybe other details. The goal is to find the product with the highest quantity_missing.\n\nSo, I need to write a SQL query that aggregates the quantity_missing by product_id and then orders it in descending order to find the top one. Since the user wants the product that's most unfulfilled, summing the quantities makes sense because each entry in unfulfilled_demands represents missing units for a specific store and product.\n\nWait, but should I use SUM or just MAX? If there are multiple entries for the same product across different stores, summing gives the total unfulfilled units for that product, which is more informative. So, grouping by product_id and summing quantity_missing would give the total unfulfilled per product.\n\nThen, ordering by that sum in descending order and limiting to 1 should give the product with the highest unfulfilled quantity. Also, I should make sure to handle any possible NULLs, but assuming the data is clean, it's probably okay.\n\nSo the SQL query would be something like:\n\nSELECT product_id, SUM(quantity_missing) as total_unfulfilled\nFROM unfulfilled_demands\nGROUP BY product_id\nORDER BY total_unfulfilled DESC\nLIMIT 1;\n\nBut wait, the user might want the product name instead of the product_id. However, the unfulfilled_demands table has product_id, and the products table has the actual product names. So maybe I need to join with the products table to get the product name.\n\nBut the initial tables mentioned in the schema include products with id and brand_id. So to get the product name, I need to join products on product_id. However, the user's question is about the product (maybe by name), but the answer might just need the product_id if the name isn't available. But since the user asked for the product, it's better to provide the name.\n\nSo the query would join products and unfulfilled_demands:\n\nSELECT p.id as product_id, p.brand_id, SUM(ud.quantity_missing) as total_unfulfilled\nFROM unfulfilled_demands ud\nJOIN products p ON ud.product_id = p.id\nGROUP BY p.id, p.brand_id\nORDER BY total_unfulfilled DESC\nLIMIT 1;\n\nBut wait, the products table's columns are id (VARCHAR PK), brand_id (VARCHAR). So joining on product_id (from unfulfilled_demands) with p.id (products.id) makes sense. Then, selecting product_id and brand_id would give the necessary info. However, if the user wants the product name, but the products table doesn't have a name column, just brand_id. So maybe the answer should include the product_id and brand_id, or just the product_id.\n\nAlternatively, if the user expects a product name, but the data doesn't have it, then the answer can only provide the product_id. But the user might consider brand_id as part of the product identifier. Hmm.\n\nBut the user's question is in Spanish: \"Dime cual es el producto que más se ha quedado sin satisfacer\" which translates to \"Tell me which product has the most unfulfilled demand.\" So they probably want the product's identifier, which is the product_id. However, if there's a product name, that would be better. But based on the schema, the products table only has id and brand_id. So the answer would need to use product_id. Unless there's another table, but according to the schema provided, only the listed tables exist.\n\nTherefore, the correct approach is to aggregate the quantity_missing per product_id, order descending, limit 1, and return the product_id. But the user might want the product name, but since it's not available, we can only provide the product_id. However, maybe the brand_id is sufficient. Alternatively, perhaps the product_id is unique enough.\n\nSo the SQL query would be:\n\nSELECT product_id, SUM(quantity_missing) as total_unfulfilled\nFROM unfulfilled_demands\nGROUP BY product_id\nORDER BY total_unfulfilled DESC\nLIMIT 1;\n\nBut to get the product name, we need to join with products. However, if the products table doesn't have a name column, then we can't. So the answer would be the product_id. But the user might not know the product_id, so maybe the brand_id is more meaningful. But the question is about the product, not the brand.\n\nAlternatively, maybe the product_id is the product's unique identifier, so that's the answer. Therefore, the query should return the product_id with the highest sum of quantity_missing.\n\nSo, executing that SQL query should give the desired result. Let me make sure there are no typos and that the columns are correct. The unfulfilled_demands table has product_id, quantity_missing. So the query is correct.\n\nNow, I need to call the execute_sql function with this query. Also, the user might need the total unfulfilled units for that product, so including the sum in the result would be helpful. The query selects product_id and the sum, so the result will have both.\n\nTherefore, the correct tool call is execute_sql with the above query.\n",
+                      "thought": true
+                    },
+                    {
+                      "function_call": {
+                        "id": "call_hhos01f8",
+                        "args": {
+                          "sql": "SELECT product_id, SUM(quantity_missing) as total_unfulfilled FROM unfulfilled_demands GROUP BY product_id ORDER BY total_unfulfilled DESC LIMIT 1;"
+                        },
+                        "name": "execute_sql"
+                      }
+                    }
+                  ],
+                  "role": "model"
+                }
+              },
+              {
+                "author": "sql_agent",
+                "content": {
+                  "parts": [
+                    {
+                      "function_response": {
+                        "id": "call_hhos01f8",
+                        "name": "execute_sql",
+                        "response": {
+                          "content": [
+                            {
+                              "type": "text",
+                              "text": "{\"product_id\":\"0595-611-250\",\"total_unfulfilled\":6321}"
+                            }
+                          ],
+                          "isError": false
+                        }
+                      }
+                    }
+                  ],
+                  "role": "user"
+                }
+              }
+            ]
+          },
+          "creation_timestamp": 1773053581.908369
+        }
+      ],
+      "session_input": {
+        "app_name": "app",
+        "user_id": "user"
+      },
+      "creation_timestamp": 1773053825.718508
+    }
+  ],
+  "creation_timestamp": 1773053809.4950871
+}
