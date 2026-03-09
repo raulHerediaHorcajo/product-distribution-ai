@@ -1,6 +1,8 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
+from app.routers import chat
+
 app = FastAPI(
     title="AI Service",
     description="Multi-agent conversational assistant for product distribution queries",
@@ -14,6 +16,8 @@ app.add_middleware(
     allow_methods=["GET", "POST", "OPTIONS"],
     allow_headers=["*"],
 )
+
+app.include_router(chat.router, prefix="/api", tags=["chat"])
 
 
 @app.get("/health")
