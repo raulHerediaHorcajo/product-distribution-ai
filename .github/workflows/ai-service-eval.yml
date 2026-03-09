@@ -30,17 +30,10 @@ jobs:
         working-directory: ./ai-service
         run: uv sync --group dev
 
-      - name: Install Ollama
-        run: |
-          curl -fsSL https://ollama.com/install.sh | sh
-
-      - name: Start Ollama and pull models
-        run: |
-          ollama serve &
-          sleep 5
-          ollama pull qwen2.5:1.5b
-          ollama pull qwen3:8b
-
       - name: Run ADK evaluation
         working-directory: ./ai-service
-        run: uv run adk eval --config_file_path app/eval/eval_config.json app app/eval/sampleDataset.evalset.json
+        env:
+          MODEL_NAME: openrouter/qwen/qwen3-8b
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        run: uv run adk eval --config_file_path app/eval/eval_config_ci.json app app/eval/sampleDataset.evalset.json
