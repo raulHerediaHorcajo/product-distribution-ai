@@ -7,8 +7,8 @@ Run from ai-service root so that agent_module="app" resolves (e.g. uv run pytest
 
 import os
 from pathlib import Path
-import pytest
 
+import pytest
 from google.adk.evaluation.agent_evaluator import AgentEvaluator
 from google.adk.evaluation.eval_config import get_evaluation_criteria_or_default
 

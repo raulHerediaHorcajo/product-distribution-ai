@@ -40,6 +40,8 @@ quote-style = "double"
 [dependency-groups]
 dev = [
     "google-adk[eval]>=1.25.0",
+    "pytest>=9.0.2",
+    "pytest-asyncio>=0.24.0",
 ]
 
 [tool.ruff.lint.isort]
