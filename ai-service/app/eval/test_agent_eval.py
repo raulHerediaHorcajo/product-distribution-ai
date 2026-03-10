@@ -34,9 +34,7 @@ def _config_path() -> str:
 async def test_sample_dataset_eval_passes():
     """Run ADK eval on sampleDataset via evaluate_eval_set; fails if any eval case fails."""
     eval_config = get_evaluation_criteria_or_default(_config_path())
-    eval_set = AgentEvaluator._load_eval_set_from_file(
-        _eval_file_path(), eval_config, {}
-    )
+    eval_set = AgentEvaluator._load_eval_set_from_file(_eval_file_path(), eval_config, {})
 
     await AgentEvaluator.evaluate_eval_set(
         agent_module=AGENT_MODULE,
