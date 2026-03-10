@@ -36,4 +36,4 @@ jobs:
           MODEL_NAME: openrouter/qwen/qwen3-8b
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
-        run: uv run adk eval --config_file_path app/eval/eval_config_ci.json app app/eval/sampleDataset.evalset.json
+        run: uv run pytest app/eval/test_agent_eval.py
