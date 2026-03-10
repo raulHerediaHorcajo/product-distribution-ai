@@ -57,7 +57,7 @@ provides-extras = ["dev"]
 
 [package.metadata.requires-dev]
 dev = [
-    { name = "google-adk", extras = ["eval"], specifier = ">=1.25.0" },
+    { name = "google-adk", extras = ["eval"], specifier = ">=1.26.0" },
     { name = "pytest", specifier = ">=9.0.2" },
     { name = "pytest-asyncio", specifier = ">=0.24.0" },
 ]

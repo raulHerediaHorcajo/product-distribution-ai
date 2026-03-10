@@ -16,7 +16,7 @@ _EVAL_DIR = Path(__file__).resolve().parent
 
 AGENT_MODULE = "app"
 EVAL_CONFIG_FILE = "eval_config_ci.json"
-EVAL_DATASET_FILE = "goldenDataset.evalset.json"
+EVAL_DATASET_FILE = "sampleDataset.evalset.json"
 NUM_RUNS = 1
 
 
@@ -31,8 +31,8 @@ def _config_path() -> str:
 
 
 @pytest.mark.asyncio
-async def test_golden_dataset_eval_passes():
-    """Run ADK eval on goldenDataset via evaluate_eval_set; fails if any eval case fails."""
+async def test_sample_dataset_eval_passes():
+    """Run ADK eval on sampleDataset via evaluate_eval_set; fails if any eval case fails."""
     eval_config = get_evaluation_criteria_or_default(_config_path())
     eval_set = AgentEvaluator._load_eval_set_from_file(_eval_file_path(), eval_config, {})
 

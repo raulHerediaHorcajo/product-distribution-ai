@@ -39,7 +39,7 @@ quote-style = "double"
 
 [dependency-groups]
 dev = [
-    "google-adk[eval]>=1.25.0",
+    "google-adk[eval]>=1.26.0",
     "pytest>=9.0.2",
     "pytest-asyncio>=0.24.0",
 ]
