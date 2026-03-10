@@ -6,6 +6,7 @@ or ChartAgent when the user asks for distribution data or charts; otherwise answ
 from google.adk.agents import Agent
 from google.adk.models.lite_llm import LiteLlm
 
+from app.agents.chart_agent import chart_agent
 from app.agents.data_agent import data_agent
 from app.agents.sql_agent import sql_agent
 from app.config import settings
@@ -38,5 +39,5 @@ main_agent = Agent(
         "'which stores exist', 'assignments for product P1'). "
         "For greetings or general questions about what you can do, answer briefly yourself."
     ),
-    sub_agents=[data_agent, sql_agent],
+    sub_agents=[data_agent, chart_agent, sql_agent],
 )
