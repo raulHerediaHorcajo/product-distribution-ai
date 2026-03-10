@@ -24,6 +24,7 @@
     "paths": {
       "@services/*": ["app/services/*"],
       "@models/*": ["app/models/*"],
+      "@icons/*": ["app/icons/*"],
       "@utils/*": ["app/utils/*"],
       "@pipes/*": ["app/pipes/*"]
     },

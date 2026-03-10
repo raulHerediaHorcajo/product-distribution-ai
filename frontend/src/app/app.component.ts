@@ -1,4 +1,5 @@
-import { Component, OnInit, OnDestroy, inject } from '@angular/core';
+import { Component, OnInit, inject, DestroyRef } from '@angular/core';
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { DashboardMetricsComponent } from './dashboard-metrics/dashboard-metrics.component';
 import { DashboardMetricsDetailComponent } from './dashboard-metrics-detail/dashboard-metrics-detail.component';
 import {
@@ -17,10 +18,11 @@ import { MetricsService } from '@services/metrics.service';
 import { DashboardMapComponent } from './dashboard-map/dashboard-map.component';
 import { DashboardTableComponent } from './dashboard-table/dashboard-table.component';
 import { DashboardTabsComponent } from './dashboard-tabs/dashboard-tabs.component';
+import { ChatComponent } from './chat/chat.component';
 import { StockAssignment } from '@models/stock-assignment.model';
 import { StockAssignmentService } from '@services/stock-assignment.service';
-import { forkJoin, Subject } from 'rxjs';
-import { takeUntil, finalize } from 'rxjs/operators';
+import { forkJoin } from 'rxjs';
+import { finalize } from 'rxjs/operators';
 
 @Component({
   selector: 'app-root',
@@ -32,11 +34,12 @@ import { takeUntil, finalize } from 'rxjs/operators';
     DashboardTabsComponent,
     DashboardMapComponent,
     DashboardTableComponent,
+    ChatComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
-export class AppComponent implements OnInit, OnDestroy {
+export class AppComponent implements OnInit {
   globalMetrics: GlobalMetrics | null = null;
   detailedMetrics: DetailedMetrics | null = null;
 
@@ -56,8 +59,7 @@ export class AppComponent implements OnInit, OnDestroy {
 
   activeTab: DashboardTab = 'map';
 
-  private readonly destroy$ = new Subject<void>();
-
+  private readonly destroyRef = inject(DestroyRef);
   private readonly stockAssignmentService = inject(StockAssignmentService);
   private readonly warehouseService = inject(WarehouseService);
   private readonly storeService = inject(StoreService);
@@ -74,7 +76,7 @@ export class AppComponent implements OnInit, OnDestroy {
       globalMetrics: this.metricsService.getGlobalMetrics(),
     })
       .pipe(
-        takeUntil(this.destroy$),
+        takeUntilDestroyed(this.destroyRef),
         finalize(() => {
           this.loading = false;
         })
@@ -101,7 +103,7 @@ export class AppComponent implements OnInit, OnDestroy {
     this.stockAssignmentService
       .getAll(filters)
       .pipe(
-        takeUntil(this.destroy$),
+        takeUntilDestroyed(this.destroyRef),
         finalize(() => {
           this.loading = false;
         })
@@ -146,7 +148,7 @@ export class AppComponent implements OnInit, OnDestroy {
 
     this.metricsService
       .getDetailedMetrics(criteria)
-      .pipe(takeUntil(this.destroy$))
+      .pipe(takeUntilDestroyed(this.destroyRef))
       .subscribe({
         next: metrics => {
           this.detailedMetrics = metrics;
@@ -157,10 +159,5 @@ export class AppComponent implements OnInit, OnDestroy {
           this.error = 'Failed to load detailed metrics';
         },
       });
-  }
-
-  ngOnDestroy() {
-    this.destroy$.next();
-    this.destroy$.complete();
   }
 }

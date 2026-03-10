@@ -1,1 +1,1 @@
-export type DashboardTab = 'map' | 'table' | 'metrics';
+export type DashboardTab = 'map' | 'table' | 'metrics' | 'chat';
