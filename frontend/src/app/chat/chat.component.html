@@ -7,7 +7,9 @@
         </span>
         <div>
           <h2 class="chat-title">Distribution Assistant</h2>
-          <p class="chat-subtitle">{{ loading ? 'Typing...' : 'Ask anything about distribution data' }}</p>
+          <p class="chat-subtitle">
+            {{ loading ? 'Typing...' : 'Ask anything about distribution data' }}
+          </p>
         </div>
       </div>
       <button type="button" class="btn-new-chat" (click)="startNewChat()">+ New chat</button>
@@ -32,35 +34,35 @@
       </div>
     } @else {
       <div class="messages">
-      @for (msg of messages; track $index) {
-        @if (msg.role === 'user') {
-          <div class="message-row message-row-user">
-            <div class="bubble bubble-user">{{ msg.text }}</div>
-            <span class="avatar avatar-user" aria-hidden="true">U</span>
-          </div>
-        } @else {
+        @for (msg of messages; track $index) {
+          @if (msg.role === 'user') {
+            <div class="message-row message-row-user">
+              <div class="bubble bubble-user">{{ msg.text }}</div>
+              <span class="avatar avatar-user" aria-hidden="true">U</span>
+            </div>
+          } @else {
+            <div class="message-row message-row-assistant">
+              <span class="avatar avatar-assistant" aria-hidden="true">AI</span>
+              <div class="bubble bubble-assistant">
+                @if (msg.text) {
+                  <markdown [data]="msg.text"></markdown>
+                }
+                @if (msg.charts?.length) {
+                  @for (chart of msg.charts; track $index) {
+                    <app-chat-chart [spec]="chart"></app-chat-chart>
+                  }
+                }
+              </div>
+            </div>
+          }
+        }
+        @if (loading) {
           <div class="message-row message-row-assistant">
             <span class="avatar avatar-assistant" aria-hidden="true">AI</span>
-            <div class="bubble bubble-assistant">
-              @if (msg.text) {
-                <markdown [data]="msg.text"></markdown>
-              }
-              @if (msg.charts?.length) {
-                @for (chart of msg.charts; track $index) {
-                  <app-chat-chart [spec]="chart"></app-chat-chart>
-                }
-              }
-            </div>
+            <div class="bubble bubble-assistant bubble-typing">Typing...</div>
           </div>
         }
-      }
-      @if (loading) {
-        <div class="message-row message-row-assistant">
-          <span class="avatar avatar-assistant" aria-hidden="true">AI</span>
-          <div class="bubble bubble-assistant bubble-typing">Typing...</div>
-        </div>
-      }
-      <div #messagesEnd></div>
+        <div #messagesEnd></div>
       </div>
     }
 

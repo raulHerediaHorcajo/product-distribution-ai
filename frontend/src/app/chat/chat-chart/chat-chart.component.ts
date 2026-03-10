@@ -1,10 +1,4 @@
-import {
-  ChangeDetectionStrategy,
-  Component,
-  Input,
-  OnChanges,
-  SimpleChanges,
-} from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 import { BaseChartDirective, provideCharts, withDefaultRegisterables } from 'ng2-charts';
 import { ChartSpec, ChatChartData, ChatChartOptions } from '@models/chat.model';
 import { CHART_COLORS } from '@models/metrics.model';
@@ -22,12 +16,7 @@ import { CHART_COLORS } from '@models/metrics.model';
           <h4 class="chat-chart-title">{{ spec.title }}</h4>
         }
         <div class="chat-chart-canvas-wrap">
-          <canvas
-            baseChart
-            [data]="chartData"
-            [options]="chartOptions"
-            [type]="spec.type"
-          >
+          <canvas baseChart [data]="chartData" [options]="chartOptions" [type]="spec.type">
           </canvas>
         </div>
       </div>

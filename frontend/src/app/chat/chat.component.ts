@@ -77,51 +77,51 @@ export class ChatComponent implements OnInit, AfterViewChecked {
       .sendMessageStreaming(content, this.sessionId)
       .pipe(takeUntilDestroyed(this.destroyRef))
       .subscribe({
-      next: data => {
-        if (data.chart) {
-          if (!assistantMessage) {
-            assistantMessage = { role: 'assistant', text: '', charts: [data.chart] };
-            this.messages.push(assistantMessage);
-            this.loading = false;
-          } else {
-            if (!assistantMessage.charts) assistantMessage.charts = [];
-            assistantMessage.charts.push(data.chart);
+        next: data => {
+          if (data.chart) {
+            if (!assistantMessage) {
+              assistantMessage = { role: 'assistant', text: '', charts: [data.chart] };
+              this.messages.push(assistantMessage);
+              this.loading = false;
+            } else {
+              if (!assistantMessage.charts) assistantMessage.charts = [];
+              assistantMessage.charts.push(data.chart);
+            }
+            this.shouldScrollToEnd = true;
           }
-          this.shouldScrollToEnd = true;
-        }
-        if (data.delta !== undefined) {
-          if (!assistantMessage) {
-            assistantMessage = { role: 'assistant', text: data.delta };
-            this.messages.push(assistantMessage);
-            this.loading = false;
-          } else {
-            assistantMessage.text += data.delta;
+          if (data.delta !== undefined) {
+            if (!assistantMessage) {
+              assistantMessage = { role: 'assistant', text: data.delta };
+              this.messages.push(assistantMessage);
+              this.loading = false;
+            } else {
+              assistantMessage.text += data.delta;
+            }
+            this.shouldScrollToEnd = true;
           }
-          this.shouldScrollToEnd = true;
-        }
-        if (data.done) {
+          if (data.done) {
+            this.loading = false;
+            this.shouldScrollToEnd = true;
+          }
+        },
+        complete: () => {
           this.loading = false;
+          if (!assistantMessage) {
+            this.messages.push({
+              role: 'assistant',
+              text: "I didn't get a reply from the agent.",
+            });
+          } else if (!assistantMessage.text.trim()) {
+            assistantMessage.text = "I didn't get a reply from the agent.";
+          }
           this.shouldScrollToEnd = true;
-        }
-      },
-      complete: () => {
-        this.loading = false;
-        if (!assistantMessage) {
-          this.messages.push({
-            role: 'assistant',
-            text: "I didn't get a reply from the agent.",
-          });
-        } else if (!assistantMessage.text.trim()) {
-          assistantMessage.text = "I didn't get a reply from the agent.";
-        }
-        this.shouldScrollToEnd = true;
-      },
-      error: err => {
-        this.loading = false;
-        this.error = err?.message || 'Failed to get a response. Please try again.';
-        this.shouldScrollToEnd = true;
-      },
-    });
+        },
+        error: err => {
+          this.loading = false;
+          this.error = err?.message || 'Failed to get a response. Please try again.';
+          this.shouldScrollToEnd = true;
+        },
+      });
   }
 
   onSuggestionClick(prompt: string): void {

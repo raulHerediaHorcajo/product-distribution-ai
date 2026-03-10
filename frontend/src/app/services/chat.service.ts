@@ -18,10 +18,7 @@ export class ChatService {
     });
   }
 
-  sendMessageStreaming(
-    message: string,
-    sessionId: string
-  ): Observable<ChatStreamChunk> {
+  sendMessageStreaming(message: string, sessionId: string): Observable<ChatStreamChunk> {
     return new Observable(observer => {
       const url = `${this.api}/chat/stream`;
       fetch(url, {
