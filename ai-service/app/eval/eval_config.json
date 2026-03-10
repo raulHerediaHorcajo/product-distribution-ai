@@ -1,0 +1,32 @@
+{
+  "criteria": {
+    "rubric_based_tool_use_quality_v1": {
+      "threshold": 0.8,
+      "judge_model_options": {
+        "judge_model": "ollama_chat/qwen2.5:1.5b",
+        "num_samples": 5
+      },
+      "rubrics": [
+        {
+          "rubric_id": "correct_tool",
+          "rubric_content": {
+            "text_property": "The agent called the correct tool(s) to answer the user's question (e.g. the expected tool or sub-agent for this type of request)."
+          }
+        },
+        {
+          "rubric_id": "appropriate_params",
+          "rubric_content": {
+            "text_property": "The tool parameters (e.g. query, filters, IDs) are appropriate for the user's request, even if the exact text (e.g. SQL query) differs from the reference."
+          }
+        }
+      ]
+    },
+    "final_response_match_v2": {
+      "threshold": 0.8,
+      "judge_model_options": {
+        "judge_model": "ollama_chat/qwen2.5:1.5b",
+        "num_samples": 5
+      }
+    }
+  }
+}
