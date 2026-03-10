@@ -1,0 +1,36 @@
+<ng-template
+  cdkConnectedOverlay
+  [cdkConnectedOverlayOrigin]="origin"
+  [cdkConnectedOverlayOpen]="true"
+  [cdkConnectedOverlayHasBackdrop]="true"
+  [cdkConnectedOverlayPositions]="overlayPositions"
+  cdkConnectedOverlayBackdropClass="cdk-overlay-transparent-backdrop"
+  (backdropClick)="handleClose()"
+  (detach)="handleClose()"
+>
+  <div class="ai-insight-card">
+    <div class="ai-insight-header">
+      <div class="ai-insight-title-row">
+        <app-ai-icon [size]="18"></app-ai-icon>
+        <span class="ai-insight-title">AI Insight</span>
+      </div>
+      <button
+        type="button"
+        class="ai-insight-close"
+        (click)="handleClose()"
+        aria-label="Close AI insight"
+      >
+        ×
+      </button>
+    </div>
+    <div class="ai-insight-body">
+      @if (loading) {
+        <p class="ai-insight-text ai-insight-loading">Analyzing metric...</p>
+      } @else if (error) {
+        <p class="ai-insight-text ai-insight-error">{{ error }}</p>
+      } @else if (text) {
+        <p class="ai-insight-text">{{ text }}</p>
+      }
+    </div>
+  </div>
+</ng-template>
