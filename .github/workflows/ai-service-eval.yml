@@ -1,26 +1,22 @@
 name: AI Service Eval
 
 on:
+  pull_request:
+    types: [opened, synchronize, reopened, labeled]
   workflow_dispatch:
-    inputs:
-      pr_number:
-        description: "PR number to evaluate"
-        required: true
-        type: string
 
 jobs:
   changes:
     name: Detect AI service changes
     runs-on: ubuntu-latest
-    
+
     outputs:
       ai-service: ${{ steps.filter.outputs.ai-service }}
 
     steps:
-      - name: Checkout PR merge ref
+      - name: Checkout code
         uses: actions/checkout@v4
         with:
-          ref: refs/pull/${{ github.event.inputs.pr_number }}/merge
           fetch-depth: 0
 
       - name: Filter paths
@@ -35,14 +31,14 @@ jobs:
   eval:
     name: Run ADK evaluation
     needs: changes
-    if: needs.changes.outputs.ai-service == 'true'
+    if: >
+      needs.changes.outputs.ai-service == 'true' &&
+      contains(github.event.pull_request.labels.*.name, 'ai-eval')
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout PR merge ref
+      - name: Checkout code
         uses: actions/checkout@v4
-        with:
-          ref: refs/pull/${{ github.event.inputs.pr_number }}/merge
 
       - name: Start dependencies (postgres, backend, toolbox)
         run: |
