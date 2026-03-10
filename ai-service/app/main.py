@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.routers import chat
+from app.routers import chat, kpi
 
 app = FastAPI(
     title="AI Service",
@@ -18,6 +18,7 @@ app.add_middleware(
 )
 
 app.include_router(chat.router, prefix="/api", tags=["chat"])
+app.include_router(kpi.router, prefix="/api", tags=["kpi"])
 
 
 @app.get("/health")
