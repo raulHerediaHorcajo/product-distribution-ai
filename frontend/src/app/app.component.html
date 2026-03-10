@@ -30,6 +30,9 @@
   @if (activeTab === 'metrics') {
     <app-dashboard-metrics-detail [metrics]="detailedMetrics"></app-dashboard-metrics-detail>
   }
+  @if (activeTab === 'chat') {
+    <app-chat></app-chat>
+  }
   @if (loading) {
     <div class="loading-overlay">
       <div class="loading-spinner"></div>

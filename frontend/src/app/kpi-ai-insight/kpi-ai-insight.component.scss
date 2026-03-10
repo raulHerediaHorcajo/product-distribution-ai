@@ -1,0 +1,74 @@
+$spacing-xs: 8px;
+$spacing-sm: 12px;
+$font-size-label: 14px;
+$text-primary: #111827;
+$text-secondary: #6b7280;
+$danger-red: #ef4444;
+
+.ai-insight-card {
+  background: white;
+  border-radius: 16px;
+  padding: 14px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid #e5e7eb;
+  min-width: 320px;
+  max-width: 520px;
+
+  &:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+  }
+}
+
+.ai-insight-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: $spacing-sm;
+}
+
+.ai-insight-title-row {
+  display: flex;
+  align-items: center;
+  gap: $spacing-xs;
+}
+
+.ai-insight-title {
+  font-size: $font-size-label;
+  font-weight: 600;
+  color: $text-primary;
+}
+
+.ai-insight-close {
+  border: none;
+  background: transparent;
+  padding: 0 $spacing-xs;
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1;
+  color: $text-secondary;
+  cursor: pointer;
+}
+
+.ai-insight-close:hover {
+  color: $text-primary;
+}
+
+.ai-insight-body {
+  min-height: 40px;
+}
+
+.ai-insight-text {
+  margin: 0;
+  font-size: $font-size-label;
+  color: $text-secondary;
+}
+
+.ai-insight-loading {
+  font-style: italic;
+}
+
+.ai-insight-error {
+  color: $danger-red;
+}

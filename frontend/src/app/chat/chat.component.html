@@ -1,0 +1,95 @@
+<div class="chat-panel">
+  @if (messages.length > 0) {
+    <header class="chat-header">
+      <div class="chat-header-left">
+        <span class="chat-icon" aria-hidden="true">
+          <app-ai-icon [size]="24"></app-ai-icon>
+        </span>
+        <div>
+          <h2 class="chat-title">Distribution Assistant</h2>
+          <p class="chat-subtitle">
+            {{ loading ? 'Typing...' : 'Ask anything about distribution data' }}
+          </p>
+        </div>
+      </div>
+      <button type="button" class="btn-new-chat" (click)="startNewChat()">+ New chat</button>
+    </header>
+  }
+
+  <div class="chat-body">
+    @if (messages.length === 0 && !loading) {
+      <div class="empty-state">
+        <span class="empty-state-icon" aria-hidden="true">
+          <app-ai-icon [size]="64"></app-ai-icon>
+        </span>
+        <h3 class="empty-state-title">Distribution Assistant</h3>
+        <p class="empty-state-text">Ask anything about distribution data</p>
+        <div class="suggestions">
+          @for (prompt of suggestedPrompts; track prompt) {
+            <button type="button" class="suggestion-btn" (click)="onSuggestionClick(prompt)">
+              {{ prompt }}
+            </button>
+          }
+        </div>
+      </div>
+    } @else {
+      <div class="messages">
+        @for (msg of messages; track $index) {
+          @if (msg.role === 'user') {
+            <div class="message-row message-row-user">
+              <div class="bubble bubble-user">{{ msg.text }}</div>
+              <span class="avatar avatar-user" aria-hidden="true">U</span>
+            </div>
+          } @else {
+            <div class="message-row message-row-assistant">
+              <span class="avatar avatar-assistant" aria-hidden="true">AI</span>
+              <div class="bubble bubble-assistant">
+                @if (msg.text) {
+                  <markdown [data]="msg.text"></markdown>
+                }
+                @if (msg.charts?.length) {
+                  @for (chart of msg.charts; track $index) {
+                    <app-chat-chart [spec]="chart"></app-chat-chart>
+                  }
+                }
+              </div>
+            </div>
+          }
+        }
+        @if (loading) {
+          <div class="message-row message-row-assistant">
+            <span class="avatar avatar-assistant" aria-hidden="true">AI</span>
+            <div class="bubble bubble-assistant bubble-typing">Typing...</div>
+          </div>
+        }
+        <div #messagesEnd></div>
+      </div>
+    }
+
+    @if (error) {
+      <p class="chat-error">{{ error }}</p>
+    }
+  </div>
+
+  <div class="chat-input-wrap">
+    <input
+      type="text"
+      class="chat-input"
+      [(ngModel)]="inputText"
+      placeholder="Ask anything about distribution data..."
+      (keydown.enter)="sendMessage()"
+      [disabled]="loading"
+    />
+    <button
+      type="button"
+      class="btn-send"
+      (click)="sendMessage()"
+      [disabled]="loading || !inputText.trim()"
+      title="Send"
+      aria-label="Send message"
+    >
+      <app-send-icon [size]="20"></app-send-icon>
+    </button>
+  </div>
+  <p class="chat-disclaimer">AI can make mistakes. Consider checking important information.</p>
+</div>

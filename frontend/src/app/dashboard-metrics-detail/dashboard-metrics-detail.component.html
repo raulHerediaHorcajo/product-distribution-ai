@@ -1,9 +1,29 @@
 <div class="metrics-detail-container">
   @if (metrics) {
+    @if (selectedOrigin && selectedKpiSlug && selectedContext) {
+      <app-kpi-ai-insight
+        [origin]="selectedOrigin"
+        [slug]="selectedKpiSlug"
+        [context]="selectedContext"
+        (closed)="onKpiInsightClosed()"
+      />
+    }
+
     <div class="metrics-row">
-      <div class="metric-card progress-card">
+      <div class="metric-card progress-card" cdkOverlayOrigin #efficiencyOrigin="cdkOverlayOrigin">
         <div class="card-header">
-          <h3 class="card-title">Efficiency Score</h3>
+          <div class="card-title-row">
+            <h3 class="card-title">Efficiency Score</h3>
+            <button
+              type="button"
+              class="kpi-ai-button"
+              (click)="openKpiInsight('efficiency-score', efficiencyOrigin)"
+              title="Ask AI to explain this KPI"
+              aria-label="Ask AI to explain Efficiency Score"
+            >
+              <app-ai-icon [size]="18"></app-ai-icon>
+            </button>
+          </div>
           <div class="progress-circle">
             <div class="progress-value">{{ metrics.efficiencyScore }}</div>
             <div class="progress-label">/100</div>
@@ -25,9 +45,20 @@
         </div>
       </div>
 
-      <div class="metric-card progress-card">
+      <div class="metric-card progress-card" cdkOverlayOrigin #fulfillmentOrigin="cdkOverlayOrigin">
         <div class="card-header">
-          <h3 class="card-title">Fulfillment Rate</h3>
+          <div class="card-title-row">
+            <h3 class="card-title">Fulfillment Rate</h3>
+            <button
+              type="button"
+              class="kpi-ai-button"
+              (click)="openKpiInsight('fulfillment-rate', fulfillmentOrigin)"
+              title="Ask AI to explain this KPI"
+              aria-label="Ask AI to explain Fulfillment Rate"
+            >
+              <app-ai-icon [size]="18"></app-ai-icon>
+            </button>
+          </div>
           <div class="progress-bar">
             <div
               class="progress-fill"
@@ -41,9 +72,20 @@
         </div>
       </div>
 
-      <div class="metric-card number-card">
+      <div class="metric-card number-card" cdkOverlayOrigin #totalDistanceOrigin="cdkOverlayOrigin">
         <div class="card-header">
-          <h3 class="card-title">Total Distance</h3>
+          <div class="card-title-row">
+            <h3 class="card-title">Total Distance</h3>
+            <button
+              type="button"
+              class="kpi-ai-button"
+              (click)="openKpiInsight('total-distance', totalDistanceOrigin)"
+              title="Ask AI to explain this KPI"
+              aria-label="Ask AI to explain Total Distance"
+            >
+              <app-ai-icon [size]="18"></app-ai-icon>
+            </button>
+          </div>
           <div class="metric-icon">🚛</div>
         </div>
         <div class="card-footer">
@@ -58,9 +100,24 @@
     </div>
 
     <div class="metrics-row stacked-row">
-      <div class="metric-card multi-value-card stacked-full-height">
+      <div
+        class="metric-card multi-value-card stacked-full-height"
+        cdkOverlayOrigin
+        #storesServedOrigin="cdkOverlayOrigin"
+      >
         <div class="card-header">
-          <h3 class="card-title">Stores Served</h3>
+          <div class="card-title-row">
+            <h3 class="card-title">Stores Served</h3>
+            <button
+              type="button"
+              class="kpi-ai-button"
+              (click)="openKpiInsight('stores-served', storesServedOrigin)"
+              title="Ask AI to explain this KPI"
+              aria-label="Ask AI to explain Stores Served"
+            >
+              <app-ai-icon [size]="18"></app-ai-icon>
+            </button>
+          </div>
           <div class="metric-icon">🛍️</div>
         </div>
         <div class="card-content">
@@ -94,9 +151,24 @@
       </div>
 
       <div class="stacked-column">
-        <div class="metric-card number-card stacked-card stacked-top">
+        <div
+          class="metric-card number-card stacked-card stacked-top"
+          cdkOverlayOrigin
+          #avgShipmentOrigin="cdkOverlayOrigin"
+        >
           <div class="card-header">
-            <h3 class="card-title">Avg Shipment Size</h3>
+            <div class="card-title-row">
+              <h3 class="card-title">Avg Shipment Size</h3>
+              <button
+                type="button"
+                class="kpi-ai-button"
+                (click)="openKpiInsight('avg-shipment-size', avgShipmentOrigin)"
+                title="Ask AI to explain this KPI"
+                aria-label="Ask AI to explain Avg Shipment Size"
+              >
+                <app-ai-icon [size]="18"></app-ai-icon>
+              </button>
+            </div>
             <div class="metric-icon">📦</div>
           </div>
           <div class="card-footer">
@@ -104,9 +176,24 @@
           </div>
         </div>
 
-        <div class="metric-card number-card stacked-card stacked-bottom">
+        <div
+          class="metric-card number-card stacked-card stacked-bottom"
+          cdkOverlayOrigin
+          #uniqueProductsOrigin="cdkOverlayOrigin"
+        >
           <div class="card-header">
-            <h3 class="card-title">Unique Products</h3>
+            <div class="card-title-row">
+              <h3 class="card-title">Unique Products</h3>
+              <button
+                type="button"
+                class="kpi-ai-button"
+                (click)="openKpiInsight('unique-products', uniqueProductsOrigin)"
+                title="Ask AI to explain this KPI"
+                aria-label="Ask AI to explain Unique Products"
+              >
+                <app-ai-icon [size]="18"></app-ai-icon>
+              </button>
+            </div>
             <div class="metric-icon">🏷️</div>
           </div>
           <div class="card-footer">
@@ -128,9 +215,24 @@
 
     <div class="metrics-row stacked-row demand-row">
       <div class="stacked-column">
-        <div class="metric-card multi-value-card stacked-card stacked-top unfulfilled-demand-card">
+        <div
+          class="metric-card multi-value-card stacked-card stacked-top unfulfilled-demand-card"
+          cdkOverlayOrigin
+          #unfulfilledOrigin="cdkOverlayOrigin"
+        >
           <div class="card-header">
-            <h3 class="card-title">Unfulfilled Demand</h3>
+            <div class="card-title-row">
+              <h3 class="card-title">Unfulfilled Demand</h3>
+              <button
+                type="button"
+                class="kpi-ai-button"
+                (click)="openKpiInsight('unfulfilled-demand', unfulfilledOrigin)"
+                title="Ask AI to explain this KPI"
+                aria-label="Ask AI to explain Unfulfilled Demand"
+              >
+                <app-ai-icon [size]="18"></app-ai-icon>
+              </button>
+            </div>
           </div>
           <div class="card-content">
             <div class="value-item main">
@@ -159,9 +261,24 @@
           </div>
         </div>
 
-        <div class="metric-card multi-value-card stacked-card stacked-bottom fulfilled-demand-card">
+        <div
+          class="metric-card multi-value-card stacked-card stacked-bottom fulfilled-demand-card"
+          cdkOverlayOrigin
+          #fulfilledOrigin="cdkOverlayOrigin"
+        >
           <div class="card-header">
-            <h3 class="card-title">Fulfilled Demand</h3>
+            <div class="card-title-row">
+              <h3 class="card-title">Fulfilled Demand</h3>
+              <button
+                type="button"
+                class="kpi-ai-button"
+                (click)="openKpiInsight('fulfilled-demand', fulfilledOrigin)"
+                title="Ask AI to explain this KPI"
+                aria-label="Ask AI to explain Fulfilled Demand"
+              >
+                <app-ai-icon [size]="18"></app-ai-icon>
+              </button>
+            </div>
           </div>
           <div class="card-content">
             <div class="value-item main">
@@ -172,9 +289,24 @@
         </div>
       </div>
 
-      <div class="metric-card chart-card large stacked-full-height">
+      <div
+        class="metric-card chart-card large stacked-full-height"
+        cdkOverlayOrigin
+        #capacityOrigin="cdkOverlayOrigin"
+      >
         <div class="card-header">
-          <h3 class="card-title">Capacity Utilization</h3>
+          <div class="card-title-row">
+            <h3 class="card-title">Capacity Utilization</h3>
+            <button
+              type="button"
+              class="kpi-ai-button"
+              (click)="openKpiInsight('capacity-utilization', capacityOrigin)"
+              title="Ask AI to explain this KPI"
+              aria-label="Ask AI to explain Capacity Utilization"
+            >
+              <app-ai-icon [size]="18"></app-ai-icon>
+            </button>
+          </div>
         </div>
         <div class="chart-container capacity-ring">
           @if (capacityChartData) {
@@ -206,9 +338,24 @@
     </div>
 
     <div class="metrics-row full-width">
-      <div class="metric-card multi-value-card full-width">
+      <div
+        class="metric-card multi-value-card full-width"
+        cdkOverlayOrigin
+        #distanceDistributionOrigin="cdkOverlayOrigin"
+      >
         <div class="card-header">
-          <h3 class="card-title">Distance Distribution</h3>
+          <div class="card-title-row">
+            <h3 class="card-title">Distance Distribution</h3>
+            <button
+              type="button"
+              class="kpi-ai-button"
+              (click)="openKpiInsight('distance-distribution', distanceDistributionOrigin)"
+              title="Ask AI to explain this KPI"
+              aria-label="Ask AI to explain Distance Distribution"
+            >
+              <app-ai-icon [size]="18"></app-ai-icon>
+            </button>
+          </div>
         </div>
         <div class="card-content distance-stats">
           <div class="distance-item">
@@ -236,9 +383,24 @@
     </div>
 
     <div class="metrics-row">
-      <div class="metric-card chart-card">
+      <div
+        class="metric-card chart-card"
+        cdkOverlayOrigin
+        #unitsByWarehouseOrigin="cdkOverlayOrigin"
+      >
         <div class="card-header">
-          <h3 class="card-title">Units by Warehouse</h3>
+          <div class="card-title-row">
+            <h3 class="card-title">Units by Warehouse</h3>
+            <button
+              type="button"
+              class="kpi-ai-button"
+              (click)="openKpiInsight('units-by-warehouse', unitsByWarehouseOrigin)"
+              title="Ask AI to explain this KPI"
+              aria-label="Ask AI to explain Units by Warehouse"
+            >
+              <app-ai-icon [size]="18"></app-ai-icon>
+            </button>
+          </div>
         </div>
         <div class="chart-container">
           @if (warehouseChartData) {
@@ -253,9 +415,20 @@
         </div>
       </div>
 
-      <div class="metric-card chart-card">
+      <div class="metric-card chart-card" cdkOverlayOrigin #topProductsOrigin="cdkOverlayOrigin">
         <div class="card-header">
-          <h3 class="card-title">Top 5 Products</h3>
+          <div class="card-title-row">
+            <h3 class="card-title">Top 5 Products</h3>
+            <button
+              type="button"
+              class="kpi-ai-button"
+              (click)="openKpiInsight('top-products', topProductsOrigin)"
+              title="Ask AI to explain this KPI"
+              aria-label="Ask AI to explain Top 5 Products"
+            >
+              <app-ai-icon [size]="18"></app-ai-icon>
+            </button>
+          </div>
         </div>
         <div class="chart-container">
           @if (topProductsChartData) {

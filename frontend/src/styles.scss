@@ -1,4 +1,6 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global styles */
+@import '@angular/cdk/overlay-prebuilt.css';
+
 $font-family-primary: 'Inter', sans-serif;
 
 $color-warehouse-bg: rgba(1, 1, 1, 0.6);

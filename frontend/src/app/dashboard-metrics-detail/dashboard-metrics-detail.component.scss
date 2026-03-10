@@ -140,6 +140,7 @@ $spacing-xl: 24px;
 
   .metric-card {
     @include card-base;
+    position: relative;
 
     &.full-width {
       grid-column: span 3;
@@ -150,6 +151,13 @@ $spacing-xl: 24px;
       justify-content: space-between;
       align-items: center;
       margin-bottom: $spacing-md;
+
+      .card-title-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: $spacing-xs;
+      }
 
       .card-title {
         @include value-text($font-size-title, 600);
@@ -181,6 +189,40 @@ $spacing-xl: 24px;
           font-size: $font-size-small;
         }
       }
+    }
+
+    .kpi-ai-button {
+      border: none;
+      background: transparent;
+      padding: 0;
+      margin: 0;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: $neutral-gray;
+      cursor: pointer;
+      position: absolute;
+      top: $spacing-xs;
+      right: $spacing-xs;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition:
+        color 0.2s ease,
+        opacity 0.2s ease,
+        transform 0.1s ease,
+        visibility 0.2s ease;
+
+      &:hover {
+        color: $text-primary;
+        transform: translateY(-1px);
+      }
+    }
+
+    &:hover .kpi-ai-button {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
     }
   }
 
@@ -364,7 +406,6 @@ $spacing-xl: 24px;
       height: 300px;
       margin-top: $spacing-md;
       width: 100%;
-      position: relative;
 
       canvas {
         width: 100% !important;

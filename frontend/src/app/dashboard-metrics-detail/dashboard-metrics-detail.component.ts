@@ -1,4 +1,6 @@
+import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
+import { CdkOverlayOrigin, OverlayModule } from '@angular/cdk/overlay';
 import { BaseChartDirective, provideCharts, withDefaultRegisterables } from 'ng2-charts';
 import { TooltipItem } from 'chart.js';
 import { DetailedMetrics, METRICS_COLORS, CHART_COLORS } from '@models/metrics.model';
@@ -6,17 +8,33 @@ import { FormatNumberPipe } from '@pipes/format-number.pipe';
 import { FormatPercentagePipe } from '@pipes/format-percentage.pipe';
 import { FormatDistancePipe } from '@pipes/format-distance.pipe';
 import { formatNumber } from '@utils/format-number.util';
+import { AiIconComponent } from '@icons/ai-icon/ai-icon.component';
+import { KpiAiInsightComponent } from '../kpi-ai-insight/kpi-ai-insight.component';
+import { KpiSlug, KPI_CONFIG } from '@models/kpi.model';
 
 @Component({
   selector: 'app-dashboard-metrics-detail',
   standalone: true,
-  imports: [BaseChartDirective, FormatNumberPipe, FormatPercentagePipe, FormatDistancePipe],
+  imports: [
+    CommonModule,
+    OverlayModule,
+    BaseChartDirective,
+    FormatNumberPipe,
+    FormatPercentagePipe,
+    FormatDistancePipe,
+    AiIconComponent,
+    KpiAiInsightComponent,
+  ],
   providers: [provideCharts(withDefaultRegisterables())],
   templateUrl: './dashboard-metrics-detail.component.html',
   styleUrl: './dashboard-metrics-detail.component.scss',
 })
 export class DashboardMetricsDetailComponent {
   @Input() metrics: DetailedMetrics | null = null;
+
+  selectedKpiSlug: KpiSlug | null = null;
+  selectedOrigin: CdkOverlayOrigin | null = null;
+  selectedContext: Record<string, unknown> | null = null;
 
   public chartOptions = {
     responsive: true,
@@ -162,5 +180,21 @@ export class DashboardMetricsDetailComponent {
         },
       },
     };
+  }
+
+  openKpiInsight(slug: KpiSlug, origin: CdkOverlayOrigin): void {
+    if (!this.metrics) return;
+    const config = KPI_CONFIG[slug];
+    if (!config) return;
+
+    this.selectedKpiSlug = slug;
+    this.selectedOrigin = origin;
+    this.selectedContext = config.buildContext(this.metrics);
+  }
+
+  onKpiInsightClosed(): void {
+    this.selectedKpiSlug = null;
+    this.selectedOrigin = null;
+    this.selectedContext = null;
   }
 }
