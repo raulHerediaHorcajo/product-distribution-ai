@@ -4,8 +4,32 @@ on:
   workflow_dispatch:
 
 jobs:
+  changes:
+    name: Detect AI service changes
+    runs-on: ubuntu-latest
+    
+    outputs:
+      ai-service: ${{ steps.filter.outputs.ai-service }}
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Filter paths
+        id: filter
+        uses: dorny/paths-filter@v3
+        with:
+          filters: |
+            ai-service:
+              - 'ai-service/**'
+              - '.github/workflows/ai-service-eval.yml'
+
   eval:
     name: Run ADK evaluation
+    needs: changes
+    if: needs.changes.outputs.ai-service == 'true'
     runs-on: ubuntu-latest
 
     steps:
